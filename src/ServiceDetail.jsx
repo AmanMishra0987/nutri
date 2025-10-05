@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { IMAGES } from '../src/contants/images';
 
 const ServiceDetail = () => {
   const { serviceName } = useParams();
@@ -736,9 +737,11 @@ const ServiceDetail = () => {
               
               <div className="mt-12 lg:mt-0">
                 <div className="bg-emerald-50 rounded-2xl p-6 sticky top-24">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-64 flex items-center justify-center">
-                    <span className="text-emerald-800 font-medium">{service.imagePlaceholder}</span>
-                  </div>
+                  <img 
+                    src={IMAGES.serviceDetail} 
+                    alt={service.imagePlaceholder}
+                    className="w-full h-64 object-cover rounded-xl"
+                  />
                   
                   <div className="mt-6">
                     <h3 className="text-xl font-bold text-emerald-900 mb-4">Service Details</h3>
