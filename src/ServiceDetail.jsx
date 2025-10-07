@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { IMAGES } from './constants/images';
+import { IMAGES } from '../src/contants/images';
 
 const ServiceDetail = () => {
   const { serviceName } = useParams();
