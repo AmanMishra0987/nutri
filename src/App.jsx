@@ -1,36 +1,126 @@
-import React ,{ useState } from 'react';
+import React ,{ useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ServiceDetail from './ServiceDetail';
+import BookingForm from './BookingForm';
+import { IMAGES } from './constants/images';
+import { SOCIAL_MEDIA } from './constants/socialMedia';
 import './App.css';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isBookingFormOpen, setIsBookingFormOpen] = useState(false);
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Main app content (homepage)
   const Home = () => (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
       {/* Navigation */}
-      <nav className="bg-white/80 backdrop-blur-sm fixed w-full z-10 shadow-sm">
+      <nav className={`fixed w-full z-10 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
+          : 'bg-transparent'
+      }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <h1 className="text-2xl font-serif font-bold text-emerald-700">Soul Fuel Wellness</h1>
+                {/* Logo */}
+                <div className="mr-3">
+                  <svg 
+                    width="40" 
+                    height="40" 
+                    viewBox="0 0 40 40" 
+                    className={`transition-colors duration-300 ${
+                      isScrolled ? 'text-emerald-600' : 'text-white drop-shadow-lg'
+                    }`}
+                    fill="currentColor"
+                  >
+                    {/* Meditation figure */}
+                    <path d="M20 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                    <path d="M20 16c-3.3 0-6 2.7-6 6v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-3.3-2.7-6-6-6zm4 14h-8v-8c0-2.2 1.8-4 4-4s4 1.8 4 4v8z"/>
+                    
+                    {/* Energy/flame symbol on chest */}
+                    <g transform="translate(20, 20)">
+                      {/* Central circle */}
+                      <circle cx="0" cy="0" r="1.5" fill="currentColor"/>
+                      {/* Upward curves */}
+                      <path d="M-1.5 0 Q-1 2 0 3 Q1 2 1.5 0" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                      {/* Wing-like extensions */}
+                      <path d="M-2.5 -1 Q-3 -3 -2 -4 Q-1 -3 -1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                      <path d="M2.5 -1 Q3 -3 2 -4 Q1 -3 1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                    </g>
+                  </svg>
+                </div>
+                
+                <h1 className={`text-2xl font-serif font-bold transition-colors duration-300 ${
+                  isScrolled 
+                    ? 'text-emerald-700' 
+                    : 'text-white drop-shadow-lg'
+                }`}>Soul Fuel Wellness</h1>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className="text-emerald-800 hover:text-emerald-600 font-medium">Home</a>
-              <a href="#about" className="text-emerald-800 hover:text-emerald-600 font-medium">About</a>
-              <a href="#services" className="text-emerald-800 hover:text-emerald-600 font-medium">Services</a>
-              <a href="#gallery" className="text-emerald-800 hover:text-emerald-600 font-medium">Gallery</a>
-              <a href="#testimonials" className="text-emerald-800 hover:text-emerald-600 font-medium">Testimonials</a>
-              <a href="#contact" className="text-emerald-800 hover:text-emerald-600 font-medium">Contact</a>
-              <button className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition duration-300">
+              <a href="#home" className={`font-medium transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-emerald-800 hover:text-emerald-600' 
+                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
+              }`}>Home</a>
+              <a href="#about" className={`font-medium transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-emerald-800 hover:text-emerald-600' 
+                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
+              }`}>About</a>
+              <a href="#services" className={`font-medium transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-emerald-800 hover:text-emerald-600' 
+                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
+              }`}>Services</a>
+              <a href="#gallery" className={`font-medium transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-emerald-800 hover:text-emerald-600' 
+                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
+              }`}>Gallery</a>
+              <a href="#testimonials" className={`font-medium transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-emerald-800 hover:text-emerald-600' 
+                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
+              }`}>Testimonials</a>
+              <a href="#contact" className={`font-medium transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-emerald-800 hover:text-emerald-600' 
+                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
+              }`}>Contact</a>
+              <button 
+                onClick={() => setIsBookingFormOpen(true)}
+                className={`px-4 py-2 rounded-full transition-all duration-300 ${
+                  isScrolled 
+                    ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                    : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border border-white/30'
+                }`}
+              >
                 Book a Session
               </button>
             </div>
             <div className="md:hidden flex items-center">
-              <button className="text-emerald-800">
+              <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className={`transition-colors duration-300 ${
+                  isScrolled 
+                    ? 'text-emerald-800' 
+                    : 'text-white drop-shadow-lg'
+                }`}
+              >
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -40,8 +130,148 @@ function App() {
         </div>
       </nav>
 
+      {/* Mobile Menu Sidebar */}
+      {isMobileMenuOpen && (
+        <>
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          
+          {/* Sidebar */}
+          <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden">
+            {/* Header */}
+            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+              <div className="flex items-center">
+                {/* Logo */}
+                <div className="mr-3">
+                  <svg 
+                    width="32" 
+                    height="32" 
+                    viewBox="0 0 40 40" 
+                    className="text-emerald-600"
+                    fill="currentColor"
+                  >
+                    {/* Meditation figure */}
+                    <path d="M20 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                    <path d="M20 16c-3.3 0-6 2.7-6 6v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-3.3-2.7-6-6-6zm4 14h-8v-8c0-2.2 1.8-4 4-4s4 1.8 4 4v8z"/>
+                    
+                    {/* Energy/flame symbol on chest */}
+                    <g transform="translate(20, 20)">
+                      {/* Central circle */}
+                      <circle cx="0" cy="0" r="1.5" fill="currentColor"/>
+                      {/* Upward curves */}
+                      <path d="M-1.5 0 Q-1 2 0 3 Q1 2 1.5 0" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                      {/* Wing-like extensions */}
+                      <path d="M-2.5 -1 Q-3 -3 -2 -4 Q-1 -3 -1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                      <path d="M2.5 -1 Q3 -3 2 -4 Q1 -3 1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                    </g>
+                  </svg>
+                </div>
+                <h2 className="text-xl font-bold text-gray-900">MENU</h2>
+              </div>
+              <button 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Menu Items */}
+            <nav className="p-6">
+              <ul className="space-y-4">
+                <li>
+                  <a 
+                    href="#home" 
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#about" 
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#services" 
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#gallery" 
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#testimonials" 
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#contact" 
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+              
+              {/* CTA Button */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <button 
+                  onClick={() => {
+                    setIsBookingFormOpen(true);
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="w-full bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition-colors font-medium"
+                >
+                  Book a Session
+                </button>
+              </div>
+            </nav>
+          </div>
+        </>
+      )}
+
+      {/* Hero Banner Image */}
+      <div className="relative">
+        <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden" style={{height:"782px"}}>
+          <img 
+            src={IMAGES.heroBanner} 
+            alt="Wellness and Nutrition Banner"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <section id="home" className="pt-16 pb-20 md:pt-24 md:pb-28">
+      <section id="home" className="py-16 pb-20 md:py-20 md:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div className="mb-12 lg:mb-0">
@@ -61,11 +291,12 @@ function App() {
                 </button>
               </div>
             </div>
-            <div className="bg-emerald-200 rounded-2xl h-96 lg:h-[500px] flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-64 h-64 mx-auto" />
-                <p className="mt-4 text-emerald-800 font-medium">Wellness & Nutrition Banner</p>
-              </div>
+            <div className="bg-emerald-200 rounded-2xl h-96 lg:h-[500px] overflow-hidden">
+              <img 
+                src={IMAGES.heroSection} 
+                alt="Healthy nutrition and wellness"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -81,11 +312,12 @@ function App() {
           
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div className="mb-12 lg:mb-0">
-              <div className="bg-emerald-100 rounded-2xl h-80 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-48 h-48 mx-auto" />
-                  <p className="mt-4 text-emerald-800 font-medium">Our Team</p>
-                </div>
+              <div className="bg-emerald-100 rounded-2xl h-80 overflow-hidden">
+                <img 
+                  src={IMAGES.teamImage} 
+                  alt="Our wellness team"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div>
@@ -256,9 +488,13 @@ function App() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                <div className="bg-gray-200 border-2 border-dashed w-full h-64" />
+            {IMAGES.gallery.map((imageUrl, index) => (
+              <div key={index} className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                <img 
+                  src={imageUrl} 
+                  alt={`Wellness gallery image ${index + 1}`}
+                  className="w-full h-64 object-cover"
+                />
               </div>
             ))}
           </div>
@@ -283,12 +519,16 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-white rounded-2xl shadow-lg p-8">
+            {IMAGES.testimonials.map((client, index) => (
+              <div key={index} className="bg-white rounded-2xl shadow-lg p-8">
                 <div className="flex items-center mb-6">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                  <img 
+                    src={client.image} 
+                    alt={client.name}
+                    className="w-16 h-16 rounded-xl object-cover"
+                  />
                   <div className="ml-4">
-                    <h4 className="font-bold text-emerald-900">Client Name</h4>
+                    <h4 className="font-bold text-emerald-900">{client.name}</h4>
                     <div className="flex text-amber-400">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <svg key={star} className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -299,7 +539,7 @@ function App() {
                   </div>
                 </div>
                 <p className="text-gray-600 italic">
-                  "Soul Fuel Wellness transformed my approach to health. The personalized nutrition plan and lifestyle coaching helped me achieve balance I never thought possible. The community support is incredible!"
+                  "{client.testimonial}"
                 </p>
               </div>
             ))}
@@ -436,13 +676,15 @@ function App() {
                 <div className="mt-10">
                   <h4 className="text-lg font-bold text-emerald-900 mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
-                    {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
+                    {SOCIAL_MEDIA.map((social) => (
                       <a 
-                        key={social} 
+                        key={social.name} 
                         href="#" 
                         className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center hover:bg-emerald-200 transition duration-300"
                       >
-                        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-6 h-6" />
+                        <svg className="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d={social.icon} />
+                        </svg>
                       </a>
                     ))}
                   </div>
@@ -483,13 +725,15 @@ function App() {
                 Empowering individuals to achieve optimal health through personalized wellness solutions.
               </p>
               <div className="flex space-x-4">
-                {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
+                {SOCIAL_MEDIA.map((social) => (
                   <a 
-                    key={social} 
+                    key={social.name} 
                     href="#" 
                     className="w-10 h-10 bg-emerald-800 rounded-full flex items-center justify-center hover:bg-emerald-700 transition duration-300"
                   >
-                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-4 h-4" />
+                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d={social.icon} />
+                    </svg>
                   </a>
                 ))}
               </div>
@@ -547,6 +791,12 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/* Booking Form Modal */}
+      <BookingForm 
+        isOpen={isBookingFormOpen} 
+        onClose={() => setIsBookingFormOpen(false)} 
+      />
     </div>
   );
 
@@ -718,13 +968,15 @@ function App() {
                 <div className="mt-10 pt-6 border-t border-white/20">
                   <h4 className="text-lg font-bold mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
-                    {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
+                    {SOCIAL_MEDIA.map((social) => (
                       <a 
-                        key={social} 
+                        key={social.name} 
                         href="#" 
                         className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                       >
-                        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-6 h-6" />
+                        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d={social.icon} />
+                        </svg>
                       </a>
                     ))}
                   </div>
