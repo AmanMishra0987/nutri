@@ -1,9 +1,12 @@
-import React ,{ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ServiceDetail from './ServiceDetail';
 import BookingForm from './BookingForm';
 import { IMAGES } from './constants/images';
 import { SOCIAL_MEDIA } from './constants/socialMedia';
+import logo from '../src/assets/whitelogo.png';
+import logoDark from '../src/assets/yellowlogo.png';
+import logoFooter from '../src/assets/logo.png';
 import './App.css';
 
 function App() {
@@ -26,100 +29,71 @@ function App() {
   const Home = () => (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
       {/* Navigation */}
-      <nav className={`fixed w-full z-10 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
-          : 'bg-transparent'
-      }`}>
+      <nav className={`fixed w-full z-10 transition-all duration-300 ${isScrolled
+        ? 'bg-white/95 backdrop-blur-sm shadow-lg'
+        : 'bg-transparent'
+        }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
                 {/* Logo */}
                 <div className="mr-3">
-                  <svg 
-                    width="40" 
-                    height="40" 
-                    viewBox="0 0 40 40" 
-                    className={`transition-colors duration-300 ${
-                      isScrolled ? 'text-emerald-600' : 'text-white drop-shadow-lg'
-                    }`}
-                    fill="currentColor"
-                  >
-                    {/* Meditation figure */}
-                    <path d="M20 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-                    <path d="M20 16c-3.3 0-6 2.7-6 6v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-3.3-2.7-6-6-6zm4 14h-8v-8c0-2.2 1.8-4 4-4s4 1.8 4 4v8z"/>
-                    
-                    {/* Energy/flame symbol on chest */}
-                    <g transform="translate(20, 20)">
-                      {/* Central circle */}
-                      <circle cx="0" cy="0" r="1.5" fill="currentColor"/>
-                      {/* Upward curves */}
-                      <path d="M-1.5 0 Q-1 2 0 3 Q1 2 1.5 0" stroke="currentColor" strokeWidth="0.5" fill="none"/>
-                      {/* Wing-like extensions */}
-                      <path d="M-2.5 -1 Q-3 -3 -2 -4 Q-1 -3 -1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
-                      <path d="M2.5 -1 Q3 -3 2 -4 Q1 -3 1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
-                    </g>
-                  </svg>
+                  <img
+                    src={isScrolled ? logoDark : logo} // switch logo based on scroll/background
+                    alt="Logo"
+                    className="w-12 h-auto"
+                  />
                 </div>
-                
-                <h1 className={`text-2xl font-serif font-bold transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-emerald-700' 
-                    : 'text-white drop-shadow-lg'
-                }`}>Soul Fuel Wellness</h1>
+
+                <h1 className={`text-2xl font-serif font-bold transition-colors duration-300 ${isScrolled
+                  ? 'text-emerald-700'
+                  : 'text-white drop-shadow-lg'
+                  }`}>Soul Fuel Wellness</h1>
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#home" className={`font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-emerald-800 hover:text-emerald-600' 
-                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
-              }`}>Home</a>
-              <a href="#about" className={`font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-emerald-800 hover:text-emerald-600' 
-                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
-              }`}>About</a>
-              <a href="#services" className={`font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-emerald-800 hover:text-emerald-600' 
-                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
-              }`}>Services</a>
-              <a href="#gallery" className={`font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-emerald-800 hover:text-emerald-600' 
-                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
-              }`}>Gallery</a>
-              <a href="#testimonials" className={`font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-emerald-800 hover:text-emerald-600' 
-                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
-              }`}>Testimonials</a>
-              <a href="#contact" className={`font-medium transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-emerald-800 hover:text-emerald-600' 
-                  : 'text-white hover:text-emerald-200 drop-shadow-lg'
-              }`}>Contact</a>
-              <button 
+              <a href="#home" className={`font-medium transition-colors duration-300 ${isScrolled
+                ? 'text-emerald-800 hover:text-emerald-600'
+                : 'text-white hover:text-emerald-200 drop-shadow-lg'
+                }`}>Home</a>
+              <a href="#about" className={`font-medium transition-colors duration-300 ${isScrolled
+                ? 'text-emerald-800 hover:text-emerald-600'
+                : 'text-white hover:text-emerald-200 drop-shadow-lg'
+                }`}>About</a>
+              <a href="#services" className={`font-medium transition-colors duration-300 ${isScrolled
+                ? 'text-emerald-800 hover:text-emerald-600'
+                : 'text-white hover:text-emerald-200 drop-shadow-lg'
+                }`}>Services</a>
+              <a href="#gallery" className={`font-medium transition-colors duration-300 ${isScrolled
+                ? 'text-emerald-800 hover:text-emerald-600'
+                : 'text-white hover:text-emerald-200 drop-shadow-lg'
+                }`}>Gallery</a>
+              <a href="#testimonials" className={`font-medium transition-colors duration-300 ${isScrolled
+                ? 'text-emerald-800 hover:text-emerald-600'
+                : 'text-white hover:text-emerald-200 drop-shadow-lg'
+                }`}>Testimonials</a>
+              <a href="#contact" className={`font-medium transition-colors duration-300 ${isScrolled
+                ? 'text-emerald-800 hover:text-emerald-600'
+                : 'text-white hover:text-emerald-200 drop-shadow-lg'
+                }`}>Contact</a>
+              <button
                 onClick={() => setIsBookingFormOpen(true)}
-                className={`px-4 py-2 rounded-full transition-all duration-300 ${
-                  isScrolled 
-                    ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
-                    : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border border-white/30'
-                }`}
+                className={`px-4 py-2 rounded-full transition-all duration-300 ${isScrolled
+                  ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border border-white/30'
+                  }`}
               >
                 Book a Session
               </button>
             </div>
             <div className="md:hidden flex items-center">
-              <button 
+              <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`transition-colors duration-300 ${
-                  isScrolled 
-                    ? 'text-emerald-800' 
-                    : 'text-white drop-shadow-lg'
-                }`}
+                className={`transition-colors duration-300 ${isScrolled
+                  ? 'text-emerald-800'
+                  : 'text-white drop-shadow-lg'
+                  }`}
               >
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -134,11 +108,11 @@ function App() {
       {isMobileMenuOpen && (
         <>
           {/* Backdrop */}
-          <div 
+          <div
             className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-          
+
           {/* Sidebar */}
           <div className="fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden">
             {/* Header */}
@@ -146,32 +120,32 @@ function App() {
               <div className="flex items-center">
                 {/* Logo */}
                 <div className="mr-3">
-                  <svg 
-                    width="32" 
-                    height="32" 
-                    viewBox="0 0 40 40" 
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 40 40"
                     className="text-emerald-600"
                     fill="currentColor"
                   >
                     {/* Meditation figure */}
-                    <path d="M20 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-                    <path d="M20 16c-3.3 0-6 2.7-6 6v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-3.3-2.7-6-6-6zm4 14h-8v-8c0-2.2 1.8-4 4-4s4 1.8 4 4v8z"/>
-                    
+                    <path d="M20 8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                    <path d="M20 16c-3.3 0-6 2.7-6 6v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-8c0-3.3-2.7-6-6-6zm4 14h-8v-8c0-2.2 1.8-4 4-4s4 1.8 4 4v8z" />
+
                     {/* Energy/flame symbol on chest */}
                     <g transform="translate(20, 20)">
                       {/* Central circle */}
-                      <circle cx="0" cy="0" r="1.5" fill="currentColor"/>
+                      <circle cx="0" cy="0" r="1.5" fill="currentColor" />
                       {/* Upward curves */}
-                      <path d="M-1.5 0 Q-1 2 0 3 Q1 2 1.5 0" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                      <path d="M-1.5 0 Q-1 2 0 3 Q1 2 1.5 0" stroke="currentColor" strokeWidth="0.5" fill="none" />
                       {/* Wing-like extensions */}
-                      <path d="M-2.5 -1 Q-3 -3 -2 -4 Q-1 -3 -1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
-                      <path d="M2.5 -1 Q3 -3 2 -4 Q1 -3 1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none"/>
+                      <path d="M-2.5 -1 Q-3 -3 -2 -4 Q-1 -3 -1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none" />
+                      <path d="M2.5 -1 Q3 -3 2 -4 Q1 -3 1.5 -1" stroke="currentColor" strokeWidth="0.5" fill="none" />
                     </g>
                   </svg>
                 </div>
                 <h2 className="text-xl font-bold text-gray-900">MENU</h2>
               </div>
-              <button 
+              <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
@@ -180,13 +154,13 @@ function App() {
                 </svg>
               </button>
             </div>
-            
+
             {/* Menu Items */}
             <nav className="p-6">
               <ul className="space-y-4">
                 <li>
-                  <a 
-                    href="#home" 
+                  <a
+                    href="#home"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -194,8 +168,8 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#about" 
+                  <a
+                    href="#about"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -203,8 +177,8 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#services" 
+                  <a
+                    href="#services"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -212,8 +186,8 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#gallery" 
+                  <a
+                    href="#gallery"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -221,8 +195,8 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#testimonials" 
+                  <a
+                    href="#testimonials"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -230,8 +204,8 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#contact" 
+                  <a
+                    href="#contact"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -239,10 +213,10 @@ function App() {
                   </a>
                 </li>
               </ul>
-              
+
               {/* CTA Button */}
               <div className="mt-8 pt-6 border-t border-gray-200">
-                <button 
+                <button
                   onClick={() => {
                     setIsBookingFormOpen(true);
                     setIsMobileMenuOpen(false);
@@ -259,9 +233,9 @@ function App() {
 
       {/* Hero Banner Image */}
       <div className="relative">
-        <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden" style={{height:"782px"}}>
-          <img 
-            src={IMAGES.heroBanner} 
+        <div className="w-full h-64 md:h-80 lg:h-96 overflow-hidden" style={{ height: "782px" }}>
+          <img
+            src={IMAGES.heroBanner}
             alt="Wellness and Nutrition Banner"
             className="w-full h-full object-cover"
           />
@@ -279,7 +253,7 @@ function App() {
                 Nourish Your Body, <span className="text-emerald-600">Energize Your Soul</span>
               </h1>
               <p className="mt-6 text-lg text-gray-600 max-w-2xl">
-                Experience holistic wellness through our personalized nutrition plans, mindfulness practices, 
+                Experience holistic wellness through our personalized nutrition plans, mindfulness practices,
                 and lifestyle coaching designed to bring balance to your life.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
@@ -292,8 +266,8 @@ function App() {
               </div>
             </div>
             <div className="bg-emerald-200 rounded-2xl h-96 lg:h-[500px] overflow-hidden">
-              <img 
-                src={IMAGES.heroSection} 
+              <img
+                src={IMAGES.heroSection}
                 alt="Healthy nutrition and wellness"
                 className="w-full h-full object-cover"
               />
@@ -309,12 +283,12 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">About Soul Fuel Wellness</h2>
             <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
           </div>
-          
+
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div className="mb-12 lg:mb-0">
               <div className="bg-emerald-100 rounded-2xl h-80 overflow-hidden">
-                <img 
-                  src={IMAGES.teamImage} 
+                <img
+                  src={IMAGES.teamImage}
                   alt="Our wellness team"
                   className="w-full h-full object-cover"
                 />
@@ -323,13 +297,13 @@ function App() {
             <div>
               <h3 className="text-2xl font-serif font-bold text-emerald-800 mb-6">Our Mission & Vision</h3>
               <p className="text-gray-600 mb-6">
-                At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. 
-                Founded in 2015, our mission is to empower individuals to achieve optimal health through personalized wellness 
+                At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit.
+                Founded in 2015, our mission is to empower individuals to achieve optimal health through personalized wellness
                 solutions that are sustainable and meaningful.
               </p>
               <p className="text-gray-600 mb-6">
-                We envision a world where everyone has access to holistic wellness resources that support their unique journey 
-                toward vitality and balance. Our approach combines evidence-based nutrition science with mindfulness practices 
+                We envision a world where everyone has access to holistic wellness resources that support their unique journey
+                toward vitality and balance. Our approach combines evidence-based nutrition science with mindfulness practices
                 and lifestyle coaching.
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
@@ -357,7 +331,7 @@ function App() {
               Comprehensive wellness programs designed to support your unique journey toward optimal health and vitality.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
@@ -371,13 +345,13 @@ function App() {
                 Personalized meal plans and nutritional guidance tailored to your health goals, dietary preferences, and lifestyle.
               </p>
               <Link to="/service/nutrition-planning" className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors">
-                Learn More 
+                Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </Link>
             </div>
-            
+
             {/* Service 2 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6">
@@ -390,13 +364,13 @@ function App() {
                 Holistic programs combining nutrition, fitness, and mindfulness to support your overall well-being.
               </p>
               <Link to="/service/wellness-programs" className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors">
-                Learn More 
+                Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </Link>
             </div>
-            
+
             {/* Service 3 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6">
@@ -409,13 +383,13 @@ function App() {
                 One-on-one coaching to help you develop sustainable habits and make lasting positive changes.
               </p>
               <Link to="/service/lifestyle-coaching" className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors">
-                Learn More 
+                Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </Link>
             </div>
-            
+
             {/* Service 4 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6">
@@ -428,13 +402,13 @@ function App() {
                 Interactive group sessions on various wellness topics to educate and inspire your journey.
               </p>
               <Link to="/service/workshops" className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors">
-                Learn More 
+                Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </Link>
             </div>
-            
+
             {/* Service 5 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6">
@@ -447,13 +421,13 @@ function App() {
                 Immersive wellness experiences in serene natural settings to rejuvenate your mind, body, and spirit.
               </p>
               <Link to="/service/retreats" className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors">
-                Learn More 
+                Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </Link>
             </div>
-            
+
             {/* Service 6 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6">
@@ -466,7 +440,7 @@ function App() {
                 Connect with like-minded individuals on similar wellness journeys through our supportive community.
               </p>
               <Link to="/service/community-support" className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors">
-                Learn More 
+                Learn More
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
@@ -486,19 +460,19 @@ function App() {
               A glimpse into our wellness events, workshops, and community activities.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {IMAGES.gallery.map((imageUrl, index) => (
               <div key={index} className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                <img 
-                  src={imageUrl} 
+                <img
+                  src={imageUrl}
                   alt={`Wellness gallery image ${index + 1}`}
                   className="w-full h-64 object-cover"
                 />
               </div>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <button className="border-2 border-emerald-600 text-emerald-700 px-8 py-3 rounded-full hover:bg-emerald-50 transition duration-300 font-medium">
               View All Photos
@@ -517,13 +491,13 @@ function App() {
               Hear from our community members about their wellness journeys.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {IMAGES.testimonials.map((client, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg p-8">
                 <div className="flex items-center mb-6">
-                  <img 
-                    src={client.image} 
+                  <img
+                    src={client.image}
                     alt={client.name}
                     className="w-16 h-16 rounded-xl object-cover"
                   />
@@ -532,7 +506,7 @@ function App() {
                     <div className="flex text-amber-400">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <svg key={star} className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                         </svg>
                       ))}
                     </div>
@@ -557,51 +531,51 @@ function App() {
               Ready to start your wellness journey? Reach out to us today.
             </p>
           </div>
-          
+
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div>
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-gray-700 mb-2">Full Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
+                  <input
+                    type="text"
+                    id="name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     placeholder="Your name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-gray-700 mb-2">Email Address</label>
-                  <input 
-                    type="email" 
-                    id="email" 
+                  <input
+                    type="email"
+                    id="email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     placeholder="your.email@example.com"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="subject" className="block text-gray-700 mb-2">Subject</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
+                  <input
+                    type="text"
+                    id="subject"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     placeholder="How can we help?"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-                  <textarea 
-                    id="message" 
+                  <textarea
+                    id="message"
                     rows={5}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     placeholder="Your message here..."
                   ></textarea>
                 </div>
-                
-                <button 
+
+                <button
                   type="submit"
                   className="w-full bg-emerald-600 text-white px-6 py-4 rounded-lg hover:bg-emerald-700 transition duration-300 font-medium text-lg"
                 >
@@ -609,11 +583,11 @@ function App() {
                 </button>
               </form>
             </div>
-            
+
             <div className="mt-12 lg:mt-0">
               <div className="bg-emerald-50 rounded-2xl p-8 h-full">
                 <h3 className="text-2xl font-bold text-emerald-900 mb-6">Contact Information</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex">
                     <div className="flex-shrink-0">
@@ -628,7 +602,7 @@ function App() {
                       <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
@@ -642,7 +616,7 @@ function App() {
                       <p className="text-gray-600 mt-1">info@soulfuelwellness.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
@@ -657,7 +631,7 @@ function App() {
                       <p className="text-gray-600 mt-1">123 Wellness Way<br />Healthville, HV 12345</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
@@ -672,14 +646,14 @@ function App() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-10">
                   <h4 className="text-lg font-bold text-emerald-900 mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
                     {SOCIAL_MEDIA.map((social) => (
-                      <a 
-                        key={social.name} 
-                        href="#" 
+                      <a
+                        key={social.name}
+                        href="#"
                         className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center hover:bg-emerald-200 transition duration-300"
                       >
                         <svg className="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
@@ -703,9 +677,9 @@ function App() {
             Subscribe to our newsletter for wellness tips, exclusive offers, and updates on upcoming events.
           </p>
           <div className="max-w-md mx-auto flex">
-            <input 
-              type="email" 
-              placeholder="Your email address" 
+            <input
+              type="email"
+              placeholder="Your email address"
               className="flex-grow px-4 py-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
             <button className="bg-amber-500 text-white px-6 py-3 rounded-r-lg hover:bg-amber-600 transition duration-300 font-medium">
@@ -720,15 +694,15 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="text-2xl font-serif font-bold mb-6">Soul Fuel Wellness</h3>
+              <img src={logoFooter} alt="Soul Fuel Wellness" className="w-32 h-auto mx-auto mb-8" />
               <p className="text-emerald-100 mb-6">
                 Empowering individuals to achieve optimal health through personalized wellness solutions.
               </p>
-              <div className="flex space-x-4">
+              <div className="flex justify-center space-x-4">
                 {SOCIAL_MEDIA.map((social) => (
-                  <a 
-                    key={social.name} 
-                    href="#" 
+                  <a
+                    key={social.name}
+                    href="#"
                     className="w-10 h-10 bg-emerald-800 rounded-full flex items-center justify-center hover:bg-emerald-700 transition duration-300"
                   >
                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -738,7 +712,7 @@ function App() {
                 ))}
               </div>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-bold mb-6">Quick Links</h4>
               <ul className="space-y-3">
@@ -750,7 +724,7 @@ function App() {
                 <li><a href="#contact" className="text-emerald-100 hover:text-white transition duration-300">Contact</a></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-bold mb-6">Services</h4>
               <ul className="space-y-3">
@@ -762,7 +736,7 @@ function App() {
                 <li><Link to="/service/community-support" className="text-emerald-100 hover:text-white transition duration-300">Community Support</Link></li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="text-lg font-bold mb-6">Download Our Profile</h4>
               <p className="text-emerald-100 mb-6">
@@ -776,7 +750,7 @@ function App() {
               </button>
             </div>
           </div>
-          
+
           <div className="border-t border-emerald-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-emerald-200 text-sm">
@@ -793,9 +767,9 @@ function App() {
       </footer>
 
       {/* Booking Form Modal */}
-      <BookingForm 
-        isOpen={isBookingFormOpen} 
-        onClose={() => setIsBookingFormOpen(false)} 
+      <BookingForm
+        isOpen={isBookingFormOpen}
+        onClose={() => setIsBookingFormOpen(false)}
       />
     </div>
   );
@@ -820,48 +794,48 @@ function App() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="firstName" className="block text-gray-700 mb-2">First Name</label>
-                      <input 
-                        type="text" 
-                        id="firstName" 
+                      <input
+                        type="text"
+                        id="firstName"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                         placeholder="Your first name"
                       />
                     </div>
                     <div>
                       <label htmlFor="lastName" className="block text-gray-700 mb-2">Last Name</label>
-                      <input 
-                        type="text" 
-                        id="lastName" 
+                      <input
+                        type="text"
+                        id="lastName"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                         placeholder="Your last name"
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-gray-700 mb-2">Email Address</label>
-                    <input 
-                      type="email" 
-                      id="email" 
+                    <input
+                      type="email"
+                      id="email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="phone" className="block text-gray-700 mb-2">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
+                    <input
+                      type="tel"
+                      id="phone"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       placeholder="(123) 456-7890"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="service" className="block text-gray-700 mb-2">Service of Interest</label>
-                    <select 
-                      id="service" 
+                    <select
+                      id="service"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                     >
                       <option value="">Select a service</option>
@@ -873,29 +847,29 @@ function App() {
                       <option value="community">Community Support</option>
                     </select>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-gray-700 mb-2">How can we help you?</label>
-                    <textarea 
-                      id="message" 
+                    <textarea
+                      id="message"
                       rows={5}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       placeholder="Tell us about your wellness goals and how we can support you..."
                     ></textarea>
                   </div>
-                  
+
                   <div className="flex items-center">
-                    <input 
-                      type="checkbox" 
-                      id="newsletter" 
+                    <input
+                      type="checkbox"
+                      id="newsletter"
                       className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
                     />
                     <label htmlFor="newsletter" className="ml-2 text-gray-700">
                       Subscribe to our newsletter for wellness tips and updates
                     </label>
                   </div>
-                  
-                  <button 
+
+                  <button
                     type="submit"
                     className="w-full bg-gradient-to-r from-emerald-600 to-cyan-600 text-white px-6 py-4 rounded-lg hover:from-emerald-700 hover:to-cyan-700 transition-all duration-300 font-medium text-lg shadow-md hover:shadow-lg"
                   >
@@ -905,7 +879,7 @@ function App() {
               </div>
               <div className="bg-gradient-to-br from-emerald-600 to-cyan-600 p-8 md:p-12 text-white">
                 <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex">
                     <div className="flex-shrink-0">
@@ -920,7 +894,7 @@ function App() {
                       <p className="mt-1">+1 (555) 123-4567</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -934,7 +908,7 @@ function App() {
                       <p className="mt-1">info@soulfuelwellness.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -949,7 +923,7 @@ function App() {
                       <p className="mt-1">123 Wellness Way<br />Healthville, HV 12345</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -964,14 +938,14 @@ function App() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-10 pt-6 border-t border-white/20">
                   <h4 className="text-lg font-bold mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
                     {SOCIAL_MEDIA.map((social) => (
-                      <a 
-                        key={social.name} 
-                        href="#" 
+                      <a
+                        key={social.name}
+                        href="#"
                         className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
                       >
                         <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
