@@ -7,6 +7,7 @@ import ServicesPage from "./pages/ServicesPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import BookingPage from "./pages/BookingPage";
+import TransformationDetails from "./pages/TransformationDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/booking" element={<BookingPage />} />
+      <Route path="/transformation/:id" element={<TransformationDetails />} />
       <Route path="/service/:serviceName" element={<Home />} />
     </Routes>
   );

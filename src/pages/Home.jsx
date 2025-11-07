@@ -7,8 +7,81 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../App.css";
 
+// Sample transformation data for home page cards
+const TRANSFORMATIONS = [
+  {
+    id: "1",
+    name: "Kevin",
+    shortSummary: "Lost 30kg with personalized nutrition coaching",
+    shortDescription: "Kevin achieved remarkable results through our personalized wellness program in Dubai.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  },
+ 
+ 
+  {
+    id: "2",
+    name: "Priyanka Ramchandani",
+    shortSummary: "Achieved goals in short timeframes",
+    shortDescription: "Priyanka found our program effective and encouraging, making it her daily lifestyle.",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+  },
+  {
+    id: "3",
+    name: "Simran Makhijani",
+    shortSummary: "Lost 8kg with constant guidance",
+    shortDescription: "Simran became more mindful of what she eats and adopted a cleaner, healthier lifestyle.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  },
+  {
+    id: "4",
+    name: "Namit Bhalla",
+    shortSummary: "Lost 10kg with thorough approach",
+    shortDescription: "Namit reached his weight loss goal and gained a new perspective on food and nutrition.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  },
+  {
+    id: "5",
+    name: "Richa Bhagnari",
+    shortSummary: "Lost 10kg from yo-yo diets",
+    shortDescription: "Richa was put on the right track after being on yo-yo diets all her life.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  },
+  {
+    id: "6",
+    name: "AJ",
+    shortSummary: "Lost 12kg in 12 weeks",
+    shortDescription: "AJ lost weight easily with sustainable diet plans and constant support.",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+  },
+  {
+    id: "7",
+    name: "Dhaara Nikalank",
+    shortSummary: "Lost 17.5kg with favorite foods",
+    shortDescription: "Dhaara learned to eat everything she loves and still lose weight.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  },
+  {
+    id: "8",
+    name: "Dubai Client",
+    shortSummary: "Grew in ways never imagined",
+    shortDescription: "Learned new ways of eating, letting go of ego and being open to learning.",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  },
+  {
+    id: "9",
+    name: "Foodie from Dubai",
+    shortSummary: "Learned balance with favorite foods",
+    shortDescription: "Learned there's simply a time, place, and portion for everything.",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+  }
+];
+
+
 function Home() {
+  const [showAll, setShowAll] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const visibleCards = showAll ? TRANSFORMATIONS : TRANSFORMATIONS.slice(0, 3);
 
   const Home = () => (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
@@ -127,8 +200,53 @@ function Home() {
         </div>
       </section>
 
+      {/* Successful Transformations Section */}
+      <section id="transformations" className="py-16 bg-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">
+              Successful Transformations
+            </h2>
+            <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
+            <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+              Real stories from real people who have transformed their lives with Soul Fuel Wellness
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {visibleCards.map((transformation) => (
+              <div key={transformation.id} className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+    
+                {/* Card Content */}
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-emerald-900 mb-2">{transformation.name}</h3>
+                  <p className="text-emerald-600 font-medium mb-3">{transformation.shortSummary}</p>
+                  <p className="text-gray-600 mb-4">{transformation.shortDescription}</p>
+                  
+                  {/* Read More Button */}
+                  <Link
+                    to={`/transformation/${transformation.id}`}
+                    className="mt-4 w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors duration-300 text-center block"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition duration-300 font-medium"
+            >
+              {showAll ? "Show Less" : "Show All Transformations"}
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section id="services" className="py-16 bg-emerald-50">
+      <section id="services" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">

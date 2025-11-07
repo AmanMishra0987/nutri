@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IMAGES } from "../constants/images";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TransformationCard from "../components/TransformationCard";
 
 const AboutPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -113,7 +114,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-6">
