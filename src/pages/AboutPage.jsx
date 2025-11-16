@@ -40,7 +40,7 @@ const AboutPage = () => {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-6">
-                Founded by Kusum Rana
+                Founded by Kusum Rana and Rajwant Kaur
               </h2>
               <p className="text-gray-600 mb-6 text-lg">
                 At Soul Fuel Wellness, we believe that true wellness comes from

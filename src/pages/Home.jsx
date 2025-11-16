@@ -165,7 +165,7 @@ function Home() {
             </div>
             <div>
               <h3 className="text-2xl font-serif font-bold text-emerald-800 mb-6">
-                Founded by Kusum Rana
+                Founded by Kusum Rana and Rajwant Kaur
               </h3>
               <p className="text-gray-600 mb-6">
                 At Soul Fuel Wellness, we believe that true wellness comes from
