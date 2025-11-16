@@ -24,10 +24,21 @@ const GalleryPage = () => {
       .catch(() => setImagesLoaded(true)); // Still show gallery even if some images fail
   }, []);
 
+  // Handle scroll to change navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const galleryCategories = [
     {
-      name: "Workshops",
-      images: IMAGES.gallery.slice(0, 6),
+      name: "Nutrition & Wellness",
+      images: IMAGES.gallery, // Show all 9 images
     }
   ];
 
@@ -62,7 +73,7 @@ const GalleryPage = () => {
           {!imagesLoaded ? (
             // Loading skeleton
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[...Array(6)].map((_, index) => (
+              {[...Array(9)].map((_, index) => (
                 <div
                   key={index}
                   className="rounded-2xl overflow-hidden shadow-lg"

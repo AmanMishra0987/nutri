@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -258,6 +258,17 @@ const TransformationDetails = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const { id } = useParams();
     const transformation = TRANSFORMATIONS.find(t => t.id === id);
+
+    // Handle scroll to change navbar background on scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     if (!transformation) {
         return (

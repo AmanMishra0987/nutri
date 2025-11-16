@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import ServiceDetail from "../ServiceDetail";
 import { IMAGES } from "../constants/images";
@@ -12,68 +12,67 @@ const TRANSFORMATIONS = [
   {
     id: "1",
     name: "Kevin",
+    age: 27,
+    location: "Dubai",
+    weightLost: "30kg",
     shortSummary: "Lost 30kg with personalized nutrition coaching",
     shortDescription: "Kevin achieved remarkable results through our personalized wellness program in Dubai.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
   },
- 
- 
   {
     id: "2",
     name: "Priyanka Ramchandani",
+    age: 40,
+    location: "Dubai",
+    weightLost: "3kg",
     shortSummary: "Achieved goals in short timeframes",
     shortDescription: "Priyanka found our program effective and encouraging, making it her daily lifestyle.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
   },
   {
     id: "3",
     name: "Simran Makhijani",
+    age: 28,
+    location: "Dubai",
+    weightLost: "8kg",
     shortSummary: "Lost 8kg with constant guidance",
     shortDescription: "Simran became more mindful of what she eats and adopted a cleaner, healthier lifestyle.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
   },
   {
     id: "4",
     name: "Namit Bhalla",
+    age: 44,
+    location: "Dubai",
+    weightLost: "10kg",
     shortSummary: "Lost 10kg with thorough approach",
     shortDescription: "Namit reached his weight loss goal and gained a new perspective on food and nutrition.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
   },
   {
     id: "5",
     name: "Richa Bhagnari",
+    age: 49,
+    location: "Dubai",
+    weightLost: "10kg",
     shortSummary: "Lost 10kg from yo-yo diets",
     shortDescription: "Richa was put on the right track after being on yo-yo diets all her life.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
   },
   {
     id: "6",
     name: "AJ",
+    age: 39,
+    location: "UK",
+    weightLost: "12kg",
     shortSummary: "Lost 12kg in 12 weeks",
     shortDescription: "AJ lost weight easily with sustainable diet plans and constant support.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
   },
   {
     id: "7",
     name: "Dhaara Nikalank",
+    age: 42,
+    location: "India",
+    weightLost: "17.5kg",
     shortSummary: "Lost 17.5kg with favorite foods",
     shortDescription: "Dhaara learned to eat everything she loves and still lose weight.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-  },
-  {
-    id: "8",
-    name: "Dubai Client",
-    shortSummary: "Grew in ways never imagined",
-    shortDescription: "Learned new ways of eating, letting go of ego and being open to learning.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-  },
-  {
-    id: "9",
-    name: "Foodie from Dubai",
-    shortSummary: "Learned balance with favorite foods",
-    shortDescription: "Learned there's simply a time, place, and portion for everything.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
   }
+  
 ];
 
 
@@ -81,67 +80,96 @@ function Home() {
   const [showAll, setShowAll] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const visibleCards = showAll ? TRANSFORMATIONS : TRANSFORMATIONS.slice(0, 3);
+  // Function to extract numeric weight value for sorting
+  const getWeightValue = (weightLost) => {
+    if (!weightLost) return 0;
+    const match = weightLost.match(/(\d+\.?\d*)/);
+    return match ? parseFloat(match[1]) : 0;
+  };
+
+  // Sort transformations by weight difference (largest first)
+  const sortedTransformations = [...TRANSFORMATIONS].sort((a, b) => {
+    return getWeightValue(b.weightLost) - getWeightValue(a.weightLost);
+  });
+
+  const visibleCards = showAll ? sortedTransformations : sortedTransformations.slice(0, 3);
+
+  // Handle scroll to change navbar background after hero section
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const heroSectionHeight = 782; // Height of hero section
+      // Navbar stays blur/transparent until hero section, then becomes white
+      setIsScrolled(scrollTop > heroSectionHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const Home = () => (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
       <Header isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
 
-      {/* Hero Banner Image */}
-      <div className="relative">
-        <div
-          className="w-full h-64 md:h-80 lg:h-96 overflow-hidden"
-          style={{ height: "782px" }}
-        >
-          <img
-            src={IMAGES.heroBanner}
-            alt="Wellness and Nutrition Banner"
-            className="w-full h-full object-cover"
-          />
-          {/* Gradient overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
-        </div>
-      </div>
+      {/* Hero Banner With Content Over Video */}
+      <div className="relative w-full h-[782px] overflow-hidden">
 
-      {/* Hero Section */}
-      <section id="home" className="py-16 pb-20 md:py-20 md:pb-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="mb-12 lg:mb-0">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-emerald-900 leading-tight">
-                Sustain Your Health,{" "}
-                <span className="text-emerald-600">Transform Your Life</span>
-              </h1>
-              <p className="mt-6 text-lg text-gray-600 max-w-2xl">
-                Experience holistic wellness through sustainable, personalized
-                diet and lifestyle programs designed to help you achieve
-                effective weight loss and overall well-being.
-              </p>
-              <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-                <Link
-                  to="/booking"
-                  className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition duration-300 text-lg font-medium text-center"
-                >
-                  Start Your Journey
-                </Link>
-                <Link
-                  to="/services"
-                  className="border-2 border-emerald-600 text-emerald-700 px-8 py-3 rounded-full hover:bg-emerald-50 transition duration-300 text-lg font-medium text-center"
-                >
-                  Explore Our Programs
-                </Link>
+        {/* Background Video */}
+        <video
+          src="/nut.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50"></div>
+
+        {/* Hero Content ON video */}
+        <div className={`relative z-10 w-full h-full flex transition-all duration-300 ${isScrolled ? 'items-start pt-[140px]' : 'items-center pt-[100px]'}`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+
+              {/* Left Text Section */}
+              <div className="text-white">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+                  Sustain Your Health,
+                  <span className="text-emerald-300"> Transform Your Life</span>
+                </h1>
+
+                <p className="mt-6 text-lg max-w-2xl">
+                  Experience holistic wellness through sustainable, personalized
+                  diet and lifestyle programs designed to help you achieve
+                  effective weight loss and overall well-being.
+                </p>
+
+                <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                  <Link
+                    to="/booking"
+                    className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition duration-300 text-lg font-medium text-center"
+                  >
+                    Start Your Journey
+                  </Link>
+
+                  <Link
+                    to="/services"
+                    className="border-2 border-emerald-300 text-emerald-200 px-8 py-3 rounded-full hover:bg-white/10 transition duration-300 text-lg font-medium text-center"
+                  >
+                    Explore Our Programs
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="bg-emerald-200 rounded-2xl h-96 lg:h-[500px] overflow-hidden">
-              <img
-                src={IMAGES.heroSection}
-                alt="Healthy nutrition and wellness"
-                className="w-full h-full object-cover"
-              />
+
+              
+
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
 
       {/* About Section */}
       <section id="about" className="py-16 bg-white">
@@ -215,22 +243,46 @@ function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {visibleCards.map((transformation) => (
-              <div key={transformation.id} className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
-    
-                {/* Card Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-emerald-900 mb-2">{transformation.name}</h3>
-                  <p className="text-emerald-600 font-medium mb-3">{transformation.shortSummary}</p>
-                  <p className="text-gray-600 mb-4">{transformation.shortDescription}</p>
-                  
-                  {/* Read More Button */}
-                  <Link
-                    to={`/transformation/${transformation.id}`}
-                    className="mt-4 w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors duration-300 text-center block"
-                  >
-                    Read More
-                  </Link>
+              <div
+                key={transformation.id}
+                className="bg-white rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl"
+              >
+                <div className="mb-6">
+                  <h4 className="font-bold text-emerald-900 mb-2">
+                    {transformation.name}
+                  </h4>
+                  <div className="flex items-center text-sm text-gray-600 mb-2">
+                    <span>{transformation.age} years</span>
+                    <span className="mx-2">•</span>
+                    <span>{transformation.location}</span>
+                  </div>
+                  {transformation.weightLost && (
+                    <div className="text-sm font-semibold text-emerald-600">
+                      Lost {transformation.weightLost}
+                    </div>
+                  )}
                 </div>
+                <p className="text-gray-600 italic mb-4">"{transformation.shortDescription}"</p>
+                <Link
+                  to={`/transformation/${transformation.id}`}
+                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-300"
+                >
+                  Read More
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </Link>
               </div>
             ))}
           </div>
@@ -560,7 +612,7 @@ function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {IMAGES.gallery.map((imageUrl, index) => (
+            {IMAGES.gallery.slice(0, 3).map((imageUrl, index) => (
               <div
                 key={index}
                 className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
@@ -581,52 +633,6 @@ function Home() {
             >
               View All Photos
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-16 bg-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">
-              Community Stories
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
-            <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
-              Hear from our community members about their wellness journeys.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {IMAGES.testimonials.map((client, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg p-8">
-                <div className="flex items-center mb-6">
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    className="w-16 h-16 rounded-xl object-cover"
-                  />
-                  <div className="ml-4">
-                    <h4 className="font-bold text-emerald-900">
-                      {client.name}
-                    </h4>
-                    <div className="flex text-amber-400">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <svg
-                          key={star}
-                          className="w-5 h-5 fill-current"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-600 italic">"{client.testimonial}"</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -1038,7 +1044,7 @@ function Home() {
                         </div>
                         <div className="ml-4">
                           <h4 className="text-lg font-bold">Phone</h4>
-                          <p className="mt-1">+1 (555) 123-4567</p>
+                          <p className="mt-1">+971 123-4567890</p>
                         </div>
                       </div>
 

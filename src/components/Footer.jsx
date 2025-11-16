@@ -10,11 +10,10 @@ const Footer = memo(() => {
       <section className="py-16 bg-emerald-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
-            Join Our Wellness Community
+          Elevate Your Wellness Journey
           </h2>
           <p className="text-emerald-100 max-w-2xl mx-auto mb-8">
-            Subscribe to our newsletter for wellness tips, exclusive offers, and
-            updates on upcoming events.
+            Subscribe to receive expert tips, exclusive deals, and the latest event news.
           </p>
           <div className="max-w-md mx-auto flex">
             <input

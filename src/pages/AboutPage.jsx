@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IMAGES } from "../constants/images";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -6,6 +6,17 @@ import TransformationCard from "../components/TransformationCard";
 
 const AboutPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll to change navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">

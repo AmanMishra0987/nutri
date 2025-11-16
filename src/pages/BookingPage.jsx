@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const BookingPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll to change navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -400,7 +411,7 @@ const BookingPage = () => {
               <h3 className="text-lg font-bold text-emerald-900 mb-2">
                 Call Us
               </h3>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
+              <p className="text-gray-600">+971 123-4567890</p>
             </div>
 
             <div className="text-center">

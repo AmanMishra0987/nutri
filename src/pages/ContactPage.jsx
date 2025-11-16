@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SOCIAL_MEDIA } from "../constants/socialMedia";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const ContactPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll to change navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

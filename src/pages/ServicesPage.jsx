@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IMAGES } from "../constants/images";
 import Header from "../components/Header";
@@ -6,6 +6,17 @@ import Footer from "../components/Footer";
 
 const ServicesPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll to change navbar background on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const services = [
     {

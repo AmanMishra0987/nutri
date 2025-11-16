@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from "react";
+import React, { useState, memo } from "react";
 import { Link } from "react-router-dom";
 import logoDark from "../assets/yellowlo.png";
 import logoFooter from "../assets/logo.png";
@@ -6,24 +6,14 @@ import logoFooter from "../assets/logo.png";
 const Header = memo(({ isScrolled, setIsScrolled }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [setIsScrolled]);
-
   return (
     <>
       <nav
         style={{ height: "100px" }}
-        className={`fixed w-full z-10 transition-all duration-300 ${
+        className={`fixed w-full z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-white/95 backdrop-blur-sm shadow-lg"
-            : "bg-transparent"
+            : "bg-transparent backdrop-blur-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
