@@ -88,117 +88,20 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                Soul Fuel Wellness was founded by Kusum Rana with a vision to
-                make sustainable health and wellness accessible to everyone. Our
-                approach combines personalized nutrition with holistic lifestyle
-                coaching to help you achieve lasting transformation.
+                As the guest speaker, Kusum Rana shared her expertise and knowledge on the significance of food and nutrition in maintaining a healthy lifestyle. With her background as a Dietician and Pilates Instructor, Kusum Rana provided valuable insights and practical tips to attendees, highlighting the connection between food choices and overall well-being.
+
+
               </p>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                Based in Dubai, we understand the unique challenges of
-                maintaining a healthy lifestyle while balancing work, travel,
-                and social commitments. Our programs are designed to integrate
-                seamlessly into your daily life, providing sustainable solutions
-                that work in the real world.
+                In addition to Kusum Rana's inspiring talk, the event featured influencers and press who were invited to participate and engage in discussions about wellness trends, healthy living, and the importance of self-care. The event provided a platform for like-minded individuals to connect, share ideas, and learn from each other's experiences.
               </p>
-              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                We believe in accountability, discipline, and consistency as the
-                foundation for success. Through our comprehensive approach
-                including personalized meal plans, daily tracking, regular
-                consultations, and ongoing support, we empower you to make
-                lasting changes that transform not just your body, but your
-                entire life.
-              </p>
+             
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16 bg-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-6">
-              Meet Our Team
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Our certified wellness professionals are passionate about helping
-              you achieve your health goals.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Team Member 1 */}
-            <div className="bg-emerald-50 rounded-2xl p-8 text-center">
-              <div className="w-32 h-32 bg-emerald-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg
-                  className="w-16 h-16 text-emerald-600"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-emerald-900 mb-2">
-                Kusum Rana
-              </h3>
-              <p className="text-emerald-700 font-medium mb-4">
-                Founder & Lead Wellness Coach
-              </p>
-              <p className="text-gray-600 text-sm">
-                Yoga, Pilates, Wellness, and Lifestyle Coach. Expert in
-                personalized nutrition and sustainable wellness programs.
-              </p>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="bg-emerald-50 rounded-2xl p-8 text-center">
-              <div className="w-32 h-32 bg-emerald-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg
-                  className="w-16 h-16 text-emerald-600"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-emerald-900 mb-2">
-                Nutrition Specialist
-              </h3>
-              <p className="text-emerald-700 font-medium mb-4">
-                Meal Planning & Dietary Guidance
-              </p>
-              <p className="text-gray-600 text-sm">
-                Personalized meal plans with balanced nutrition, portion
-                control, and calorie management for optimal results.
-              </p>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="bg-emerald-50 rounded-2xl p-8 text-center">
-              <div className="w-32 h-32 bg-emerald-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <svg
-                  className="w-16 h-16 text-emerald-600"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-emerald-900 mb-2">
-                Support Team
-              </h3>
-              <p className="text-emerald-700 font-medium mb-4">
-                Daily Guidance & Accountability
-              </p>
-              <p className="text-gray-600 text-sm">
-                Dedicated team providing daily weight tracking, progress
-                monitoring, and continuous support via WhatsApp.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+ 
 
       {/* Values Section */}
       <section className="py-16 bg-emerald-50">

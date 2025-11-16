@@ -263,16 +263,7 @@ const ContactPage = () => {
                     )}
                   </div>
 
-                  <div className="flex items-center">
-                    <input
-                      type="checkbox"
-                      id="newsletter"
-                      className="w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
-                    />
-                    <label htmlFor="newsletter" className="ml-2 text-gray-700">
-                      Subscribe to our newsletter for wellness tips and updates
-                    </label>
-                  </div>
+                  
 
                   <button
                     type="submit"
@@ -309,7 +300,7 @@ const ContactPage = () => {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-bold">Phone</h4>
-                      <p className="mt-1">+1 (555) 123-4567</p>
+                      <p className="mt-1">+971 123-456790</p>
                     </div>
                   </div>
 

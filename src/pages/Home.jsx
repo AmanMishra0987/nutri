@@ -286,7 +286,7 @@ function Home() {
                 and lifestyle with balanced nutrition and portion control.
               </p>
               <Link
-                to="/service/nutrition-planning"
+                to="/services"
                 className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
               >
                 Learn More
@@ -333,7 +333,7 @@ function Home() {
                 and habit formation for sustainable wellness.
               </p>
               <Link
-                to="/service/wellness-programs"
+                to="/services"
                 className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
               >
                 Learn More
@@ -380,7 +380,7 @@ function Home() {
                 tracking, and mindful eating guidance.
               </p>
               <Link
-                to="/service/lifestyle-coaching"
+                to="/services"
                 className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
               >
                 Learn More
@@ -427,7 +427,7 @@ function Home() {
                 support for quarterly and semi-annual plans.
               </p>
               <Link
-                to="/service/workshops"
+                to="/services"
                 className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
               >
                 Learn More
@@ -474,7 +474,7 @@ function Home() {
                 guidance, and medical history integration.
               </p>
               <Link
-                to="/service/retreats"
+                to="/services"
                 className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
               >
                 Learn More
@@ -521,7 +521,7 @@ function Home() {
                 and continuous guidance for lasting results.
               </p>
               <Link
-                to="/service/community-support"
+                to="/services"
                 className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
               >
                 Learn More
@@ -734,7 +734,7 @@ function Home() {
                       <h4 className="text-lg font-bold text-emerald-900">
                         Phone
                       </h4>
-                      <p className="text-gray-600 mt-1">Dubai, UAE</p>
+                      <p className="text-gray-600 mt-1">+971 1234567890</p>
                     </div>
                   </div>
 
