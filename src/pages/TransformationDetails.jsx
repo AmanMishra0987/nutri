@@ -19,11 +19,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Busy schedule in Dubai, lack of time, energy deficiency",
         solutions: "Personalized nutrition, home workouts, stress management",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "30kg weight loss",
             "Increased energy levels",
@@ -48,11 +44,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Maintaining consistency in a busy lifestyle",
         solutions: "Flexible meal planning, habit formation, continuous support",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
-            after: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-        },
+       
         results: [
             "3kg weight loss",
             "Improved energy levels",
@@ -75,11 +67,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Building mindfulness around eating, staying motivated for fitness",
         solutions: "Simple diet plans, education on nutrition, motivation and support",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "8kg weight loss",
             "Increased mindfulness about eating",
@@ -102,11 +90,7 @@ const TRANSFORMATIONS = [
         duration: "Several months",
         challenges: "Need for thorough approach, ongoing support and motivation",
         solutions: "Detailed assessment, personalized plan, regular check-ins, education",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "10kg weight loss",
             "New perspective on food and nutrition",
@@ -129,11 +113,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Breaking the yo-yo dieting cycle, achieving sustainable results",
         solutions: "Gradual changes, habit formation, education, consistency focus",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "10kg weight loss",
             "Breaking the yo-yo dieting cycle",
@@ -156,11 +136,7 @@ const TRANSFORMATIONS = [
         duration: "12 weeks",
         challenges: "Post-pregnancy weight gain, multiple failed diets, maintaining lifestyle",
         solutions: "Sustainable diet plans, favorite foods inclusion, flexible approach, education",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
-            after: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-        },
+        
         results: [
             "12kg weight loss",
             "Sustainable and easy to follow plans",
@@ -183,11 +159,7 @@ const TRANSFORMATIONS = [
         duration: "4 months",
         challenges: "Fear of giving up favorite foods, delay in starting",
         solutions: "Portion control education, balanced approach, motivation, comprehensive wellness",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "17.5kg weight loss",
             "Enjoyment of favorite foods",
@@ -210,11 +182,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Letting go of ego, being open to learning new things",
         solutions: "Guidance, encouragement, lifelong skill development",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "Personal growth beyond weight loss",
             "Learning new ways of eating",
@@ -238,11 +206,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Resistance to restriction, being a foodie, poor sleep habits",
         solutions: "Inclusive diet plans, education on balance, comprehensive wellness approach",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-        beforeAfterImages: {
-            before: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
-            after: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
-        },
+        
         results: [
             "11.4kg weight loss",
             "Learned balance with favorite foods",
@@ -367,32 +331,6 @@ const TransformationDetails = () => {
                                 <div className="bg-emerald-50 rounded-xl p-6 border border-emerald-100">
                                     <h3 className="text-lg font-bold text-emerald-800 mb-3">Our Solutions</h3>
                                     <p className="text-emerald-700">{transformation.solutions}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="mb-12">
-                            <h2 className="text-2xl font-bold text-emerald-900 mb-6">Before & After</h2>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div className="text-center">
-                                    <div className="rounded-xl overflow-hidden mb-4">
-                                        <img
-                                            src={transformation.beforeAfterImages.before}
-                                            alt="Before"
-                                            className="w-full h-64 object-cover"
-                                        />
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900">Before</h3>
-                                </div>
-                                <div className="text-center">
-                                    <div className="rounded-xl overflow-hidden mb-4">
-                                        <img
-                                            src={transformation.beforeAfterImages.after}
-                                            alt="After"
-                                            className="w-full h-64 object-cover"
-                                        />
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900">After</h3>
                                 </div>
                             </div>
                         </div>
