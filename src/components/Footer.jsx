@@ -91,6 +91,14 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
+                    to="/enrollment"
+                    className="text-emerald-100 hover:text-white transition duration-300"
+                  >
+                    How to Enroll
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/gallery"
                     className="text-emerald-100 hover:text-white transition duration-300"
                   >

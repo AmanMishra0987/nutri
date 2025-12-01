@@ -165,6 +165,15 @@ const Header = memo(({ isScrolled, setIsScrolled }) => {
                 </li>
                 <li>
                   <Link
+                    to="/enrollment"
+                    className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    How to Enroll
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/gallery"
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}

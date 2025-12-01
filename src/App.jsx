@@ -9,6 +9,7 @@ import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import BookingPage from "./pages/BookingPage";
 import TransformationDetails from "./pages/TransformationDetails";
+import EnrollmentPage from "./pages/EnrollmentPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/enrollment" element={<EnrollmentPage />} />
         <Route path="/transformation/:id" element={<TransformationDetails />} />
         <Route path="/service/:serviceName" element={<Home />} />
       </Routes>
