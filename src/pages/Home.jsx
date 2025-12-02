@@ -833,9 +833,8 @@ function Home() {
                         Business Hours
                       </h4>
                       <p className="text-gray-600 mt-1">
-                        Monday-Friday: 9:00 AM – 6:30 PM
-                        <br />
-                        Consultation: Tuesday & Thursday, 1:30 PM – 5:00 PM
+                        Monday-Friday: 9:00 AM – 6:30 PM (GMT +4)
+                       
                       </p>
                     </div>
                   </div>
@@ -1131,11 +1130,9 @@ function Home() {
                         <div className="ml-4">
                           <h4 className="text-lg font-bold">Business Hours</h4>
                           <p className="mt-1">
-                            Monday-Friday: 9am - 6pm
+                            Monday-Friday: 9am - 6:30pm
                             <br />
-                            Saturday: 10am - 4pm
-                            <br />
-                            Sunday: Closed
+                            Sunday & Saturday: Closed
                           </p>
                         </div>
                       </div>
