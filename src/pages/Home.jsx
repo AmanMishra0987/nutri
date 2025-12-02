@@ -217,10 +217,9 @@ function Home() {
                   <div className="text-gray-600">Based in UAE</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-700 leading-relaxed">
-                    Monday to Friday<br />
-                    9:00 AM – 6:30 PM<br />
-                    <span className="text-xl font-semibold text-gray-600">GMT +4</span>
+                  <div className="text-3xl font-bold text-emerald-700">
+                    Monday to Friday <br />
+                    9:00 AM to 6:30 PM (GMT +4)
                   </div>
                   <div className="text-gray-600">Support Available</div>
                 </div>
