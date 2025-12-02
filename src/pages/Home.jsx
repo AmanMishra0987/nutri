@@ -218,7 +218,7 @@ function Home() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-emerald-700">
-                    Monday to Friday <br>
+                    Monday to Friday <br/>
                     9:00 AM to 6:30 PM (GMT +4)
                   </div>
                   <div className="text-gray-600">Support Available</div>
