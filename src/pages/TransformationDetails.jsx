@@ -14,7 +14,7 @@ const TRANSFORMATIONS = [
         currentWeight: "87 kg",
         shortSummary: "Lost 30kg with personalized nutrition coaching",
         fullDescription: "Kevin came to us struggling with weight gain and lack of energy affecting his daily life in Dubai. Through our personalized nutrition plan and lifestyle coaching, he learned sustainable habits that helped him lose 30kg. Today, he's not only physically transformed but also mentally empowered.",
-        detailedStory: "Amazing experience I had with the help of Kusum and Rajwant helped me from day 1. Every plan they created was personalized built around my preferences, routines, and progress. What really stood out was how they emphasized education, they didn’t just tell me what to eat, they explained whyAlways available to help you out if you have any doubts regarding the diet",
+        detailedStory: "super. Actually, put me on the right track after being on YO YO diets all my life ",
 
         weightLost: "30kg",
         duration: "Ongoing",
