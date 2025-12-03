@@ -22,7 +22,7 @@ const EnrollmentPage = () => {
     { id: "step1", label: "Step 1: Getting Started", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" },
     { id: "step2", label: "Step 2: Questionnaire", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
     { id: "documents", label: "Required Documents", icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
-    { id: "payment", label: "Payment & Plans", icon: "M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" },
+    
     { id: "rules", label: "Rules & Guidelines", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
   ];
 
@@ -568,107 +568,7 @@ const EnrollmentPage = () => {
       </section>
 
       {/* Payment & Plans Section */}
-      <section id="payment" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Step 4
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
-              Final Enrollment + Payment Details
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose the plan that best fits your weight loss goals and commitment level
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {paymentPlans.map((plan, index) => (
-              <div
-                key={index}
-                className={`rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl ${
-                  plan.popular
-                    ? "bg-gradient-to-br from-emerald-600 to-cyan-600 text-white shadow-xl scale-105"
-                    : "bg-white shadow-lg border border-gray-100"
-                }`}
-              >
-                {plan.popular && (
-                  <div className="bg-amber-400 text-amber-900 text-center py-2 font-bold text-sm">
-                    MOST POPULAR
-                  </div>
-                )}
-                <div className="p-8">
-                  <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? "text-white" : "text-emerald-900"}`}>
-                    {plan.name}
-                  </h3>
-                  <p className={`text-sm mb-4 ${plan.popular ? "text-emerald-100" : "text-gray-600"}`}>
-                    {plan.consultation}
-                  </p>
-                  <div className="mb-6">
-                    <span className={`text-4xl font-bold ${plan.popular ? "text-white" : "text-emerald-600"}`}>
-                      {plan.price}
-                    </span>
-                  </div>
-                  <div className={`mb-6 p-4 rounded-lg ${plan.popular ? "bg-white/10" : "bg-emerald-50"}`}>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className={plan.popular ? "text-emerald-100" : "text-gray-600"}>Duration:</span>
-                      <span className={`font-semibold ${plan.popular ? "text-white" : "text-emerald-700"}`}>
-                        {plan.duration}
-                      </span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className={plan.popular ? "text-emerald-100" : "text-gray-600"}>Validity:</span>
-                      <span className={`font-semibold ${plan.popular ? "text-white" : "text-emerald-700"}`}>
-                        {plan.validity}
-                      </span>
-                    </div>
-                  </div>
-                  <ul className="space-y-3 mb-6">
-                    {plan.features.map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-start gap-2">
-                        <svg
-                          className={`w-5 h-5 flex-shrink-0 mt-0.5 ${plan.popular ? "text-emerald-200" : "text-emerald-600"}`}
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <span className={`text-sm ${plan.popular ? "text-emerald-50" : "text-gray-600"}`}>
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className={`text-xs mb-6 ${plan.popular ? "text-emerald-200" : "text-gray-500"}`}>
-                    {plan.note}
-                  </p>
-                  <Link
-                    to="/booking"
-                    className={`block text-center py-3 rounded-lg font-semibold transition duration-300 ${
-                      plan.popular
-                        ? "bg-white text-emerald-600 hover:bg-emerald-50"
-                        : "bg-emerald-600 text-white hover:bg-emerald-700"
-                    }`}
-                  >
-                    Get Started
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 max-w-2xl mx-auto text-center">
-            <p className="text-gray-600 text-sm">
-              Payment required 3 days before plan delivery. Renewal and re-enrollment are subject to availability.
-            </p>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Rules & Guidelines Section */}
       <section id="rules" className="py-16 bg-emerald-50">
