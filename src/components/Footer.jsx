@@ -114,7 +114,7 @@ const Footer = memo(() => {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    to="/services"
+                    to="#"
                     className="text-emerald-100 hover:text-white transition duration-300"
                   >
                     Nutrition Planning
@@ -122,7 +122,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="/services"
+                    to="#"
                     className="text-emerald-100 hover:text-white transition duration-300"
                   >
                     Wellness Programs
@@ -130,23 +130,16 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="/services"
+                    to="#"
                     className="text-emerald-100 hover:text-white transition duration-300"
                   >
                     Lifestyle Coaching
                   </Link>
                 </li>
+                
                 <li>
                   <Link
-                    to="/services"
-                    className="text-emerald-100 hover:text-white transition duration-300"
-                  >
-                    Workshops
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
+                    to="#"
                     className="text-emerald-100 hover:text-white transition duration-300"
                   >
                     Retreats
@@ -154,7 +147,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="/services"
+                    to="#"
                     className="text-emerald-100 hover:text-white transition duration-300"
                   >
                     Community Support
