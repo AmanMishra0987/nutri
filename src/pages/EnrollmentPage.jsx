@@ -3,28 +3,43 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+const sections = [
+  { id: "intro", label: "Our Approach", icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
+  { id: "step1", label: "Step 1: Getting Started", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" },
+  { id: "step2", label: "Step 2: Questionnaire", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
+  { id: "documents", label: "Required Documents", icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
+  { id: "rules", label: "Rules & Guidelines", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
+];
+
 const EnrollmentPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("intro");
+  const [formData, setFormData] = useState({});
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0);
+      
+      // Update active section based on scroll position
+      const sectionIds = sections.map(s => s.id);
+      const currentSection = sectionIds.find(id => {
+        const element = document.getElementById(id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 200 && rect.bottom >= 200;
+        }
+        return false;
+      });
+      
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const sections = [
-    { id: "intro", label: "Our Approach", icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
-    { id: "step1", label: "Step 1: Getting Started", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" },
-    { id: "step2", label: "Step 2: Questionnaire", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
-    { id: "documents", label: "Required Documents", icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
-    
-    { id: "rules", label: "Rules & Guidelines", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
-  ];
 
   const dietPlanFeatures = [
     {
@@ -150,56 +165,6 @@ const EnrollmentPage = () => {
     { name: "Photos of Current Supplements", description: "Any vitamins/minerals currently taking" }
   ];
 
-  const paymentPlans = [
-    {
-      name: "Trial Pack",
-      duration: "4 Weeks",
-      validity: "6 Weeks",
-      price: "AED 1,000",
-      consultation: "4 meal plans + 4 consultations",
-      features: [
-        "4 personalized meal plans",
-        "4 consultation sessions (10-15 mins each)",
-        "Daily weight tracking support",
-        "WhatsApp support during working hours",
-        "Perfect for beginners"
-      ],
-      note: "One-time offer. For 5kg+ weight loss goals, quarterly plan required after trial.",
-      popular: false
-    },
-    {
-      name: "Quarterly Pack",
-      duration: "12 Weeks",
-      validity: "16 Weeks",
-      price: "AED 2,600",
-      consultation: "Initial 2.5-4 hour consultation + 10-15 min weekly calls",
-      features: [
-        "12 personalized meal plans",
-        "12 consultation sessions",
-        "Extended initial consultation (2.5-4 hours)",
-        "Progress tracking and plan adjustments",
-        "Comprehensive support throughout"
-      ],
-      note: "Required for weight loss targets of 5kg or more after trial.",
-      popular: true
-    },
-    {
-      name: "Semi-Annual Pack",
-      duration: "24 Weeks",
-      validity: "28 Weeks",
-      price: "AED 5,000",
-      consultation: "Extended consultations + full support",
-      features: [
-        "24 personalized meal plans",
-        "24 consultation sessions",
-        "Comprehensive initial assessment",
-        "Holidays and travel support included",
-        "Long-term transformation program"
-      ],
-      note: "Best value for lasting results.",
-      popular: false
-    }
-  ];
 
   const rules = [
     {
@@ -288,11 +253,42 @@ const EnrollmentPage = () => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 120;
+      const offset = 100;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
+  };
+
+  const handleInputChange = (index, value) => {
+    setFormData(prev => ({
+      ...prev,
+      [index]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // Here you can add API call to submit the form data
+    alert("Questionnaire submitted successfully! We will contact you soon.");
+  };
+
+  const getInputType = (question, index) => {
+    const lowerQuestion = question.toLowerCase();
+    if (lowerQuestion.includes("weight") || lowerQuestion.includes("height") || lowerQuestion.includes("age") || lowerQuestion.includes("stress levels") || lowerQuestion.includes("days per week")) {
+      return "number";
+    }
+    if (lowerQuestion.includes("time") || lowerQuestion.includes("wake up") || lowerQuestion.includes("sleep") || lowerQuestion.includes("meal")) {
+      return "time";
+    }
+    if (lowerQuestion.includes("schedule") || lowerQuestion.includes("routine") || lowerQuestion.includes("list") || lowerQuestion.includes("medications") || lowerQuestion.includes("conditions") || lowerQuestion.includes("issues") || lowerQuestion.includes("attempts")) {
+      return "textarea";
+    }
+    if (lowerQuestion.includes("do you") || lowerQuestion.includes("frequency") || lowerQuestion.includes("quality")) {
+      return "text";
+    }
+    return "text";
   };
 
   return (
@@ -326,32 +322,38 @@ const EnrollmentPage = () => {
         </div>
       </section>
 
-      {/* Navigation Tabs */}
-      <div className="sticky top-[100px] z-40 bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex overflow-x-auto py-4 gap-2 scrollbar-hide">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full whitespace-nowrap transition-all duration-300 text-sm font-medium ${
-                  activeSection === section.id
-                    ? "bg-emerald-600 text-white shadow-md"
-                    : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
-                }`}
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={section.icon} />
-                </svg>
-                {section.label}
-              </button>
-            ))}
+      {/* Main Content Layout with Sidebar */}
+      <div className="flex flex-col lg:flex-row">
+        {/* Left Sidebar Navigation */}
+        <aside className="w-full lg:w-64 xl:w-72 bg-white shadow-lg lg:sticky lg:top-[100px] lg:h-[calc(100vh-100px)] lg:overflow-y-auto z-30">
+          <div className="p-4 lg:p-6">
+            <h3 className="text-lg font-bold text-emerald-900 mb-4 hidden lg:block">Navigation</h3>
+            <nav className="space-y-2">
+              {sections.map((section) => (
+                <button
+                  key={section.id}
+                  onClick={() => scrollToSection(section.id)}
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium text-left ${
+                    activeSection === section.id
+                      ? "bg-emerald-600 text-white shadow-md"
+                      : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
+                  }`}
+                >
+                  <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={section.icon} />
+                  </svg>
+                  <span className="flex-1">{section.label}</span>
+                </button>
+              ))}
+            </nav>
           </div>
-        </div>
-      </div>
+        </aside>
 
-      {/* Introduction Section */}
-      <section id="intro" className="py-16 bg-white">
+        {/* Right Content Area */}
+        <main className="flex-1">
+
+          {/* Introduction Section */}
+          <section id="intro" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -411,8 +413,8 @@ const EnrollmentPage = () => {
         </div>
       </section>
 
-      {/* Step 1 Section */}
-      <section id="step1" className="py-16 bg-emerald-50">
+          {/* Step 1 Section */}
+          <section id="step1" className="py-16 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -462,8 +464,8 @@ const EnrollmentPage = () => {
         </div>
       </section>
 
-      {/* Step 2 - Questionnaire Section */}
-      <section id="step2" className="py-16 bg-white">
+          {/* Step 2 - Questionnaire Section */}
+          <section id="step2" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -478,46 +480,70 @@ const EnrollmentPage = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 border border-emerald-100">
+          <div className="max-w-5xl mx-auto">
+            <form onSubmit={handleSubmit} className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 border border-emerald-100">
               <h3 className="text-xl font-bold text-emerald-900 mb-6 flex items-center gap-2">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
-                Questions We'll Ask You
+                Please Fill Out the Questionnaire
               </h3>
-              <div className="grid md:grid-cols-2 gap-3">
-                {questionnaireItems.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 bg-white rounded-lg p-3 shadow-sm">
-                    <span className="flex-shrink-0 w-6 h-6 bg-emerald-600 text-white rounded-full flex items-center justify-center text-xs font-bold">
-                      {index + 1}
-                    </span>
-                    <span className="text-gray-700 text-sm">{item}</span>
-                  </div>
-                ))}
+              <div className="space-y-4">
+                {questionnaireItems.map((item, index) => {
+                  const inputType = getInputType(item, index);
+                  const isTextarea = inputType === "textarea";
+                  return (
+                    <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
+                      <div className="flex flex-col md:flex-row md:items-center gap-3">
+                        <label className="flex items-start gap-3 md:w-1/2 flex-shrink-0">
+                          <span className="flex-shrink-0 w-6 h-6 bg-emerald-600 text-white rounded-full flex items-center justify-center text-xs font-bold mt-1">
+                            {index + 1}
+                          </span>
+                          <span className="text-gray-700 text-sm font-medium">{item}</span>
+                        </label>
+                        <div className="md:flex-1">
+                          {isTextarea ? (
+                            <textarea
+                              value={formData[index] || ""}
+                              onChange={(e) => handleInputChange(index, e.target.value)}
+                              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm"
+                              rows={3}
+                              placeholder="Enter your answer..."
+                            />
+                          ) : (
+                            <input
+                              type={inputType}
+                              value={formData[index] || ""}
+                              onChange={(e) => handleInputChange(index, e.target.value)}
+                              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm"
+                              placeholder="Enter your answer..."
+                            />
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-            </div>
 
-            <div className="mt-8 text-center">
-              <p className="text-gray-600 mb-4">
-                This questionnaire will be shared with you after your initial consultation booking
-              </p>
-              <Link
-                to="/booking"
-                className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition duration-300 font-semibold"
-              >
-                Book Consultation to Get Started
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
+              <div className="mt-8 flex justify-center">
+                <button
+                  type="submit"
+                  className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition duration-300 font-semibold shadow-lg hover:shadow-xl"
+                >
+                  Submit Questionnaire
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
 
-      {/* Required Documents Section */}
-      <section id="documents" className="py-16 bg-emerald-50">
+          {/* Required Documents Section */}
+          <section id="documents" className="py-16 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -567,11 +593,8 @@ const EnrollmentPage = () => {
         </div>
       </section>
 
-      {/* Payment & Plans Section */}
-      
-
-      {/* Rules & Guidelines Section */}
-      <section id="rules" className="py-16 bg-emerald-50">
+          {/* Rules & Guidelines Section */}
+          <section id="rules" className="py-16 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -641,6 +664,8 @@ const EnrollmentPage = () => {
           </div>
         </div>
       </section>
+        </main>
+      </div>
 
       <Footer />
     </div>
