@@ -40,7 +40,7 @@ const TRANSFORMATIONS = [
         currentWeight: "52 kg",
         shortSummary: "Achieved goals in short timeframes",
         fullDescription: "Priyanka always managed to achieve her goals with our program, even within short month timeframes. She finds the program very effective, encouraging and it has become her daily lifestyle.",
-        detailedStory: "Priyanka has always managed to achieve her goals with our program, even within short month timeframes. She finds the program very effective, encouraging and it has become her daily lifestyle.\n\nHer journey with us has been consistently successful, demonstrating her commitment to maintaining her health and wellness goals. The program's flexibility and personalized approach have allowed her to integrate healthy habits seamlessly into her daily routine.\n\nWhat sets Priyanka apart is her dedication to consistency and her ability to adapt our wellness principles to her lifestyle. She has become a role model for other clients, showing that sustainable health is achievable with the right guidance and personal commitment.\n\nHer success story reinforces our belief that with the right support system and personalized approach, anyone can achieve their wellness goals regardless of their starting point.",
+        detailedStory: "Your journey and experience with us: I have always managed to achieve my goals with your program, even within short month timeframes. I find the program very effective, encouraging and it has become my daily lifestyle.",
         weightLost: "3kg",
         duration: "Ongoing",
         challenges: "Maintaining consistency in a busy lifestyle",
