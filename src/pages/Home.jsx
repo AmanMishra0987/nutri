@@ -16,7 +16,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "30kg",
     shortSummary: "Lost 30kg with personalized nutrition coaching",
-    shortDescription: "Kevin achieved remarkable results through our personalized wellness program in Dubai.",
+    shortDescription: "Kevin achieved remarkable results through our personalized wellness program in Dubai."
   },
   {
     id: "2",
@@ -25,7 +25,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "3kg",
     shortSummary: "Achieved goals in short timeframes",
-    shortDescription: "Priyanka found our program effective and encouraging, making it her daily lifestyle.",
+    shortDescription: "Priyanka found our program effective and encouraging, making it her daily lifestyle."
   },
   {
     id: "3",
@@ -34,7 +34,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "8kg",
     shortSummary: "Lost 8kg with constant guidance",
-    shortDescription: "Simran became more mindful of what she eats and adopted a cleaner, healthier lifestyle.",
+    shortDescription: "Simran became more mindful of what she eats and adopted a cleaner, healthier lifestyle."
   },
   {
     id: "4",
@@ -43,7 +43,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "10kg",
     shortSummary: "Lost 10kg with thorough approach",
-    shortDescription: "Namit reached his weight loss goal and gained a new perspective on food and nutrition.",
+    shortDescription: "Namit reached his weight loss goal and gained a new perspective on food and nutrition."
   },
   {
     id: "5",
@@ -52,7 +52,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "10kg",
     shortSummary: "Lost 10kg from yo-yo diets",
-    shortDescription: "Richa was put on the right track after being on yo-yo diets all her life.",
+    shortDescription: "Richa was put on the right track after being on yo-yo diets all her life."
   },
   {
     id: "6",
@@ -61,7 +61,7 @@ const TRANSFORMATIONS = [
     location: "UK",
     weightLost: "12kg",
     shortSummary: "Lost 12kg in 12 weeks",
-    shortDescription: "AJ lost weight easily with sustainable diet plans and constant support.",
+    shortDescription: "AJ lost weight easily with sustainable diet plans and constant support."
   },
   {
     id: "7",
@@ -70,10 +70,166 @@ const TRANSFORMATIONS = [
     location: "India",
     weightLost: "17.5kg",
     shortSummary: "Lost 17.5kg with favorite foods",
-    shortDescription: "Dhaara learned to eat everything she loves and still lose weight.",
+    shortDescription: "Dhaara learned to eat everything she loves and still lose weight."
+  },
+
+  /* ---------- NEW TESTIMONIALS BELOW ---------- */
+
+  {
+    id: "8",
+    name: "Himanshu",
+    age: 26,
+    location: "Canada",
+    weightLost: "22.3kg",
+    shortSummary: "Reversed diabetes and lost 22kg",
+    shortDescription: "Himanshu transformed his health, reversed diabetes, and built a healthier relationship with food."
+  },
+  {
+    id: "9",
+    name: "Deepali Gandhi",
+    age: 40,
+    location: "Canada",
+    weightLost: "23kg",
+    shortSummary: "Lost 23kg and built lifelong mindful eating habits",
+    shortDescription: "Deepali mastered portion control and achieved her best shape ever."
+  },
+  {
+    id: "10",
+    name: "Sathvik",
+    age: 24,
+    location: "Dubai",
+    weightLost: "28.4kg",
+    shortSummary: "Lost 28kg with personalized planning",
+    shortDescription: "Sathvik transformed his confidence with a deeply personalized lifestyle plan."
+  },
+  {
+    id: "11",
+    name: "Miita Thakral",
+    age: 43,
+    location: "Thailand",
+    weightLost: "9kg",
+    shortSummary: "Lost 9kg during perimenopause",
+    shortDescription: "Miita achieved consistent fat loss while staying craving-free and nourished."
+  },
+  {
+    id: "12",
+    name: "Ruba Hassan",
+    age: 35,
+    location: "Yemen",
+    weightLost: "5kg",
+    shortSummary: "Lost 5kg with an easy, filling plan",
+    shortDescription: "Ruba enjoyed a simple, tailored plan that kept her full all day."
+  },
+  {
+    id: "13",
+    name: "Rahul",
+    age: 35,
+    location: "Dubai",
+    weightLost: "8kg",
+    shortSummary: "Wedding transformation success",
+    shortDescription: "Rahul achieved his best shape and confidence before his wedding."
+  },
+  {
+    id: "14",
+    name: "Andie",
+    age: 36,
+    location: "Sri Lanka",
+    weightLost: "11.45kg",
+    shortSummary: "Lost 11kg with flexible planning",
+    shortDescription: "Andie thrived with daily check-ins and a customizable meal plan."
+  },
+  {
+    id: "15",
+    name: "Shefali",
+    age: 43,
+    location: "Canada",
+    weightLost: "12kg",
+    shortSummary: "Lost 12kg and reduced inflammation",
+    shortDescription: "Shefali learned which foods triggered inflammation and transformed her health."
+  },
+  {
+    id: "16",
+    name: "Rahul Valecha",
+    age: 32,
+    location: "Dubai",
+    weightLost: "8kg",
+    shortSummary: "Lost 8kg before his wedding",
+    shortDescription: "Rahul shaped his best physique through a structured 6-month plan."
+  },
+  {
+    id: "17",
+    name: "Renjim",
+    age: null,
+    location: "Turkey",
+    weightLost: "11kg",
+    shortSummary: "Lost 11kg after cortisol-related weight gain",
+    shortDescription: "Renjim finally lost weight through a plan tailored to his hormonal challenges."
+  },
+  {
+    id: "18",
+    name: "Prerna Khushalani",
+    age: 33,
+    location: null,
+    weightLost: "21kg",
+    shortSummary: "Lost 21kg before her wedding",
+    shortDescription: "Prerna overcame thyroid struggles to lose over 20 kilos."
+  },
+  {
+    id: "19",
+    name: "Aanchal",
+    age: 39,
+    location: "UK",
+    weightLost: "13kg",
+    shortSummary: "Lost 13kg post-pregnancy",
+    shortDescription: "Aanchal regained her health with sustainable plans that fit her lifestyle."
+  },
+  {
+    id: "20",
+    name: "Priyanka Sridhar",
+    age: 28,
+    location: "USA",
+    weightLost: "14kg",
+    shortSummary: "Lost 14kg with sustainable habits",
+    shortDescription: "Priyanka improved both physical and mental health through a balanced lifestyle plan."
+  },
+  {
+    id: "21",
+    name: "Neha Munjal",
+    age: 36,
+    location: null,
+    weightLost: "16kg",
+    shortSummary: "Lost 16kg postpartum",
+    shortDescription: "Neha regained energy and confidence with a structured postpartum plan."
+  },
+  {
+    id: "22",
+    name: "Anand",
+    age: 39,
+    location: "Saudi Arabia",
+    weightLost: "18.5kg",
+    shortSummary: "Lost 18kg with sustainable discipline",
+    shortDescription: "Anand embraced lifelong healthy habits and improved his daily activity levels."
+  },
+  {
+    id: "23",
+    name: "Jayshree",
+    age: 52,
+    location: "Dubai",
+    weightLost: "27kg",
+    shortSummary: "Lost 27kg and stopped BP medication",
+    shortDescription: "Jayshree reversed high BP and transformed her health with easy-to-follow plans."
+  },
+  {
+    id: "24",
+    name: "MM",
+    age: 26,
+    location: "Dubai",
+    weightLost: "25kg",
+    shortSummary: "Lost 25kg with structured yearly planning",
+    shortDescription: "MM stayed consistent with plans built around his lifestyle and schedule."
   }
-  
 ];
+
 
 
 function Home() {
@@ -163,7 +319,7 @@ function Home() {
                 </div>
               </div>
 
-              
+
 
             </div>
           </div>
@@ -193,22 +349,12 @@ function Home() {
             </div>
             <div>
               <h3 className="text-2xl font-serif font-bold text-emerald-800 mb-6">
-                Founded by Kusum Rana 
+                Founded by Kusum Rana
               </h3>
               <p className="text-gray-600 mb-6">
-                At Soul Fuel Wellness, we believe that true wellness comes from
-                nurturing the whole self - body, mind, and spirit. Our mission
-                is to empower individuals to achieve optimal health through
-                personalized wellness solutions that are sustainable and
-                meaningful.
+                Soul Fuel Wellness – A Journey Fueled by Purpose, Passion & Real Transformation. Soul Fuel Wellness was created from a place of truth, lived experience, and an unwavering passion for holistic health. My journey began long before this company existed—rooted in childhood struggles with being overweight, the emotional challenges of pregnancy, and years of feeling the weight of social expectations and body-shaming
               </p>
-              <p className="text-gray-600 mb-6">
-                We offer sustainable, personalized diet and lifestyle programs
-                aimed at achieving effective weight loss and overall well-being.
-                Our approach combines personalized nutrition plans with wellness
-                coaching, focusing on building sustainable habits for long-term
-                success.
-              </p>
+             
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-emerald-700">
@@ -219,7 +365,7 @@ function Home() {
                 <div className="text-center">
                   <div className="text-3xl font-bold text-emerald-700">
                     Monday to Friday <br />
-                    
+
                   </div>
                   <div className="text-gray-600">Support Available : 9:00 AM to 6:30 PM (GMT +4)</div>
                 </div>
@@ -834,7 +980,7 @@ function Home() {
                       </h4>
                       <p className="text-gray-600 mt-1">
                         Monday-Friday: 9:00 AM – 6:30 PM (GMT +4)
-                       
+
                       </p>
                     </div>
                   </div>

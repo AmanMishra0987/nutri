@@ -20,7 +20,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Busy schedule in Dubai, lack of time, energy deficiency",
         solutions: "Personalized nutrition, home workouts, stress management",
-        
+
         results: [
             "30kg weight loss",
             "Increased energy levels",
@@ -30,7 +30,7 @@ const TRANSFORMATIONS = [
             "Discipline and consistency"
         ]
     },
-   
+
     {
         id: "2",
         name: "Priyanka Ramchandani",
@@ -45,7 +45,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Maintaining consistency in a busy lifestyle",
         solutions: "Flexible meal planning, habit formation, continuous support",
-       
+
         results: [
             "3kg weight loss",
             "Improved energy levels",
@@ -67,7 +67,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Building mindfulness around eating, staying motivated for fitness",
         solutions: "Simple diet plans, education on nutrition, motivation and support",
-        
+
         results: [
             "8kg weight loss",
             "Increased mindfulness about eating",
@@ -85,12 +85,12 @@ const TRANSFORMATIONS = [
         currentWeight: "82 kg",
         shortSummary: "Lost 10kg with thorough approach",
         fullDescription: "Namit had a fantastic experience with Kusum and Rajwant over the last few months. He not only reached his weight loss goal but also gained a new perspective on food and nutrition.",
-        detailedStory:"I had a fantastic experience with Kusum and Rajwant over the last few months. I not only reached my weight loss goal but also gained a new perspective on food and nutrition. Kusum's approach is incredibly thorough and detailed and her genuine concern truly makes a difference. The constant support and motivation they offer at every step of the way was very helpful in achieving my goal.", 
+        detailedStory: "I had a fantastic experience with Kusum and Rajwant over the last few months. I not only reached my weight loss goal but also gained a new perspective on food and nutrition. Kusum's approach is incredibly thorough and detailed and her genuine concern truly makes a difference. The constant support and motivation they offer at every step of the way was very helpful in achieving my goal.",
         weightLost: "10kg",
         duration: "Several months",
         challenges: "Need for thorough approach, ongoing support and motivation",
         solutions: "Detailed assessment, personalized plan, regular check-ins, education",
-        
+
         results: [
             "10kg weight loss",
             "New perspective on food and nutrition",
@@ -113,7 +113,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Breaking the yo-yo dieting cycle, achieving sustainable results",
         solutions: "Gradual changes, habit formation, education, consistency focus",
-        
+
         results: [
             "10kg weight loss",
             "Breaking the yo-yo dieting cycle",
@@ -136,7 +136,7 @@ const TRANSFORMATIONS = [
         duration: "12 weeks",
         challenges: "Post-pregnancy weight gain, multiple failed diets, maintaining lifestyle",
         solutions: "Sustainable diet plans, favorite foods inclusion, flexible approach, education",
-        
+
         results: [
             "12kg weight loss",
             "Sustainable and easy to follow plans",
@@ -159,7 +159,7 @@ const TRANSFORMATIONS = [
         duration: "4 months",
         challenges: "Fear of giving up favorite foods, delay in starting",
         solutions: "Portion control education, balanced approach, motivation, comprehensive wellness",
-        
+
         results: [
             "17.5kg weight loss",
             "Enjoyment of favorite foods",
@@ -182,7 +182,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Letting go of ego, being open to learning new things",
         solutions: "Guidance, encouragement, lifelong skill development",
-        
+
         results: [
             "Personal growth beyond weight loss",
             "Learning new ways of eating",
@@ -206,7 +206,7 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Resistance to restriction, being a foodie, poor sleep habits",
         solutions: "Inclusive diet plans, education on balance, comprehensive wellness approach",
-        
+
         results: [
             "11.4kg weight loss",
             "Learned balance with favorite foods",
@@ -215,7 +215,351 @@ const TRANSFORMATIONS = [
             "Comprehensive wellness approach",
             "Healthier and more balanced than ever"
         ]
+    },
+    {
+        id: "10",
+        name: "Himanshu",
+        age: 26,
+        location: "Canada",
+        startingWeight: "113 kg",
+        currentWeight: "90.7 kg",
+        shortSummary: "Reversed diabetes and lost weight with sustainable habits",
+        fullDescription: "Himanshu is deeply grateful for the support and expertise provided by Kusum and Rajwant. Their guidance helped him lose weight, build healthier habits, and even reverse his diabetes.",
+        detailedStory: "From day one, they understood my habits, preferences, and goals. The plan felt sustainable, realistic, and tailored. Thanks to them, I not only lost weight but also reversed my diabetes and built a much healthier relationship with food.",
+        weightLost: "22.3 kg",
+        duration: "Ongoing",
+        challenges: "Diabetes, habits, sustainability",
+        solutions: "Tailored nutrition, ongoing support, realistic planning",
+        results: [
+            "22.3kg weight loss",
+            "Reversed diabetes",
+            "Better relationship with food",
+            "Improved health parameters"
+        ]
+    },
+    {
+        id: "11",
+        name: "Deepali Gandhi",
+        age: 40,
+        location: "Canada",
+        startingWeight: "82 kg",
+        currentWeight: "59 kg",
+        shortSummary: "Lost 23kg and built lifelong mindful eating habits",
+        fullDescription: "Deepali found a lifelong guide in Kusum. Her journey transformed not just her body but also her mindset around food.",
+        detailedStory: "Choosing to work with Kusum wasn’t just about weight loss — she became a lifelong guide. She helped me master portion control even in social settings. I’m in the best shape of my life today.",
+        weightLost: "23 kg",
+        duration: "Ongoing",
+        challenges: "Portion control, lifestyle balance",
+        solutions: "Mindset training, habit formation, tailored plans",
+        results: [
+            "23kg weight loss",
+            "Better relationship with food",
+            "Mindful eating habits",
+            "Increased confidence"
+        ]
+    },
+    {
+        id: "12",
+        name: "Sathvik",
+        age: 24,
+        location: "Dubai",
+        startingWeight: "117 kg",
+        currentWeight: "88.6 kg",
+        shortSummary: "Lost 28+ kg with personalized coaching",
+        fullDescription: "After struggling for years, Sathvik transformed his health and confidence through a focused, guided plan.",
+        detailedStory: "I struggled for years and reached almost 120 kilos. Kusum created a personalized plan and guided me through emotional and lifestyle changes. I've dropped more than 30 kilos and feel like a new person.",
+        weightLost: "28.4 kg",
+        duration: "Ongoing",
+        challenges: "Emotional eating, lifestyle habits",
+        solutions: "Personalized plan, deep assessment, consistent follow-ups",
+        results: [
+            "28.4kg weight loss",
+            "Improved confidence",
+            "Better emotional balance",
+            "Healthier lifestyle habits"
+        ]
+    },
+    {
+        id: "13",
+        name: "Miita Thakral",
+        age: 43,
+        location: "Thailand",
+        startingWeight: "66 kg",
+        currentWeight: "57 kg",
+        shortSummary: "Lost 9kg during perimenopause",
+        fullDescription: "Miita achieved slow and consistent fat loss with cravings controlled and nutrition optimized.",
+        detailedStory: "As a woman facing perimenopause changes, belly fat was a concern. Kusum and Rajwant kept me craving-free and nutrient-rich. They made wholesome, sustainable weight loss possible.",
+        weightLost: "9 kg",
+        duration: "Ongoing",
+        challenges: "Perimenopause, cravings, hormonal changes",
+        solutions: "Balanced diet, habit management, personalized nutrition",
+        results: [
+            "9kg weight loss",
+            "Craving-free plan",
+            "Better hormonal balance",
+            "Improved energy"
+        ]
+    },
+    {
+        id: "14",
+        name: "Ruba Hassan",
+        age: 35,
+        location: "Yemen",
+        startingWeight: "84.45 kg",
+        currentWeight: "79.5 kg",
+        shortSummary: "Lost 5kg with a simple and filling plan",
+        fullDescription: "Ruba loved how easy the plan was to follow and how full she felt throughout the day.",
+        detailedStory: "The nutritional advice was new, original, and tailored to my needs. I felt full all day and still lost weight!",
+        weightLost: "5 kg",
+        duration: "Ongoing",
+        challenges: "Finding sustainable nutrition",
+        solutions: "Tailored plan, simple guidelines",
+        results: [
+            "5kg weight loss",
+            "Easy to follow plan",
+            "Feeling full all day"
+        ]
+    },
+    {
+        id: "15",
+        name: "Rahul",
+        age: 35,
+        location: "Dubai",
+        startingWeight: "86 kg",
+        currentWeight: "78 kg (lowest)",
+        shortSummary: "Wedding transformation with improved confidence",
+        fullDescription: "Rahul joined for wedding fitness and achieved his best physique.",
+        detailedStory: "A 6-month course helped me achieve my best physique for my wedding. Tough in the beginning, but amazing after 2–3 weeks. My progress boosted my confidence tremendously.",
+        weightLost: "8 kg",
+        duration: "6 months",
+        challenges: "Consistency, pre-wedding pressure",
+        solutions: "Structured planning, accountability, flexible diet",
+        results: [
+            "8kg weight loss",
+            "Better physique",
+            "Improved confidence"
+        ]
+    },
+    {
+        id: "16",
+        name: "Andie",
+        age: 36,
+        location: "Sri Lanka",
+        startingWeight: "82.75 kg",
+        currentWeight: "71.3 kg",
+        shortSummary: "Lost 11.45kg with daily accountability",
+        fullDescription: "Andie loved the constant communication and flexibility of the plan.",
+        detailedStory: "Daily check-ins kept me on track. The plan was flexible — they adjusted anything I disliked. No fad diets, just portion control, exercise, and movement.",
+        weightLost: "11.45 kg",
+        duration: "Ongoing",
+        challenges: "Consistency, food preferences",
+        solutions: "Flexible meal plan, portion control, daily support",
+        results: [
+            "11.45kg weight loss",
+            "Improved consistency",
+            "Better lifestyle habits"
+        ]
+    },
+    {
+        id: "17",
+        name: "Shefali",
+        age: 43,
+        location: "Canada",
+        startingWeight: "90 kg",
+        currentWeight: "78 kg",
+        shortSummary: "Lost 12kg and reduced inflammation",
+        fullDescription: "Shefali learned what foods caused inflammation and transformed her health.",
+        detailedStory: "I lost stubborn weight and understood what foods caused inflammation. Kusum patiently answered all questions and helped me understand my body deeply.",
+        weightLost: "12 kg",
+        duration: "Ongoing",
+        challenges: "Inflammation, stubborn weight",
+        solutions: "Food mapping, education, personalized guidance",
+        results: [
+            "12kg weight loss",
+            "Reduced inflammation",
+            "Better understanding of body"
+        ]
+    },
+    {
+        id: "18",
+        name: "Rahul Valecha",
+        age: 32,
+        location: "Dubai",
+        startingWeight: "86 kg",
+        currentWeight: "78 kg",
+        shortSummary: "Wedding weight loss success",
+        fullDescription: "Rahul achieved his best physique before his wedding.",
+        detailedStory: "A 6-month program helped me get into the best shape for my wedding. Tough initially but became easier after a few weeks.",
+        weightLost: "8 kg",
+        duration: "6 months",
+        challenges: "Wedding deadline",
+        solutions: "Structured routine, accountability",
+        results: [
+            "8kg weight loss",
+            "Improved confidence",
+            "Better physique"
+        ]
+    },
+    {
+        id: "19",
+        name: "Renjim",
+        age: null,
+        location: "Turkey",
+        startingWeight: "80 kg",
+        currentWeight: "69 kg",
+        shortSummary: "Lost 11kg after struggling with cortisol-related weight gain",
+        fullDescription: "After two years of struggling, Renjim finally found a plan that worked.",
+        detailedStory: "I gained weight due to cortisol and couldn’t lose it. Kusum studied my blood tests and lifestyle deeply. Everything was designed for my specific needs.",
+        weightLost: "11 kg",
+        duration: "2 months",
+        challenges: "Cortisol issues, past failures",
+        solutions: "Lifestyle analysis, personalized nutrition, constant support",
+        results: [
+            "11kg weight loss",
+            "Better hormonal balance",
+            "Improved health"
+        ]
+    },
+    {
+        id: "20",
+        name: "Prerna Khushalani",
+        age: 33,
+        location: null,
+        startingWeight: "101 kg",
+        currentWeight: "80 kg",
+        shortSummary: "Lost 21kg before her wedding despite thyroid",
+        fullDescription: "Prerna struggled with thyroid issues but achieved major results.",
+        detailedStory: "I’ve tried many diets but nothing worked due to thyroid. Kusum kept me accountable and helped me lose 20+ kg before my wedding.",
+        weightLost: "21 kg",
+        duration: "Ongoing",
+        challenges: "Thyroid, multiple failed diets",
+        solutions: "Accountability, thyroid-friendly planning",
+        results: [
+            "21kg weight loss",
+            "Improved energy",
+            "Better hormonal balance"
+        ]
+    },
+    {
+        id: "21",
+        name: "Aanchal",
+        age: 39,
+        location: "UK",
+        startingWeight: "70 kg",
+        currentWeight: "57 kg",
+        shortSummary: "Lost 13kg post-pregnancy",
+        fullDescription: "Aanchal regained her health after childbirth with expert support.",
+        detailedStory: "I struggled to lose weight post-pregnancy. With sustainable diet plans and constant support, I lost 12–13 kg easily while enjoying my favorite foods.",
+        weightLost: "13 kg",
+        duration: "12 weeks",
+        challenges: "Post-pregnancy weight, failed diets",
+        solutions: "Simple sustainable plans, flexibility, constant support",
+        results: [
+            "13kg weight loss",
+            "Better lifestyle balance"
+        ]
+    },
+    {
+        id: "22",
+        name: "Priyanka Sridhar",
+        age: 28,
+        location: "USA",
+        startingWeight: "64 kg",
+        currentWeight: "50.7 kg",
+        shortSummary: "Lost 14kg with a sustainable lifestyle plan",
+        fullDescription: "Priyanka lost weight without starvation and improved her mental well-being.",
+        detailedStory: "I lost 14 kg in 4 months without starving or complicated meals. It’s a sustainable lifestyle shift that improved my physical and mental health.",
+        weightLost: "14 kg",
+        duration: "4 months",
+        challenges: "Discipline, mindset",
+        solutions: "Meal customization, balance, habit formation",
+        results: [
+            "14kg weight loss",
+            "Better mental health",
+            "More energy"
+        ]
+    },
+    {
+        id: "23",
+        name: "Neha Munjal",
+        age: 36,
+        location: null,
+        startingWeight: "68 kg",
+        currentWeight: "52 kg",
+        shortSummary: "16kg postpartum weight loss",
+        fullDescription: "Neha rebuilt her body and confidence postpartum.",
+        detailedStory: "After delivery my weight didn’t move for months. With Kusum, I dropped from 68 to 52 in less than 6 months. My body felt lighter, happier, and more energized.",
+        weightLost: "16 kg",
+        duration: "6 months",
+        challenges: "Postpartum weight, low energy",
+        solutions: "Right food, right quantity, lifestyle reset",
+        results: [
+            "16kg weight loss",
+            "Improved energy",
+            "Better mood"
+        ]
+    },
+    {
+        id: "24",
+        name: "Anand",
+        age: 39,
+        location: "Saudi Arabia",
+        startingWeight: "126 kg",
+        currentWeight: "107.5 kg",
+        shortSummary: "Learned discipline and sustainable health habits",
+        fullDescription: "Anand’s journey transformed his mindset, not just his body.",
+        detailedStory: "This wasn’t just weight loss — it was education. NEAT changed everything. The first few weeks were hard, but now I have lifelong discipline.",
+        weightLost: "18.5 kg",
+        duration: "1 year",
+        challenges: "Undisciplined diet, lifestyle habits",
+        solutions: "NEAT, education, consistent guidance",
+        results: [
+            "18.5kg weight loss",
+            "Sustainable lifestyle",
+            "Better dietary awareness"
+        ]
+    },
+    {
+        id: "25",
+        name: "Jayshree",
+        age: 52,
+        location: "Dubai",
+        startingWeight: "90 kg",
+        currentWeight: "63 kg",
+        shortSummary: "Lost 27kg and stopped BP medication",
+        fullDescription: "Jayshree transformed her health and reversed blood pressure issues.",
+        detailedStory: "I dropped 27 kg in 10 months and stopped BP medicine. Kusum guided me daily and weekly through food choices I enjoyed.",
+        weightLost: "27 kg",
+        duration: "10 months",
+        challenges: "High BP, cravings, consistency",
+        solutions: "Tailored meal plan, daily accountability",
+        results: [
+            "27kg weight loss",
+            "Stopped BP medication",
+            "Improved overall health"
+        ]
+    },
+    {
+        id: "26",
+        name: "MM",
+        age: 26,
+        location: "Dubai",
+        startingWeight: "96 kg",
+        currentWeight: "71 kg",
+        shortSummary: "Lost 25kg with structured long-term planning",
+        fullDescription: "MM worked with the team strategically for predictable yearly progress.",
+        detailedStory: "I lost 25+ kg in 6 months with complete structure and accountability. Plans were made around my schedule, events, and lifestyle.",
+        weightLost: "25 kg",
+        duration: "6 months",
+        challenges: "Lifestyle, long-term consistency",
+        solutions: "Yearly structured approach, personalized scheduling",
+        results: [
+            "25kg weight loss",
+            "Consistency through events",
+            "Long-term sustainability"
+        ]
     }
+
 ];
 
 const TransformationDetails = () => {

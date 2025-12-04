@@ -99,20 +99,34 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                As the guest speaker, Kusum Rana shared her expertise and knowledge on the significance of food and nutrition in maintaining a healthy lifestyle. With her background as a Dietician and Pilates Instructor, Kusum Rana provided valuable insights and practical tips to attendees, highlighting the connection between food choices and overall well-being.
+                Soul Fuel Wellness – A Journey Fueled by Purpose, Passion & Real Transformation.
 
+                Soul Fuel Wellness was created from a place of truth, lived experience, and an unwavering passion for holistic health. My journey began long before this company existed—rooted in childhood struggles with being overweight, the emotional challenges of pregnancy, and years of feeling the weight of social expectations and body-shaming.
+                In 2011, at 108 kg, I reached a turning point. I realized that change had to come not just from wanting to look different, but from wanting to feel different—healthier, stronger, more confident, and more myself. What started as a personal mission evolved into a complete life transformation.
+                I deepened my understanding of holistic health through intensive studies in Yoga and Ayurveda, followed by formal training as a Pilates instructor. From there, I immersed myself in nutrition, learning how food, hormones, and lifestyle patterns shape the body and mind. These disciplines didn’t just reshape my body from 108 kg to 52 kg—they rebuilt my confidence, renewed my energy, and transformed my entire relationship with health.
+
+                Along the way, I witnessed something else: the profound disconnect between fast-paced corporate life and true wellbeing. Although I worked a stable, well-paid corporate job, my heart felt called toward something more meaningful. So, with courage and clarity, I left the comfort of that world to pursue what I truly loved—helping others heal, transform, and thrive.
+                That choice became Soul Fuel Wellness.
+                A space created for real people facing real challenges—weight gain, hormonal changes, lifestyle diseases, stress, social pressure, postpartum struggles, and more. A space guided by science, sustained by holistic wisdom, and powered by empathy.
+                Today, I help individuals transform their lives through:
+                Prenatal & Postnatal Wellness
+                Sustainable Weight Loss Programs
+                Lifestyle Disease Reversal
+                Nutrition & Blood Report–Based Guidance
+                Holistic Mind-Body Alignment
+                My mission is simple yet profound:
+                To help you reclaim your health, your confidence, and your self-worth through balanced, sustainable, and compassionate wellness.
+                Together, we can create a healthier world—one empowered transformation at a time.
 
               </p>
-              <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                In addition to Kusum Rana's inspiring talk, the event featured influencers and press who were invited to participate and engage in discussions about wellness trends, healthy living, and the importance of self-care. The event provided a platform for like-minded individuals to connect, share ideas, and learn from each other's experiences.
-              </p>
-             
+              
+
             </div>
           </div>
         </div>
       </section>
 
- 
+
 
       {/* Values Section */}
       <section className="py-16 bg-emerald-50">
