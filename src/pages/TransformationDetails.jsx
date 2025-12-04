@@ -27,7 +27,7 @@ const TRANSFORMATIONS = [
             "Improved sleep quality",
             "Enhanced self-confidence",
             "Better relationship with food",
-            "Discipline and consistency"
+            "Improved blood biomarkers"
         ]
     },
 
@@ -51,7 +51,8 @@ const TRANSFORMATIONS = [
             "Improved energy levels",
             "Better lifestyle habits",
             "Enhanced discipline",
-            "Sustainable wellness routine"
+            "Sustainable wellness routine",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -73,7 +74,8 @@ const TRANSFORMATIONS = [
             "Increased mindfulness about eating",
             "Adopted cleaner lifestyle",
             "Enhanced motivation for fitness",
-            "Better understanding of nutrition"
+            "Better understanding of nutrition",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -96,7 +98,8 @@ const TRANSFORMATIONS = [
             "New perspective on food and nutrition",
             "Thorough and detailed approach",
             "Ongoing support and motivation",
-            "Personalized plan based on individual needs"
+            "Personalized plan based on individual needs",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -119,7 +122,8 @@ const TRANSFORMATIONS = [
             "Breaking the yo-yo dieting cycle",
             "Sustainable results",
             "Healthier relationship with food",
-            "Confidence in making healthy choices"
+            "Confidence in making healthy choices",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -142,7 +146,8 @@ const TRANSFORMATIONS = [
             "Sustainable and easy to follow plans",
             "Inclusion of favorite foods",
             "Support through all life events",
-            "Better understanding of food and balance"
+            "Better understanding of food and balance",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -165,7 +170,8 @@ const TRANSFORMATIONS = [
             "Enjoyment of favorite foods",
             "Complete lifestyle change",
             "Improved appearance and feelings",
-            "Sustainable healthy habits"
+            "Sustainable healthy habits",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -189,7 +195,8 @@ const TRANSFORMATIONS = [
             "Letting go of ego",
             "Being open to learning",
             "Lifelong skills development",
-            "Continued application of principles"
+            "Continued application of principles",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -213,7 +220,8 @@ const TRANSFORMATIONS = [
             "Guilt-free enjoyment of food",
             "Improved sleep habits understanding",
             "Comprehensive wellness approach",
-            "Healthier and more balanced than ever"
+            "Healthier and more balanced than ever",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -234,7 +242,9 @@ const TRANSFORMATIONS = [
             "22.3kg weight loss",
             "Reversed diabetes",
             "Better relationship with food",
-            "Improved health parameters"
+            "Improved health parameters",
+            "Improved blood biomarkers"
+
         ]
     },
     {
@@ -255,7 +265,8 @@ const TRANSFORMATIONS = [
             "23kg weight loss",
             "Better relationship with food",
             "Mindful eating habits",
-            "Increased confidence"
+            "Increased confidence",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -276,7 +287,8 @@ const TRANSFORMATIONS = [
             "28.4kg weight loss",
             "Improved confidence",
             "Better emotional balance",
-            "Healthier lifestyle habits"
+            "Healthier lifestyle habits",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -297,7 +309,8 @@ const TRANSFORMATIONS = [
             "9kg weight loss",
             "Craving-free plan",
             "Better hormonal balance",
-            "Improved energy"
+            "Improved energy",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -317,7 +330,8 @@ const TRANSFORMATIONS = [
         results: [
             "5kg weight loss",
             "Easy to follow plan",
-            "Feeling full all day"
+            "Feeling full all day",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -337,7 +351,8 @@ const TRANSFORMATIONS = [
         results: [
             "8kg weight loss",
             "Better physique",
-            "Improved confidence"
+            "Improved confidence",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -357,7 +372,8 @@ const TRANSFORMATIONS = [
         results: [
             "11.45kg weight loss",
             "Improved consistency",
-            "Better lifestyle habits"
+            "Better lifestyle habits",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -377,7 +393,8 @@ const TRANSFORMATIONS = [
         results: [
             "12kg weight loss",
             "Reduced inflammation",
-            "Better understanding of body"
+            "Better understanding of body",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -397,7 +414,8 @@ const TRANSFORMATIONS = [
         results: [
             "8kg weight loss",
             "Improved confidence",
-            "Better physique"
+            "Better physique",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -417,7 +435,8 @@ const TRANSFORMATIONS = [
         results: [
             "11kg weight loss",
             "Better hormonal balance",
-            "Improved health"
+            "Improved health",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -437,7 +456,8 @@ const TRANSFORMATIONS = [
         results: [
             "21kg weight loss",
             "Improved energy",
-            "Better hormonal balance"
+            "Better hormonal balance",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -456,7 +476,8 @@ const TRANSFORMATIONS = [
         solutions: "Simple sustainable plans, flexibility, constant support",
         results: [
             "13kg weight loss",
-            "Better lifestyle balance"
+            "Better lifestyle balance",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -476,7 +497,8 @@ const TRANSFORMATIONS = [
         results: [
             "14kg weight loss",
             "Better mental health",
-            "More energy"
+            "More energy",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -496,7 +518,8 @@ const TRANSFORMATIONS = [
         results: [
             "16kg weight loss",
             "Improved energy",
-            "Better mood"
+            "Better mood",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -516,7 +539,8 @@ const TRANSFORMATIONS = [
         results: [
             "18.5kg weight loss",
             "Sustainable lifestyle",
-            "Better dietary awareness"
+            "Better dietary awareness",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -536,7 +560,8 @@ const TRANSFORMATIONS = [
         results: [
             "27kg weight loss",
             "Stopped BP medication",
-            "Improved overall health"
+            "Improved overall health",
+            "Improved blood biomarkers"
         ]
     },
     {
@@ -556,7 +581,8 @@ const TRANSFORMATIONS = [
         results: [
             "25kg weight loss",
             "Consistency through events",
-            "Long-term sustainability"
+            "Long-term sustainability",
+            "Improved blood biomarkers"
         ]
     }
 
