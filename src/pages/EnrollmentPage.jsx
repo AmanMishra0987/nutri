@@ -180,11 +180,9 @@ const EnrollmentPage = () => {
     {
       title: "Working Hours",
       items: [
-        "Monday to Friday: 9:00 AM to 6:00 PM",
-        "New consultations: Tuesdays and Thursdays, 1:30 PM - 5:00 PM (2.5-4 hours)",
-        "Weekly consultations: 1:30 PM - 6:00 PM (max 20 minutes)",
+        "Monday to Friday: 9:00 AM to 6:30 PM (GMT +4)",
         "Closed on Saturdays, Sundays, and public holidays",
-        "International clients: queries answered within 24 hours"
+        "International clients: queries answered within 24 to 40 hours"
       ]
     },
     {
