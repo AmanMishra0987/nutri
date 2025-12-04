@@ -181,7 +181,8 @@ const EnrollmentPage = () => {
       title: "Working Hours",
       items: [
         "Monday to Friday: 9:00 AM to 6:30 PM (GMT +4)",
-        "Closed on Saturdays, Sundays, and public holidays",
+        "saturday : 10 AM to 4 PM (GMT +4)",
+        "Closed on  Sundays, and public holidays",
         "International clients: queries answered within 24 to 40 hours"
       ]
     },
