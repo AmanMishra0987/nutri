@@ -411,7 +411,7 @@ const BookingPage = () => {
               <h3 className="text-lg font-bold text-emerald-900 mb-2">
                 Call Us
               </h3>
-              <p className="text-gray-600">+971 123-4567890</p>
+              <p className="text-gray-600">+971 505357209</p>
             </div>
 
             <div className="text-center">

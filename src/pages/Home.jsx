@@ -887,7 +887,7 @@ function Home() {
                       <h4 className="text-lg font-bold text-emerald-900">
                         Phone
                       </h4>
-                      <p className="text-gray-600 mt-1">+971 1234567890</p>
+                      <p className="text-gray-600 mt-1">+971 505357209</p>
                     </div>
                   </div>
 
@@ -1190,7 +1190,7 @@ function Home() {
                         </div>
                         <div className="ml-4">
                           <h4 className="text-lg font-bold">Phone</h4>
-                          <p className="mt-1">+971 123-4567890</p>
+                          <p className="mt-1">+971 505357209</p>
                         </div>
                       </div>
 
