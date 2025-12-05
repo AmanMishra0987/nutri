@@ -311,7 +311,7 @@ function Home() {
                   </Link>
 
                   <Link
-                    to="/services"
+                    to="/"
                     className="border-2 border-emerald-300 text-emerald-200 px-8 py-3 rounded-full hover:bg-white/10 transition duration-300 text-lg font-medium text-center"
                   >
                     Explore Our Programs
