@@ -8,14 +8,14 @@ export const IMAGES = {
   teamImage: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2031&q=80",
   
   // Gallery images
-  gallery: [
-    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80",
-    "https://images.unsplash.com/photo-1506629905607-0b2b3b3b3b3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2020&q=80",
-    "https://images.unsplash.com/photo-1506629905607-0b2b3b3b3b3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-  ],
+gallery: [
+  "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=2070&q=80", // Healthy salad bowl
+  "https://images.unsplash.com/photo-1604908177522-4326a24c67a5?auto=format&fit=crop&w=2070&q=80", // Grilled chicken with veggies
+  "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=2070&q=80", // Oatmeal with berries
+  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=2070&q=80", // Fresh fruits
+  "https://images.unsplash.com/photo-1523475496153-3d6ccdb06a48?auto=format&fit=crop&w=2070&q=80", // Avocado toast
+  "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2070&q=80"  // Veg bowl / buddha bowl
+],
   
   // Testimonial images
   testimonials: [
