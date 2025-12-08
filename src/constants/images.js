@@ -6,6 +6,7 @@ export const IMAGES = {
   
   // About section - Founders Kusum Rana and Rajwant Kaur
   teamImage: "/found.jpeg",
+  myJourneyImage: "/my-journey.jpg", // Before/After transformation image
   
   // Gallery images - Nutrition, healthy eating, and weight loss related
 gallery: [
