@@ -328,46 +328,45 @@ function Home() {
 
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">
-              About Soul Fuel Wellness
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
-          </div>
-
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="mb-12 lg:mb-0">
-              <div className="bg-emerald-100 rounded-2xl h-80 overflow-hidden">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src={IMAGES.teamImage}
-                  alt="Our wellness team"
-                  className="w-full h-full object-cover"
+                  alt="Kusum Rana - Founder"
+                  className="w-full h-[600px] object-cover transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-serif font-bold text-emerald-800 mb-6">
-                Founded by Kusum Rana
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Soul Fuel Wellness – A Journey Fueled by Purpose, Passion & Real Transformation. Soul Fuel Wellness was created from a place of truth, lived experience, and an unwavering passion for holistic health. My journey began long before this company existed—rooted in childhood struggles with being overweight, the emotional challenges of pregnancy, and years of feeling the weight of social expectations and body-shaming
-              </p>
-             
-              <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-700">
-                    Dubai
-                  </div>
-                  <div className="text-gray-600">Based in UAE</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-emerald-700">
-                    Monday to Friday <br />
+            
+            <div className="space-y-8">
+              <div>
+                <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">Founder</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-6">
+                  Founded by <span className="text-emerald-600">Kusum Rana</span>
+                </h2>
+              </div>
+              
+              <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+                <p>
+                  At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. Our mission is to empower individuals to achieve optimal health through personalized wellness solutions that are sustainable and meaningful.
+                </p>
+                <p>
+                  We offer sustainable, personalized diet and lifestyle programs aimed at achieving effective weight loss and overall well-being. Our approach combines personalized nutrition plans with wellness coaching, focusing on building sustainable habits for long-term success.
+                </p>
+              </div>
 
-                  </div>
-                  <div className="text-gray-600">Support Available : 9:00 AM to 6:30 PM (GMT +4)</div>
+              <div className="grid grid-cols-2 gap-6 pt-8">
+                <div className="p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl border border-emerald-200">
+                  <div className="text-4xl font-bold text-emerald-700 mb-2">Dubai</div>
+                  <div className="text-gray-600 font-medium">Based in UAE</div>
+                </div>
+                <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
+                  <div className="text-lg font-bold text-cyan-700 mb-2">Available Monday to Friday</div>
+                  <div className="text-gray-600 font-medium text-sm">Support Available : 9:00 AM to 6:30 PM (GMT +4)</div>
                 </div>
               </div>
             </div>

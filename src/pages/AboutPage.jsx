@@ -81,8 +81,8 @@ const AboutPage = () => {
                   <div className="text-gray-600 font-medium">Based in UAE</div>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
-                  <div className="text-4xl font-bold text-cyan-700 mb-2">24/7</div>
-                  <div className="text-gray-600 font-medium">Support Available</div>
+                  <div className="text-lg font-bold text-cyan-700 mb-2">Available Monday to Friday</div>
+                  <div className="text-gray-600 font-medium text-sm">Support Available : 9:00 AM to 6:30 PM (GMT +4)</div>
                 </div>
               </div>
             </div>
@@ -279,7 +279,7 @@ const AboutPage = () => {
                   </p>
                 </div>
               </div>
-            ))}
+   ))}
           </div>
         </div>
       </section>
