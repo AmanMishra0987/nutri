@@ -187,18 +187,20 @@ const AboutPage = () => {
           <div className="max-w-5xl mx-auto">
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl overflow-hidden p-8 md:p-12">
-                <div className="relative rounded-2xl overflow-hidden mb-8 flex justify-center">
-                  <img
-                    src={IMAGES.myJourneyImage}
-                    alt="Transformation journey - Before and After"
-                    className="w-full max-w-2xl h-auto max-h-[400px] rounded-2xl shadow-xl object-contain"
-                  />
-                  <div className="absolute top-6 left-6 bg-emerald-600 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg backdrop-blur-sm">
-                    Before: 108 kg
-                  </div>
-                  <div className="absolute top-6 right-6 bg-cyan-600 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg backdrop-blur-sm">
-                    After: 52 kg
+              <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-4 sm:p-8 md:p-12">
+                <div className="relative mb-8 w-full">
+                  <div className="relative w-full flex justify-center">
+                    <img
+                      src={IMAGES.myJourneyImage}
+                      alt="Transformation journey - Before and After"
+                      className="w-full h-auto sm:max-w-2xl sm:max-h-[400px] md:max-h-[450px] rounded-2xl shadow-xl object-contain"
+                    />
+                    <div className="absolute top-2 left-2 sm:top-6 sm:left-6 bg-emerald-600 text-white px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm shadow-lg backdrop-blur-sm z-10">
+                      Before: 108 kg
+                    </div>
+                    <div className="absolute top-2 right-2 sm:top-6 sm:right-6 bg-cyan-600 text-white px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm shadow-lg backdrop-blur-sm z-10">
+                      After: 52 kg
+                    </div>
                   </div>
                 </div>
                 <div className="text-center">
