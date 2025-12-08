@@ -20,6 +20,10 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Busy schedule in Dubai, lack of time, energy deficiency",
         solutions: "Personalized nutrition, home workouts, stress management",
+        beforeAfterImages: {
+            before: "/kevin-before.jpg",
+            after: "/kevin-after.jpg"
+        },
 
         results: [
             "30kg weight loss",
@@ -681,6 +685,41 @@ const TransformationDetails = () => {
                                 <div className="text-gray-600">Nutrition & Wellness</div>
                             </div>
                         </div>
+
+                        {transformation.beforeAfterImages && (
+                            <div className="mb-12">
+                                <h2 className="text-2xl font-bold text-emerald-900 mb-6 text-center">Before & After Transformation</h2>
+                                <div className="flex justify-center gap-6 max-w-2xl mx-auto">
+                                    <div className="relative group flex-1 max-w-[300px]">
+                                        <div className="absolute -inset-2 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition duration-300"></div>
+                                        <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl">
+                                            <img
+                                                src={transformation.beforeAfterImages.before}
+                                                alt={`${transformation.name} - Before`}
+                                                className="w-full h-[400px] object-cover"
+                                            />
+                                           
+                                        </div>
+                                    </div>
+                                    <div className="relative group flex-1 max-w-[300px]">
+                                        <div className="absolute -inset-2 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition duration-300"></div>
+                                        <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl">
+                                            <img
+                                                src={transformation.beforeAfterImages.after}
+                                                alt={`${transformation.name} - After`}
+                                                className="w-full h-[400px] object-cover"
+                                            />
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="text-center mt-6">
+                                    <p className="text-xl font-bold text-emerald-700">
+                                        Lost {transformation.weightLost} in {transformation.duration}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
 
                         <div className="mb-12">
                             <h2 className="text-2xl font-bold text-emerald-900 mb-6">The Journey</h2>

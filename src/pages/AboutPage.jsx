@@ -26,7 +26,7 @@ const AboutPage = () => {
         <div className="absolute inset-0 opacity-30" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full border border-emerald-400/30">
             <span className="text-emerald-300 text-sm font-semibold tracking-wider uppercase">About Us</span>
@@ -57,7 +57,7 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-            
+
             <div className="space-y-8">
               <div>
                 <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">Founder</span>
@@ -65,7 +65,7 @@ const AboutPage = () => {
                   Founded by <span className="text-emerald-600">Kusum Rana</span>
                 </h2>
               </div>
-              
+
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
                 <p>
                   At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. Our mission is to empower individuals to achieve optimal health through personalized wellness solutions that are sustainable and meaningful.
@@ -95,7 +95,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Self <span className="text-emerald-600">Transformation</span>
+              My <span className="text-emerald-600">Journey</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto rounded-full"></div>
           </div>
@@ -106,23 +106,23 @@ const AboutPage = () => {
                 <p className="text-gray-700 leading-relaxed text-lg mb-6">
                   <span className="text-2xl font-bold text-emerald-600">Soul Fuel Wellness</span> – A Journey Fueled by Purpose, Passion & Real Transformation.
                 </p>
-                
+
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Soul Fuel Wellness was created from a place of truth, lived experience, and an unwavering passion for holistic health. My journey began long before this company existed—rooted in childhood struggles with being overweight, the emotional challenges of pregnancy, and years of feeling the weight of social expectations and body-shaming.
                 </p>
-                
+
                 <p className="text-gray-700 leading-relaxed mb-6">
                   In <span className="font-semibold text-emerald-700">2011, at 108 kg</span>, I reached a turning point. I realized that change had to come not just from wanting to look different, but from wanting to feel different—healthier, stronger, more confident, and more myself. What started as a personal mission evolved into a complete life transformation.
                 </p>
-                
+
                 <p className="text-gray-700 leading-relaxed mb-6">
                   I deepened my understanding of holistic health through intensive studies in <span className="font-semibold">Yoga and Ayurveda</span>, followed by formal training as a Pilates instructor. From there, I immersed myself in nutrition, learning how food, hormones, and lifestyle patterns shape the body and mind. These disciplines didn't just reshape my body from 108 kg to 52 kg—they rebuilt my confidence, renewed my energy, and transformed my entire relationship with health.
                 </p>
-                
+
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Along the way, I witnessed something else: the profound disconnect between fast-paced corporate life and true wellbeing. Although I worked a stable, well-paid corporate job, my heart felt called toward something more meaningful. So, with courage and clarity, I left the comfort of that world to pursue what I truly loved—helping others heal, transform, and thrive.
                 </p>
-                
+
                 <div className="bg-gradient-to-r from-emerald-50 to-cyan-50 rounded-2xl p-8 my-8 border-l-4 border-emerald-500">
                   <p className="text-gray-800 font-semibold mb-4 text-lg">That choice became Soul Fuel Wellness.</p>
                   <p className="text-gray-700 leading-relaxed">
@@ -156,54 +156,21 @@ const AboutPage = () => {
                   </ul>
                 </div>
 
-                <div className="mt-10 pt-8 border-t border-gray-200">
-                  <p className="text-xl font-bold text-gray-900 mb-3">My mission is simple yet profound:</p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    To help you reclaim your health, your confidence, and your self-worth through balanced, sustainable, and compassionate wellness.
-                  </p>
-                  <p className="text-lg text-emerald-600 font-semibold mt-4">
-                    Together, we can create a healthier world—one empowered transformation at a time.
-                  </p>
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Journey Section - Modern Image Showcase */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              My <span className="text-emerald-600">Journey</span>
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              A personal transformation that inspired the creation of Soul Fuel Wellness
-            </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mt-4 rounded-full"></div>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-2xl p-4 sm:p-8 md:p-12">
-                <div className="relative mb-8 w-full">
-                  <div className="relative w-full flex justify-center">
+              <div className="mt-12">
+                <div className="relative group">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
+                  <div className="relative flex flex-col items-center">
                     <img
                       src={IMAGES.myJourneyImage}
                       alt="Transformation journey - Before and After"
-                      className="w-full h-auto sm:max-w-2xl sm:max-h-[400px] md:max-h-[450px] rounded-2xl shadow-xl object-contain"
+                      className="w-full max-w-2xl h-auto max-h-[450px] rounded-2xl shadow-xl object-contain mx-auto"
                     />
-                    <div className="absolute top-2 left-2 sm:top-6 sm:left-6 bg-emerald-600 text-white px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm shadow-lg backdrop-blur-sm z-10">
-                      Before: 108 kg
-                    </div>
-                    <div className="absolute top-2 right-2 sm:top-6 sm:right-6 bg-cyan-600 text-white px-3 py-1.5 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm shadow-lg backdrop-blur-sm z-10">
-                      After: 52 kg
-                    </div>
                   </div>
                 </div>
-                <div className="text-center">
+                
+                <div className="text-center mt-8">
                   <p className="text-2xl font-bold text-gray-900 mb-4">
                     From 108 kg to 52 kg
                   </p>
@@ -215,7 +182,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+
       </section>
+
 
       {/* Core Values - Modern Grid */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
@@ -279,7 +248,7 @@ const AboutPage = () => {
                   </p>
                 </div>
               </div>
-   ))}
+            ))}
           </div>
         </div>
       </section>
