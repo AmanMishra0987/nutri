@@ -180,56 +180,6 @@ const TRANSFORMATIONS = [
     },
     {
         id: "8",
-        name: "Dubai Client",
-        age: 44,
-        location: "Dubai",
-        startingWeight: "Not specified",
-        currentWeight: "Not specified",
-        shortSummary: "Grew in ways never imagined",
-        fullDescription: "Being with Kusum & Mona, this client didn't just lose weight or get into better shape, but grew in ways they would have never imagined.",
-        detailedStory: "Being with Kusum & Mona, this client didn't just lose weight, or get into better shape, they grew in ways they would have never imagined. They learnt to try new things, new ways of eating, letting go of ego and being open to learning. These are lifelong skills they will carry with them. And even when they're not on their plan, they continue to follow many of the principles which make total sense to them.\n\nThis transformation goes beyond physical changes. The client discovered that working with our team meant embarking on a journey of personal growth. They learned to approach food and wellness with curiosity rather than judgment.\n\nLetting go of ego was one of the most challenging but rewarding aspects of their journey. By becoming open to learning, they were able to break through plateaus and discover new possibilities for their health.\n\nThe skills they developed - trying new things, being open to learning, letting go of ego - are indeed lifelong gifts that extend far beyond diet and exercise.\n\nWhat makes this story particularly inspiring is how the client continues to apply these principles even when not actively on the program. This shows true internalization of the wellness mindset.\n\nThey're grateful to have Kusum and Mona guiding them on this transformative journey.",
-        weightLost: "Not specified",
-        duration: "Ongoing",
-        challenges: "Letting go of ego, being open to learning new things",
-        solutions: "Guidance, encouragement, lifelong skill development",
-
-        results: [
-            "Personal growth beyond weight loss",
-            "Learning new ways of eating",
-            "Letting go of ego",
-            "Being open to learning",
-            "Lifelong skills development",
-            "Continued application of principles",
-            "Improved blood biomarkers"
-        ]
-    },
-    {
-        id: "9",
-        name: "Foodie from Dubai",
-        age: 28,
-        location: "Dubai",
-        startingWeight: "87.7 kg",
-        currentWeight: "76.3 kg",
-        shortSummary: "Learned balance with favorite foods",
-        fullDescription: "As a wholehearted foodie, this client used to the idea of a \"diet plan.\" They loved the freedom of eating what they wanted, when they wanted. Anything that meant restriction or limitation instantly put them off.",
-        detailedStory: "As a wholehearted foodie, this client used to the idea of a \"diet plan.\" They loved the freedom of eating what they wanted, when they wanted. Anything that meant restriction or limitation instantly put them off.\n\nKusum and Mona completely changed their perspective. They designed a plan that included their weekly cravings, so they never felt deprived. Instead, they learned that there's simply a time, place, and portion for everything. They began to look forward to their favorite foods even more, enjoying them guilt-free and in balance.\n\nWhat truly sets them apart is that this isn't just a diet; it's a lifestyle shift. With their poor sleep habits, the team patiently explained how rest affects everything. Their care goes beyond food - from checking on vitamins and medications to even tracking headaches and cycles, they truly pay attention to every detail.\n\nThe process and progress is so seamless, personalized, and genuinely result-driven. Even the first onboarding call was so eye-opening that they knew they'd made the right choice. They're incredibly grateful to have crossed paths with the team, whose expertise has transformed how they approach health and wellness. Today, they're at their lowest weight since 2022 but more importantly, feeling healthier and more balanced than ever before.\n\nThis journey demonstrates that being a foodie and maintaining a healthy weight are not mutually exclusive. The key is learning balance and portion control rather than complete restriction.\n\nThe comprehensive approach that considers all aspects of wellness - from sleep to medication to cycles - shows the holistic nature of the program.\n\nToday, they maintain their healthy habits and continue to feel better than ever.",
-        weightLost: "11.4kg",
-        duration: "Ongoing",
-        challenges: "Resistance to restriction, being a foodie, poor sleep habits",
-        solutions: "Inclusive diet plans, education on balance, comprehensive wellness approach",
-
-        results: [
-            "11.4kg weight loss",
-            "Learned balance with favorite foods",
-            "Guilt-free enjoyment of food",
-            "Improved sleep habits understanding",
-            "Comprehensive wellness approach",
-            "Healthier and more balanced than ever",
-            "Improved blood biomarkers"
-        ]
-    },
-    {
-        id: "10",
         name: "Himanshu",
         age: 26,
         location: "Canada",
@@ -252,7 +202,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "11",
+        id: "9",
         name: "Deepali Gandhi",
         age: 40,
         location: "Canada",
@@ -274,7 +224,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "12",
+        id: "10",
         name: "Sathvik",
         age: 24,
         location: "Dubai",
@@ -296,7 +246,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "13",
+        id: "11",
         name: "Miita Thakral",
         age: 43,
         location: "Thailand",
@@ -318,7 +268,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "14",
+        id: "12",
         name: "Ruba Hassan",
         age: 35,
         location: "Yemen",
@@ -339,7 +289,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "15",
+        id: "13",
         name: "Rahul",
         age: 35,
         location: "Dubai",
@@ -360,7 +310,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "16",
+        id: "14",
         name: "Andie",
         age: 36,
         location: "Sri Lanka",
@@ -381,7 +331,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "17",
+        id: "15",
         name: "Shefali",
         age: 43,
         location: "Canada",
@@ -402,7 +352,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "18",
+        id: "16",
         name: "Rahul Valecha",
         age: 32,
         location: "Dubai",
@@ -423,7 +373,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "19",
+        id: "17",
         name: "Renjim",
         age: null,
         location: "Turkey",
@@ -444,7 +394,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "20",
+        id: "18",
         name: "Prerna Khushalani",
         age: 33,
         location: null,
@@ -465,7 +415,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "21",
+        id: "19",
         name: "Aanchal",
         age: 39,
         location: "UK",
@@ -485,7 +435,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "22",
+        id: "20",
         name: "Priyanka Sridhar",
         age: 28,
         location: "USA",
@@ -506,7 +456,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "23",
+        id: "21",
         name: "Neha Munjal",
         age: 36,
         location: null,
@@ -527,7 +477,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "24",
+        id: "22",
         name: "Anand",
         age: 39,
         location: "Saudi Arabia",
@@ -548,7 +498,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "25",
+        id: "23",
         name: "Jayshree",
         age: 52,
         location: "Dubai",
@@ -569,7 +519,7 @@ const TRANSFORMATIONS = [
         ]
     },
     {
-        id: "26",
+        id: "24",
         name: "MM",
         age: 26,
         location: "Dubai",

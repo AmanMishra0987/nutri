@@ -16,15 +16,14 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="*" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
-        
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/booking" element={<BookingPage />} />
         <Route path="/enrollment" element={<EnrollmentPage />} />
         <Route path="/transformation/:id" element={<TransformationDetails />} />
         <Route path="/service/:serviceName" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </>
   );
