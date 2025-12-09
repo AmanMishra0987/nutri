@@ -163,12 +163,15 @@ const TRANSFORMATIONS = [
         currentWeight: "65 kg",
         shortSummary: "Lost 17.5kg with favorite foods",
         fullDescription: "Dhaara started on 10th Feb 2025 and took a while to finally start the diet. She honestly thought she'd never be able to eat her favorite foods again!",
-        detailedStory: "Your journey and experience with us: started on 10th Feb 2025 .. did it for 4months It took me a while to finally start the diet… I honestly thought I’d never be able to eat my favorite foods again! But you proved me so wrong! I ate everything I love and still lost weight 😍 You taught me how to be healthy, eat wisely, and enjoy food in the right proportions.Life has completely changed for me — from my eating habits to how I look and feel. I’ve never felt or looked better! Thank you so much Kusum and Rajwant for your constant support, motivation, and encouragement 💕Truly, the best decision of my life was to join you both!",
+        detailedStory: "Your journey and experience with us: started on 10th Feb 2025 .. did it for 4months It took me a while to finally start the diet… I honestly thought I'd never be able to eat my favorite foods again! But you proved me so wrong! I ate everything I love and still lost weight 😍 You taught me how to be healthy, eat wisely, and enjoy food in the right proportions.Life has completely changed for me — from my eating habits to how I look and feel. I've never felt or looked better! Thank you so much Kusum and Rajwant for your constant support, motivation, and encouragement 💕Truly, the best decision of my life was to join you both!",
         weightLost: "17.5kg",
         duration: "4 months",
         challenges: "Fear of giving up favorite foods, delay in starting",
         solutions: "Portion control education, balanced approach, motivation, comprehensive wellness",
-
+        beforeAfterImages: {
+            before: "/dhara-before.jpeg",
+            after: "/dhara-after.jpeg"
+        },
         results: [
             "17.5kg weight loss",
             "Enjoyment of favorite foods",
@@ -237,6 +240,10 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Emotional eating, lifestyle habits",
         solutions: "Personalized plan, deep assessment, consistent follow-ups",
+        beforeAfterImages: {
+            before: "/satvik-before.jpeg",
+            after: "/satvik-after.jpeg"
+        },
         results: [
             "28.4kg weight loss",
             "Improved confidence",
@@ -323,6 +330,10 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Consistency, food preferences",
         solutions: "Flexible meal plan, portion control, daily support",
+        beforeAfterImages: {
+            before: "/anndie-before.jpeg",
+            after: "/andie-after.jpeg"
+        },
         results: [
             "11.45kg weight loss",
             "Improved consistency",
@@ -407,6 +418,10 @@ const TRANSFORMATIONS = [
         duration: "Ongoing",
         challenges: "Thyroid, multiple failed diets",
         solutions: "Accountability, thyroid-friendly planning",
+        beforeAfterImages: {
+            before: "/prerna-before.jpeg",
+            after: "/prerna-after.jpeg"
+        },
         results: [
             "21kg weight loss",
             "Improved energy",
@@ -469,6 +484,10 @@ const TRANSFORMATIONS = [
         duration: "6 months",
         challenges: "Postpartum weight, low energy",
         solutions: "Right food, right quantity, lifestyle reset",
+        beforeAfterImages: {
+            before: "/neha-before.jpeg",
+            after: "/neha-after.jpeg"
+        },
         results: [
             "16kg weight loss",
             "Improved energy",
