@@ -6,28 +6,7 @@ import logoFooter from "../assets/logo.png";
 const Footer = memo(() => {
   return (
     <>
-      {/* Newsletter Section */}
-      <section className="py-16 bg-emerald-700">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
-          Elevate Your Wellness Journey
-          </h2>
-          <p className="text-emerald-100 max-w-2xl mx-auto mb-8">
-            Subscribe to receive expert tips, exclusive deals, and the latest event news.
-          </p>
-          <div className="max-w-md mx-auto flex">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-grow px-4 py-3 rounded-l-lg border border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-            />
-            <button className="bg-amber-500 text-white px-6 py-3 rounded-r-lg hover:bg-amber-600 transition duration-300 font-medium">
-              Subscribe
-            </button>
-          </div>
-
-        </div>
-      </section>
+      
 
       {/* Footer */}
       <footer className="bg-emerald-900 text-white pt-16 pb-8">
