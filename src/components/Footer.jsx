@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
 import { SOCIAL_MEDIA } from "../constants/socialMedia";
-import logoFooter from "../assets/logo.png";
+import logoFooter from "../assets/yellowlo.png";
 
 const Footer = memo(() => {
   return (
@@ -9,7 +9,7 @@ const Footer = memo(() => {
       
 
       {/* Footer */}
-      <footer className="bg-emerald-900 text-white pt-16 pb-8">
+      <footer className="bg-gradient-to-br text-black pt-16 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12 lg:justify-items-center">
             <div>
@@ -18,7 +18,7 @@ const Footer = memo(() => {
                 alt="Soul Fuel Wellness"
                 className="w-32 h-auto mx-auto mb-8"
               />
-              <p className="text-emerald-100 mb-6">
+              <p className="text-black mb-6">
                 Empowering individuals to achieve optimal health through
                 personalized wellness solutions.
               </p>
@@ -47,7 +47,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Home
                   </Link>
@@ -55,7 +55,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/about"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     About Us
                   </Link>
@@ -64,7 +64,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/enrollment"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     How to Enroll
                   </Link>
@@ -72,7 +72,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/gallery"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Gallery
                   </Link>
@@ -80,7 +80,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/contact"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Contact
                   </Link>
@@ -94,7 +94,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Nutrition Planning
                   </Link>
@@ -102,7 +102,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Wellness Programs
                   </Link>
@@ -110,7 +110,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Lifestyle Coaching
                   </Link>
@@ -119,7 +119,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Retreats
                   </Link>
@@ -127,7 +127,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-emerald-100 hover:text-white transition duration-300"
+                    className="text-black hover:text-white transition duration-300"
                   >
                     Community Support
                   </Link>
@@ -139,26 +139,26 @@ const Footer = memo(() => {
 
           <div className="border-t border-emerald-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-emerald-200 text-sm">
+              <p className="text-black text-sm">
                 &copy; {new Date().getFullYear()} Soul Fuel Wellness. All rights
                 reserved.
               </p>
               <div className="mt-4 md:mt-0 flex space-x-6">
                 <a
                   href="#"
-                  className="text-emerald-200 hover:text-white text-sm transition duration-300"
+                  className="text-black hover:text-white text-sm transition duration-300"
                 >
                   Privacy Policy
                 </a>
                 <a
                   href="#"
-                  className="text-emerald-200 hover:text-white text-sm transition duration-300"
+                  className="text-black hover:text-white text-sm transition duration-300"
                 >
                   Terms of Service
                 </a>
                 <a
                   href="#"
-                  className="text-emerald-200 hover:text-white text-sm transition duration-300"
+                  className="text-black hover:text-white text-sm transition duration-300"
                 >
                   Accessibility
                 </a>
