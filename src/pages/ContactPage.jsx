@@ -21,7 +21,7 @@ const ContactPage = () => {
     lastName: "",
     email: "",
     phone: "",
-    service: "",
+    
     message: "",
   });
   const [errors, setErrors] = useState({});
@@ -86,20 +86,13 @@ const ContactPage = () => {
         lastName: "",
         email: "",
         phone: "",
-        service: "",
+       
         message: "",
       });
     }
   };
 
-  const services = [
-    "Nutrition Planning",
-    "Wellness Programs",
-    "Lifestyle Coaching",
-    "Workshops",
-    "Retreats",
-    "Community Support",
-  ];
+ 
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
@@ -224,29 +217,6 @@ const ContactPage = () => {
                         {errors.phone}
                       </p>
                     )}
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="service"
-                      className="block text-gray-700 mb-2"
-                    >
-                      Service of Interest
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      value={formData.service}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
-                    >
-                      <option value="">Select a service</option>
-                      {services.map((service) => (
-                        <option key={service} value={service}>
-                          {service}
-                        </option>
-                      ))}
-                    </select>
                   </div>
 
                   <div>
