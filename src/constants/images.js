@@ -12,11 +12,7 @@ export const IMAGES = {
 gallery: [
 
  
-  "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=2070&q=80", // Oatmeal with berries
-  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=2070&q=80", // Fresh fruits
-  "https://images.unsplash.com/photo-1669490884223-ca6ca27c8766?q=80&w=2032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2070&q=80"  // Veg bowl / buddha bowl
-],
+  ],
   
   // Testimonial images
   testimonials: [
