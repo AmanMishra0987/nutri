@@ -76,7 +76,7 @@ const BookingPage = () => {
       // Here you would typically send the data to your backend
       console.log("Booking submitted:", formData);
       alert(
-        "Booking request submitted successfully! We will contact you soon to confirm your appointment."
+        "Thankyou for contacting us! We will contact you soon to confirm your appointment."
       );
 
       // Reset form
