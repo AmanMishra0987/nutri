@@ -136,5 +136,5 @@ Founded by *Kusum Rana*
 Yoga, Pilates, Wellness, and Lifestyle Coach  
 
 📍 Based in Dubai  
-📅 Working Hours: Monday–Friday, 9:00 AM – 6:30 PM  
+📅 Working Hours: Monday–Friday, 9:00 AM – 6:00 PM  
 📞 Consultation Calls: Tuesday & Thursday, 1:30 PM – 5:00 PM  
