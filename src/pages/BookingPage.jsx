@@ -19,35 +19,11 @@ const BookingPage = () => {
     name: "",
     phone: "",
     email: "",
-    service: "",
-    date: "",
-    time: "",
+    
   });
 
   const [errors, setErrors] = useState({});
 
-  // Wellness services data
-  const services = [
-    { id: "nutrition-planning", name: "Nutrition Planning" },
-    { id: "wellness-programs", name: "Wellness Programs" },
-    { id: "lifestyle-coaching", name: "Lifestyle Coaching" },
-    { id: "workshops", name: "Workshops" },
-    { id: "retreats", name: "Retreats" },
-    { id: "community-support", name: "Community Support" },
-  ];
-
-  // Available time slots
-  const timeSlots = [
-    "09:00 AM",
-    "10:00 AM",
-    "11:00 AM",
-    "12:00 PM",
-    "01:00 PM",
-    "02:00 PM",
-    "03:00 PM",
-    "04:00 PM",
-    "05:00 PM",
-  ];
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -88,18 +64,6 @@ const BookingPage = () => {
       newErrors.email = "Please enter a valid email address";
     }
 
-    if (!formData.service) {
-      newErrors.service = "Please select a service";
-    }
-
-    if (!formData.date) {
-      newErrors.date = "Please select a date";
-    }
-
-    if (!formData.time) {
-      newErrors.time = "Please select a time";
-    }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -120,9 +84,7 @@ const BookingPage = () => {
         name: "",
         phone: "",
         email: "",
-        service: "",
-        date: "",
-        time: "",
+        
       });
     }
   };
@@ -247,116 +209,6 @@ const BookingPage = () => {
                   {errors.email && (
                     <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                   )}
-                </div>
-              </div>
-
-              {/* Service Selection */}
-              <div>
-                <h3 className="text-xl font-bold text-emerald-900 mb-6">
-                  Service Selection
-                </h3>
-                <div>
-                  <label
-                    htmlFor="service"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Select Service *
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors ${
-                      errors.service ? "border-red-500" : "border-gray-300"
-                    }`}
-                  >
-                    <option value="">Choose a wellness service</option>
-                    {services.map((service) => (
-                      <option key={service.id} value={service.id}>
-                        {service.name}
-                      </option>
-                    ))}
-                  </select>
-                  {errors.service && (
-                    <p className="text-red-500 text-sm mt-1">
-                      {errors.service}
-                    </p>
-                  )}
-                </div>
-
-                {/* Service Information */}
-                {formData.service && (
-                  <div className="mt-6 p-6 bg-emerald-50 rounded-lg">
-                    <h4 className="text-lg font-semibold text-emerald-900 mb-2">
-                      Selected Service:{" "}
-                      {services.find((s) => s.id === formData.service)?.name}
-                    </h4>
-                    <p className="text-sm text-emerald-700">
-                      You will be assigned to our certified wellness
-                      professional who specializes in this service.
-                    </p>
-                  </div>
-                )}
-              </div>
-
-              {/* Date and Time Selection */}
-              <div>
-                <h3 className="text-xl font-bold text-emerald-900 mb-6">
-                  Schedule Your Session
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="date"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                    >
-                      Select Date *
-                    </label>
-                    <input
-                      type="date"
-                      id="date"
-                      name="date"
-                      value={formData.date}
-                      onChange={handleChange}
-                      min={getMinDate()}
-                      max={getMaxDate()}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors ${
-                        errors.date ? "border-red-500" : "border-gray-300"
-                      }`}
-                    />
-                    {errors.date && (
-                      <p className="text-red-500 text-sm mt-1">{errors.date}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="time"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                    >
-                      Select Time *
-                    </label>
-                    <select
-                      id="time"
-                      name="time"
-                      value={formData.time}
-                      onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors ${
-                        errors.time ? "border-red-500" : "border-gray-300"
-                      }`}
-                    >
-                      <option value="">Choose time slot</option>
-                      {timeSlots.map((time) => (
-                        <option key={time} value={time}>
-                          {time}
-                        </option>
-                      ))}
-                    </select>
-                    {errors.time && (
-                      <p className="text-red-500 text-sm mt-1">{errors.time}</p>
-                    )}
-                  </div>
                 </div>
               </div>
 
