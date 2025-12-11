@@ -285,7 +285,7 @@ const BookingPage = () => {
               <h3 className="text-lg font-bold text-emerald-900 mb-2">
                 Email Us
               </h3>
-              <p className="text-gray-600">info@soulfuelwellness.com</p>
+              <p className="text-gray-600">info@soulfuelwellness.ae</p>
             </div>
 
             <div className="text-center">

@@ -1215,7 +1215,7 @@ function Home() {
                         </div>
                         <div className="ml-4">
                           <h4 className="text-lg font-bold">Email</h4>
-                          <p className="mt-1">info@soulfuelwellness.com</p>
+                          <p className="mt-1">info@soulfuelwellness.ae</p>
                         </div>
                       </div>
 
