@@ -978,7 +978,7 @@ function Home() {
                         Business Hours
                       </h4>
                       <p className="text-gray-600 mt-1">
-                        Monday-Friday: 9:00 AM – 6:30 PM (GMT +4)
+                        Monday-Friday: 9:00 AM – 6:00 PM (GMT +4)
 
                       </p>
                     </div>

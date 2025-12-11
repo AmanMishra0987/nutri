@@ -308,9 +308,7 @@ const BookingPage = () => {
                 Business Hours
               </h3>
               <p className="text-gray-600">
-                Mon-Fri: 9am-6pm
-                <br />
-                Sat: 10am-4pm
+                Monday-Friday: 9:00 AM – 6:00 PM (GMT +4)
               </p>
             </div>
           </div>

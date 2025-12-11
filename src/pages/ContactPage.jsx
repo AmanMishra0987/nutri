@@ -367,11 +367,7 @@ const ContactPage = () => {
                     <div className="ml-4">
                       <h4 className="text-lg font-bold">Business Hours</h4>
                       <p className="mt-1">
-                        Monday-Friday: 9am - 6pm
-                        <br />
-                        Saturday: 10am - 4pm
-                        <br />
-                        Sunday: Closed
+                        Monday-Friday: 9:00 AM – 6:00 PM (GMT +4)
                       </p>
                     </div>
                   </div>
