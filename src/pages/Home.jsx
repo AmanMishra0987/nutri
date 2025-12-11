@@ -367,7 +367,7 @@ function Home() {
                 <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
                   <div className="text-lg font-bold text-cyan-700 mb-2 white-space: nowrap;">Available </div>
                   <div className="text-gray-600 font-medium text-sm white-space: nowrap;">Monday to Friday</div>
-                  <div className="text-gray-600 font-medium text-sm white-space: nowrap;">9:00 AM to 6:30 PM (GMT +4)</div>
+                  <div className="text-gray-600 font-medium text-sm white-space: nowrap;">9:00 AM to 6:00 PM (GMT +4)</div>
                 </div>
               </div>
             </div>
