@@ -47,7 +47,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Home
                   </Link>
@@ -55,7 +55,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/about"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     About Us
                   </Link>
@@ -64,7 +64,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/enrollment"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     How to Enroll
                   </Link>
@@ -72,7 +72,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/gallery"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Gallery
                   </Link>
@@ -80,7 +80,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="/contact"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Contact
                   </Link>
@@ -94,7 +94,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Nutrition Planning
                   </Link>
@@ -102,7 +102,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Wellness Programs
                   </Link>
@@ -110,7 +110,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Lifestyle Coaching
                   </Link>
@@ -119,7 +119,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Retreats
                   </Link>
@@ -127,7 +127,7 @@ const Footer = memo(() => {
                 <li>
                   <Link
                     to="#"
-                    className="text-black hover:text-white transition duration-300"
+                    className="text-black  transition duration-300"
                   >
                     Community Support
                   </Link>
@@ -146,19 +146,19 @@ const Footer = memo(() => {
               <div className="mt-4 md:mt-0 flex space-x-6">
                 <a
                   href="#"
-                  className="text-black hover:text-white text-sm transition duration-300"
+                  className="text-black  text-sm transition duration-300"
                 >
                   Privacy Policy
                 </a>
                 <a
                   href="#"
-                  className="text-black hover:text-white text-sm transition duration-300"
+                  className="text-black  text-sm transition duration-300"
                 >
                   Terms of Service
                 </a>
                 <a
                   href="#"
-                  className="text-black hover:text-white text-sm transition duration-300"
+                  className="text-black  text-sm transition duration-300"
                 >
                   Accessibility
                 </a>
