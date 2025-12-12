@@ -310,16 +310,8 @@ function Home() {
                     Start Your Journey
                   </Link>
 
-                  <Link
-                    to="#"
-                    className="border-2 border-emerald-300 text-emerald-200 px-8 py-3 rounded-full hover:bg-white/10 transition duration-300 text-lg font-medium text-center"
-                  >
-                    Explore Our Programs
-                  </Link>
                 </div>
               </div>
-
-
 
             </div>
           </div>
@@ -630,7 +622,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Gallery Section */}
+      
       <section id="gallery" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
