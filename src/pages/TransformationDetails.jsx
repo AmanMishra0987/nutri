@@ -14,8 +14,7 @@ const TRANSFORMATIONS = [
         currentWeight: "87 kg",
         shortSummary: "Lost 30kg with personalized nutrition coaching",
         fullDescription: "Kevin came to us struggling with weight gain and lack of energy affecting his daily life in Dubai. Through our personalized nutrition plan and lifestyle coaching, he learned sustainable habits that helped him lose 30kg. Today, he's not only physically transformed but also mentally empowered.",
-        detailedStory: "super. Actually, put me on the right track after being on YO YO diets all my life ",
-
+        detailedStory: "Amazing experience I had with the help of Kusum and Rajwant helped me from day 1. Every plan they created was personalized built around my preferences, routines, and progress. What really stood out was how they emphasized education, they didn’t just tell me what to eat, they explained why.Always available to help you out if you have any doubts regarding the diet.\n\nMuch recommended.",
         weightLost: "30kg",
         duration: "Ongoing",
         challenges: "Busy schedule in Dubai, lack of time, energy deficiency",
@@ -44,7 +43,7 @@ const TRANSFORMATIONS = [
         currentWeight: "52 kg",
         shortSummary: "Achieved goals in short timeframes",
         fullDescription: "Priyanka always managed to achieve her goals with our program, even within short month timeframes. She finds the program very effective, encouraging and it has become her daily lifestyle.",
-        detailedStory: "Your journey and experience with us: I have always managed to achieve my goals with your program, even within short month timeframes. I find the program very effective, encouraging and it has become my daily lifestyle.",
+        detailedStory: "I have always managed to achieve my goals with your program, even within short month timeframes. I find the program very effective, encouraging and it has become my daily lifestyle. ",
         weightLost: "3kg",
         duration: "Ongoing",
         challenges: "Maintaining consistency in a busy lifestyle",
@@ -68,7 +67,7 @@ const TRANSFORMATIONS = [
         currentWeight: "53 kg",
         shortSummary: "Lost 8kg with constant guidance",
         fullDescription: "Simran couldn't thank Kusum and Rajwant enough for their constant guidance and support throughout her journey. Their diet plans were simple, practical, and easy to follow; nothing complicated or unrealistic.",
-        detailedStory: "Your journey and experience with us: I can’t thank Kusum and Rajwant enough for their constant guidance and support throughout my journey. Their diet plans were simple, practical, and easy to follow; nothing complicated or unrealistic. Working with them has truly made me more mindful of what I eat and has encouraged me to adopt a cleaner, healthier lifestyle. I’ve also become much more motivated to stay active and prioritize my fitness.I couldn’t have asked for better guidance, they have truly helped me build healthier habits that I’ll carry forward.",
+        detailedStory: "I can’t thank Kusum and Rajwant enough for their constant guidance and support throughout my journey. Their diet plans were simple, practical, and easy to follow; nothing complicated or unrealistic. Working with them has truly made me more mindful of what I eat and has encouraged me to adopt a cleaner, healthier lifestyle. I’ve also become much more motivated to stay active and prioritize my fitness.I couldn’t have asked for better guidance, they have truly helped me build healthier habits that I’ll carry forward.",
         duration: "Ongoing",
         challenges: "Building mindfulness around eating, staying motivated for fitness",
         solutions: "Simple diet plans, education on nutrition, motivation and support",
@@ -163,7 +162,7 @@ const TRANSFORMATIONS = [
         currentWeight: "65 kg",
         shortSummary: "Lost 17.5kg with favorite foods",
         fullDescription: "Dhaara started on 10th Feb 2025 and took a while to finally start the diet. She honestly thought she'd never be able to eat her favorite foods again!",
-        detailedStory: "Your journey and experience with us: started on 10th Feb 2025 .. did it for 4months It took me a while to finally start the diet… I honestly thought I'd never be able to eat my favorite foods again! But you proved me so wrong! I ate everything I love and still lost weight 😍 You taught me how to be healthy, eat wisely, and enjoy food in the right proportions.Life has completely changed for me — from my eating habits to how I look and feel. I've never felt or looked better! Thank you so much Kusum and Rajwant for your constant support, motivation, and encouragement 💕Truly, the best decision of my life was to join you both!",
+        detailedStory: "Started on 10th Feb 2025 .. did it for 4months It took me a while to finally start the diet… I honestly thought I'd never be able to eat my favorite foods again!\n\nBut you proved me so wrong! I ate everything I love and still lost weight 😍\n\nYou taught me how to be healthy, eat wisely, and enjoy food in the right proportions.\n\nLife has completely changed for me — from my eating habits to how I look and feel. I've never felt or looked better!\n\nThank you so much Kusum and Rajwant for your constant support, motivation, and encouragement 💕\n\nTruly, the best decision of my life was to join you both!",
         weightLost: "17.5kg",
         duration: "4 months",
         challenges: "Fear of giving up favorite foods, delay in starting",
@@ -190,7 +189,7 @@ const TRANSFORMATIONS = [
         currentWeight: "90.7 kg",
         shortSummary: "Reversed diabetes and lost weight with sustainable habits",
         fullDescription: "Himanshu is deeply grateful for the support and expertise provided by Kusum and Rajwant. Their guidance helped him lose weight, build healthier habits, and even reverse his diabetes.",
-        detailedStory: "From day one, they understood my habits, preferences, and goals. The plan felt sustainable, realistic, and tailored. Thanks to them, I not only lost weight but also reversed my diabetes and built a much healthier relationship with food.",
+        detailedStory: "I'm incredibly grateful for the amazing support and expertise Kusum and Rajwant provided throughout my weight-loss journey. From day one, they took the time to understand my habits, preferences, and goals, creating a plan that felt realistic, sustainable, and tailored specifically to me.\n\nTheir encouragement kept me motivated, and their practical advice made healthy eating feel simple and achievable—even on the toughest days. Thanks to their guidance, I not only lost weight but also gained a much healthier relationship with food. I was able to reverse my diabetes and get all my parameters in line.\n\nIf you're looking for a knowledgeable, compassionate, and results-driven team, I can't recommend them highly enough. Their work truly made a difference in my life!",
         weightLost: "22.3 kg",
         duration: "Ongoing",
         challenges: "Diabetes, habits, sustainability",
@@ -213,7 +212,7 @@ const TRANSFORMATIONS = [
         currentWeight: "59 kg",
         shortSummary: "Lost 23kg and built lifelong mindful eating habits",
         fullDescription: "Deepali found a lifelong guide in Kusum. Her journey transformed not just her body but also her mindset around food.",
-        detailedStory: "Choosing to work with Kusum wasn’t just about weight loss — she became a lifelong guide. She helped me master portion control even in social settings. I’m in the best shape of my life today.",
+        detailedStory: "Choosing to work with Kusum wasn't just about finding the right person to help me on my weight loss journey, I felt I found a lifelong friend and guide in her. The impact of her guidance has been truly life changing, I'm amazed at how she trained my brain to make portion controlled healthier choices even when I'm in social settings. I truly feel I'm in best shape of my life today and I only have Kusum to thank for the confidence and knowledge to make that a reality. Thank you Kusum for everything.",
         weightLost: "23 kg",
         duration: "Ongoing",
         challenges: "Portion control, lifestyle balance",
@@ -235,7 +234,7 @@ const TRANSFORMATIONS = [
         currentWeight: "88.6 kg",
         shortSummary: "Lost 28+ kg with personalized coaching",
         fullDescription: "After struggling for years, Sathvik transformed his health and confidence through a focused, guided plan.",
-        detailedStory: "I struggled for years and reached almost 120 kilos. Kusum created a personalized plan and guided me through emotional and lifestyle changes. I've dropped more than 30 kilos and feel like a new person.",
+        detailedStory: "I am 24 years old, and for many years I struggled with my weight. I was a slim child, but from my late teens I started gaining weight steadily. Things became difficult when I was studying abroad, and by the time I returned to Dubai after completing my studies, I had reached almost 120 kilos. It was worrying for me and for my family.\n\nI tried exercise and different routines, but nothing really helped. Through one of my mother's colleagues, we heard about Kusum and Rajwant, and I decided to give it a try. Kusum asked me to complete a few tests and then guided me through a personalised lifestyle plan. I realised that many of the foods I was eating were not supporting my body or my emotional balance.\n\nI followed the plan with commitment. I started at 120 kilos, and today I am at 85 kilos. This 34-kilo change has transformed my confidence, my health, and the way I feel about myself. My mother also followed the program and lost around 8 kilos, which shows how effective their guidance is.\n\nI am truly grateful to Kusum and Rajwant for their discipline, support, and consistent follow-ups. This journey has changed my life, and I would genuinely recommend them to anyone who wants a healthier body and a healthier mind.",
         weightLost: "28.4 kg",
         duration: "Ongoing",
         challenges: "Emotional eating, lifestyle habits",
@@ -261,7 +260,7 @@ const TRANSFORMATIONS = [
         currentWeight: "57 kg",
         shortSummary: "Lost 9kg during perimenopause",
         fullDescription: "Miita achieved slow and consistent fat loss with cravings controlled and nutrition optimized.",
-        detailedStory: "As a woman facing perimenopause changes, belly fat was a concern. Kusum and Rajwant kept me craving-free and nutrient-rich. They made wholesome, sustainable weight loss possible.",
+        detailedStory: "Amid lots of changes in the body is a belly fat that becomes a peri-menopause issue. As a woman going through that , I knew I had to loose slow and consistent.\n\nKusum and Rajwant understood that narrative and kept me craving free , yet nutrient surplus. They made loosing the wholesome way possible.  Grateful to them always .",
         weightLost: "9 kg",
         duration: "Ongoing",
         challenges: "Perimenopause, cravings, hormonal changes",
@@ -283,7 +282,7 @@ const TRANSFORMATIONS = [
         currentWeight: "79.5 kg",
         shortSummary: "Lost 5kg with a simple and filling plan",
         fullDescription: "Ruba loved how easy the plan was to follow and how full she felt throughout the day.",
-        detailedStory: "The nutritional advice was new, original, and tailored to my needs. I felt full all day and still lost weight!",
+        detailedStory: "I had a fantastic experience with Kusum and her team. The nutritional advice she had provided was original, new and tailored to my needs. The plan was easy to follow and made me feel full all day! I highly recommend her to everyone 🌸",
         weightLost: "5 kg",
         duration: "Ongoing",
         challenges: "Finding sustainable nutrition",
@@ -304,7 +303,7 @@ const TRANSFORMATIONS = [
         currentWeight: "78 kg (lowest)",
         shortSummary: "Wedding transformation with improved confidence",
         fullDescription: "Rahul joined for wedding fitness and achieved his best physique.",
-        detailedStory: "A 6-month course helped me achieve my best physique for my wedding. Tough in the beginning, but amazing after 2–3 weeks. My progress boosted my confidence tremendously.",
+        detailedStory: "6 month course to achieve my best physique for my wedding. Touch in the beginning but gets better after 2-3 weeks. My progress helped me increase my confidence as well. I looked great and felt great.",
         weightLost: "8 kg",
         duration: "6 months",
         challenges: "Consistency, pre-wedding pressure",
@@ -325,7 +324,7 @@ const TRANSFORMATIONS = [
         currentWeight: "71.3 kg",
         shortSummary: "Lost 11.45kg with daily accountability",
         fullDescription: "Andie loved the constant communication and flexibility of the plan.",
-        detailedStory: "Daily check-ins kept me on track. The plan was flexible — they adjusted anything I disliked. No fad diets, just portion control, exercise, and movement.",
+        detailedStory: "Starting my health journey with Kusum was one of the best decisions I've ever made. What made it even better was the daily check-ins, which kept me on track and motivated. The meal plan was also flexible—if I didn’t like a certain food or ingredient, Kusum and her team would make adjustments to suit my preferences, ensuring I always enjoyed what I was eating. There were no fad diets—just simple portion control, exercise, and movement, which made it all feel sustainable. With Kusum’s support and constant communication, staying on track was easier than I expected. Highly recommend!",
         weightLost: "11.45 kg",
         duration: "Ongoing",
         challenges: "Consistency, food preferences",
@@ -350,7 +349,7 @@ const TRANSFORMATIONS = [
         currentWeight: "78 kg",
         shortSummary: "Lost 12kg and reduced inflammation",
         fullDescription: "Shefali learned what foods caused inflammation and transformed her health.",
-        detailedStory: "I lost stubborn weight and understood what foods caused inflammation. Kusum patiently answered all questions and helped me understand my body deeply.",
+        detailedStory: "Working with Kusum has been one of the best things I have ever done for myself. Not only did I lose the weight that refused to come off no matter what I tried, I was also able to understand what foods worked for me and what didn’t. Under her guidance I was able see a pattern and understand certain foods caused inflammation in my body. She always takes the time to answer all your questions patiently. Not only do I feel great after working with her I also understand my body like never before. I highly recommend Kusum and her team.",
         weightLost: "12 kg",
         duration: "Ongoing",
         challenges: "Inflammation, stubborn weight",
@@ -413,7 +412,7 @@ const TRANSFORMATIONS = [
         currentWeight: "80 kg",
         shortSummary: "Lost 21kg before her wedding despite thyroid",
         fullDescription: "Prerna struggled with thyroid issues but achieved major results.",
-        detailedStory: "I’ve tried many diets but nothing worked due to thyroid. Kusum kept me accountable and helped me lose 20+ kg before my wedding.",
+        detailedStory: "Honestly since I have thyroid, I’ve always been working out and I have tried lots and lots of other diets. Kusum is so diligent, she used to keep checking up on me and keeping me accountable, that really helped a lot and I lost over 20 kilos right before my wedding.",
         weightLost: "21 kg",
         duration: "Ongoing",
         challenges: "Thyroid, multiple failed diets",
@@ -438,7 +437,7 @@ const TRANSFORMATIONS = [
         currentWeight: "57 kg",
         shortSummary: "Lost 13kg post-pregnancy",
         fullDescription: "Aanchal regained her health after childbirth with expert support.",
-        detailedStory: "I struggled to lose weight post-pregnancy. With sustainable diet plans and constant support, I lost 12–13 kg easily while enjoying my favorite foods.",
+        detailedStory: "I put on a significant amount of weight after I had my son and really struggled to lose it. After trying multiple diets and exercise regimes I started to work with Soul Fuel Wellness. I lost 12kg in as many weeks and the best part was how easy it felt. The diet plans were sustainable, easy to follow and included favourite food groups and cheat meals.  Kusum and Rajwant are exceptionally supportive and explained reasons behind all the plans and rules which makes it much easier to engage with. They were approachable and able to offer advice at every step of the journey, including last minute questions when I had a change of plan. They helped me continue to lose weight through holidays, work dinners and social events. Overall, it has been a journey not only of weight loss, but also learning. I feel I better understand how to engage with food and maintain a healthy balance while continuing to enjoy my lifestyle. Cannot thank both of you enough",
         weightLost: "13 kg",
         duration: "12 weeks",
         challenges: "Post-pregnancy weight, failed diets",
@@ -458,7 +457,7 @@ const TRANSFORMATIONS = [
         currentWeight: "50.7 kg",
         shortSummary: "Lost 14kg with a sustainable lifestyle plan",
         fullDescription: "Priyanka lost weight without starvation and improved her mental well-being.",
-        detailedStory: "I lost 14 kg in 4 months without starving or complicated meals. It’s a sustainable lifestyle shift that improved my physical and mental health.",
+        detailedStory: "I was 64 kgs before starting, and in 4 months I lost 14 kgs in a slow and easy manner.\n\nThere was no starving or outlandish meal ideas .\n\nThe plan was curated to my likes and I was able to eat everything I like and still the lose weight .\n\nThe best part is it instilled a sense of discipline and respect towards my own body and I was in tune with myself .\n\nAlong with physical health my mental health also improved greatly and  I had more energy to work productively .\n\nThis diet plan is not just a temporary fix , it is sustainable lifestyle modification!",
         weightLost: "14 kg",
         duration: "4 months",
         challenges: "Discipline, mindset",
@@ -665,7 +664,7 @@ const TransformationDetails = () => {
                                             <img
                                                 src={transformation.beforeAfterImages.before}
                                                 alt={`${transformation.name} - Before`}
-                                                className="w-full h-[400px] object-cover"
+                                                className="w-full h-[400px] object-contain"
                                             />
                                            
                                         </div>
@@ -676,7 +675,7 @@ const TransformationDetails = () => {
                                             <img
                                                 src={transformation.beforeAfterImages.after}
                                                 alt={`${transformation.name} - After`}
-                                                className="w-full h-[400px] object-cover"
+                                                className="w-full h-[400px] object-contain"
                                             />
                                             
                                         </div>
