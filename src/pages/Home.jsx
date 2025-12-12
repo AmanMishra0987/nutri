@@ -43,7 +43,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "10kg",
     shortSummary: "Lost 10kg with thorough approach",
-    shortDescription: "Namit reached his weight loss goal and gained a new perspective on food and nutrition."
+    shortDescription: "I had a fantastic experience with Kusum and Rajwant over the last few months."
   },
   {
     id: "5",
@@ -52,7 +52,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "10kg",
     shortSummary: "Lost 10kg from yo-yo diets",
-    shortDescription: "Richa was put on the right track after being on yo-yo diets all her life."
+    shortDescription: "super. Actually, put me on the right track after being on YO YO diets all my life"
   },
   {
     id: "6",
@@ -61,7 +61,7 @@ const TRANSFORMATIONS = [
     location: "UK",
     weightLost: "12kg",
     shortSummary: "Lost 12kg in 12 weeks",
-    shortDescription: "AJ lost weight easily with sustainable diet plans and constant support."
+    shortDescription: "I put on a significant amount of weight after I had my son and really struggled to lose it."
   },
   {
     id: "7",
@@ -70,7 +70,7 @@ const TRANSFORMATIONS = [
     location: "India",
     weightLost: "17.5kg",
     shortSummary: "Lost 17.5kg with favorite foods",
-    shortDescription: "Dhaara learned to eat everything she loves and still lose weight."
+    shortDescription: "Started on 10th Feb 2025 .. did it for 4months It took me a while to finally start the diet…"
   },
 
   /* ---------- NEW TESTIMONIALS BELOW ---------- */
@@ -82,7 +82,7 @@ const TRANSFORMATIONS = [
     location: "Canada",
     weightLost: "22.3kg",
     shortSummary: "Reversed diabetes and lost 22kg",
-    shortDescription: "Himanshu transformed his health, reversed diabetes, and built a healthier relationship with food."
+    shortDescription: "I'm incredibly grateful for the amazing support and expertise Kusum and Rajwant provided throughout my weight-loss journey."
   },
   {
     id: "9",
@@ -91,7 +91,7 @@ const TRANSFORMATIONS = [
     location: "Canada",
     weightLost: "23kg",
     shortSummary: "Lost 23kg and built lifelong mindful eating habits",
-    shortDescription: "Deepali mastered portion control and achieved her best shape ever."
+    shortDescription: "Choosing to work with Kusum wasn't just about finding the right person to help me on my weight loss journey"
   },
   {
     id: "10",
@@ -100,7 +100,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "28.4kg",
     shortSummary: "Lost 28kg with personalized planning",
-    shortDescription: "Sathvik transformed his confidence with a deeply personalized lifestyle plan."
+    shortDescription: "I am 24 years old, and for many years I struggled with my weight."
   },
   {
     id: "11",
@@ -109,7 +109,7 @@ const TRANSFORMATIONS = [
     location: "Thailand",
     weightLost: "9kg",
     shortSummary: "Lost 9kg during perimenopause",
-    shortDescription: "Miita achieved consistent fat loss while staying craving-free and nourished."
+    shortDescription: "mid lots of changes in the body is a belly fat that becomes a peri-menopause issue. "
   },
   {
     id: "12",
@@ -118,7 +118,7 @@ const TRANSFORMATIONS = [
     location: "Yemen",
     weightLost: "5kg",
     shortSummary: "Lost 5kg with an easy, filling plan",
-    shortDescription: "Ruba enjoyed a simple, tailored plan that kept her full all day."
+    shortDescription: "I had a fantastic experience with Kusum and her team."
   },
   {
     id: "13",
@@ -127,7 +127,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "8kg",
     shortSummary: "Wedding transformation success",
-    shortDescription: "Rahul achieved his best shape and confidence before his wedding."
+    shortDescription: "6 month course to achieve my best physique for my wedding."
   },
   {
     id: "14",
@@ -136,7 +136,7 @@ const TRANSFORMATIONS = [
     location: "Sri Lanka",
     weightLost: "11.45kg",
     shortSummary: "Lost 11kg with flexible planning",
-    shortDescription: "Andie thrived with daily check-ins and a customizable meal plan."
+    shortDescription: "Starting my health journey with Kusum was one of the best decisions I've ever made."
   },
   {
     id: "15",
@@ -145,7 +145,7 @@ const TRANSFORMATIONS = [
     location: "Canada",
     weightLost: "12kg",
     shortSummary: "Lost 12kg and reduced inflammation",
-    shortDescription: "Shefali learned which foods triggered inflammation and transformed her health."
+    shortDescription: "Working with Kusum has been one of the best things I have ever done for myself."
   },
   {
     id: "16",
@@ -154,7 +154,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "8kg",
     shortSummary: "Lost 8kg before his wedding",
-    shortDescription: "Rahul shaped his best physique through a structured 6-month plan."
+    shortDescription: "A 6-month program helped me get into the best shape for my wedding."
   },
   {
     id: "17",
@@ -163,7 +163,7 @@ const TRANSFORMATIONS = [
     location: "Turkey",
     weightLost: "11kg",
     shortSummary: "Lost 11kg after cortisol-related weight gain",
-    shortDescription: "Renjim finally lost weight through a plan tailored to his hormonal challenges."
+    shortDescription: "I gained weight due to cortisol and couldn’t lose it."
   },
   {
     id: "18",
@@ -172,7 +172,7 @@ const TRANSFORMATIONS = [
     location: null,
     weightLost: "21kg",
     shortSummary: "Lost 21kg before her wedding",
-    shortDescription: "Prerna overcame thyroid struggles to lose over 20 kilos."
+    shortDescription: "Honestly since I have thyroid, I’ve always been working out and I have tried lots and lots of other diets."
   },
   {
     id: "19",
@@ -181,7 +181,7 @@ const TRANSFORMATIONS = [
     location: "UK",
     weightLost: "13kg",
     shortSummary: "Lost 13kg post-pregnancy",
-    shortDescription: "Aanchal regained her health with sustainable plans that fit her lifestyle."
+    shortDescription: "I put on a significant amount of weight after I had my son and really struggled to lose it."
   },
   {
     id: "20",
@@ -190,7 +190,7 @@ const TRANSFORMATIONS = [
     location: "USA",
     weightLost: "14kg",
     shortSummary: "Lost 14kg with sustainable habits",
-    shortDescription: "Priyanka improved both physical and mental health through a balanced lifestyle plan."
+    shortDescription: "I was 64 kgs before starting, and in 4 months I lost 14 kgs in a slow and easy manner."
   },
   {
     id: "21",
@@ -199,7 +199,7 @@ const TRANSFORMATIONS = [
     location: null,
     weightLost: "16kg",
     shortSummary: "Lost 16kg postpartum",
-    shortDescription: "Neha regained energy and confidence with a structured postpartum plan."
+    shortDescription: "It was one of the life changing experience as I could learn to adapt and understand a better way of eating, sleeping and waking up early with healthy food choices."
   },
   {
     id: "22",
@@ -208,7 +208,7 @@ const TRANSFORMATIONS = [
     location: "Saudi Arabia",
     weightLost: "18.5kg",
     shortSummary: "Lost 18kg with sustainable discipline",
-    shortDescription: "Anand embraced lifelong healthy habits and improved his daily activity levels."
+    shortDescription: "My journey has been a wonderful experience. Rather than focusing solely on weight reduction..."
   },
   {
     id: "23",
@@ -217,7 +217,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "27kg",
     shortSummary: "Lost 27kg and stopped BP medication",
-    shortDescription: "Jayshree reversed high BP and transformed her health with easy-to-follow plans."
+    shortDescription: "I got introduced to Kusum when I was at my lowest physically. Was 90 kg and having high BP and started medication for the same."
   },
   {
     id: "24",
@@ -226,7 +226,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "25kg",
     shortSummary: "Lost 25kg with structured yearly planning",
-    shortDescription: "MM stayed consistent with plans built around his lifestyle and schedule."
+    shortDescription: "My journey with Kusum and the entire team has been nothing short of spectacular."
   }
 ];
 
