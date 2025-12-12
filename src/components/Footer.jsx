@@ -96,7 +96,7 @@ const Footer = memo(() => {
                     to="#"
                     className="text-black  transition duration-300"
                   >
-                    Nutrition Planning
+                    Weight loss and nutrition
                   </Link>
                 </li>
                 <li>
@@ -104,7 +104,7 @@ const Footer = memo(() => {
                     to="#"
                     className="text-black  transition duration-300"
                   >
-                    Wellness Programs
+                    Sound healing
                   </Link>
                 </li>
                 <li>
@@ -112,7 +112,7 @@ const Footer = memo(() => {
                     to="#"
                     className="text-black  transition duration-300"
                   >
-                    Lifestyle Coaching
+                    Yoga
                   </Link>
                 </li>
                 
@@ -121,7 +121,7 @@ const Footer = memo(() => {
                     to="#"
                     className="text-black  transition duration-300"
                   >
-                    Retreats
+                    Pilates
                   </Link>
                 </li>
                 <li>
@@ -129,7 +129,31 @@ const Footer = memo(() => {
                     to="#"
                     className="text-black  transition duration-300"
                   >
-                    Community Support
+                    Prenatal and postnatal nutrition and weightloss
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="#"
+                    className="text-black  transition duration-300"
+                  >
+                    Menopause nutrition and guidance
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="#"
+                    className="text-black  transition duration-300"
+                  >
+                    Pcos/pcod/hormonal imbalance management
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="#"
+                    className="text-black  transition duration-300"
+                  >
+                    Breathe work
                   </Link>
                 </li>
               </ul>
