@@ -6,15 +6,13 @@ import Footer from "../components/Footer";
 const sections = [
   { id: "intro", label: "Our Approach", icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
   { id: "step1", label: "Step 1: Getting Started", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" },
-  { id: "step2", label: "Step 2: Questionnaire", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
-  { id: "documents", label: "Required Documents", icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
+  { id: "step2", label: "Step 2: Book Your Session", icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" },
   { id: "rules", label: "Rules & Guidelines", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
 ];
 
 const EnrollmentPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("intro");
-  const [formData, setFormData] = useState({});
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -112,61 +110,6 @@ const EnrollmentPage = () => {
     "You must stay 100% committed all 7 days. There are no cheat days - every bite matters!"
   ];
 
-  const questionnaireItems = [
-    "Your full name",
-    "Current weight",
-    "Goal: What is your target weight?",
-    "Current height in CM",
-    "Age",
-    "What time do you wake up?",
-    "What time do you sleep?",
-    "What time do you start your first meal?",
-    "What time do you end your last meal?",
-    "Regular eating schedule (all meals and snacks from wake up to last meal with timings)",
-    "Water intake throughout the day",
-    "Do you eat desserts after meals?",
-    "Favorite desserts list",
-    "Favorite fast food when eating at home",
-    "Favorite fast food when eating out",
-    "Coffee and tea consumption (with/without dairy and sugar)",
-    "Favorite fruits list",
-    "Smoking habits (frequency)",
-    "Alcohol consumption (frequency)",
-    "How many days per week do you need alcohol?",
-    "Do you feel hungry between meals?",
-    "Do you feel bloated after meals?",
-    "Any digestive issues?",
-    "Bowel movement frequency",
-    "Any medical conditions or allergies?",
-    "Current medications",
-    "Exercise routine (type, frequency, duration)",
-    "Stress levels (1-10)",
-    "Sleep quality",
-    "Previous diet attempts",
-    "Food restrictions or preferences",
-    "Vegetarian/Non-vegetarian/Vegan",
-    "Cuisines you prefer",
-    "Foods you absolutely cannot eat",
-    "Cooking frequency",
-    "Who cooks at home?",
-    "Eating out frequency",
-    "Travel frequency",
-    "Work schedule and nature of job",
-    "Goals beyond weight loss"
-  ];
-
-  const requiredDocuments = [
-    { name: "Full Body Photo", description: "Current photo in body-fitting outfit for record" },
-    { name: "Body Measurements", description: "Chest, waist, and hip measurements" },
-    { name: "Digital Weighing Scale", description: "For daily weight tracking" },
-    { name: "Measuring Tools", description: "Teaspoon, tablespoon, ML cup, food weighing scale" },
-    { name: "Blood Reports (if available)", description: "Recent blood work including CBC, thyroid, vitamin levels" },
-    { name: "Medical History", description: "List of current medications and medical conditions" },
-    { name: "BMI Testing Report", description: "If previously done" },
-    { name: "Photos of Current Supplements", description: "Any vitamins/minerals currently taking" }
-  ];
-
-
   const rules = [
     {
       title: "Consultation Appointments",
@@ -257,37 +200,6 @@ const EnrollmentPage = () => {
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
-  };
-
-  const handleInputChange = (index, value) => {
-    setFormData(prev => ({
-      ...prev,
-      [index]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Here you can add API call to submit the form data
-    alert("Questionnaire submitted successfully! We will contact you soon.");
-  };
-
-  const getInputType = (question, index) => {
-    const lowerQuestion = question.toLowerCase();
-    if (lowerQuestion.includes("weight") || lowerQuestion.includes("height") || lowerQuestion.includes("age") || lowerQuestion.includes("stress levels") || lowerQuestion.includes("days per week")) {
-      return "number";
-    }
-    if (lowerQuestion.includes("time") || lowerQuestion.includes("wake up") || lowerQuestion.includes("sleep") || lowerQuestion.includes("meal")) {
-      return "time";
-    }
-    if (lowerQuestion.includes("schedule") || lowerQuestion.includes("routine") || lowerQuestion.includes("list") || lowerQuestion.includes("medications") || lowerQuestion.includes("conditions") || lowerQuestion.includes("issues") || lowerQuestion.includes("attempts")) {
-      return "textarea";
-    }
-    if (lowerQuestion.includes("do you") || lowerQuestion.includes("frequency") || lowerQuestion.includes("quality")) {
-      return "text";
-    }
-    return "text";
   };
 
   return (
@@ -487,7 +399,7 @@ const EnrollmentPage = () => {
         </div>
       </section>
 
-          {/* Step 2 - Questionnaire Section */}
+          {/* Step 2 Section */}
           <section id="step2" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -495,122 +407,34 @@ const EnrollmentPage = () => {
               Step 2
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
-              Enrollment Questionnaire
+              Book Your Session
             </h2>
             <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Please fill out this comprehensive questionnaire to help us understand you better and create your personalized meal plan
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <form onSubmit={handleSubmit} className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 border border-emerald-100">
-              <h3 className="text-xl font-bold text-emerald-900 mb-6 flex items-center gap-2">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                Please Fill Out the Questionnaire
-              </h3>
-              <div className="space-y-4">
-                {questionnaireItems.map((item, index) => {
-                  const inputType = getInputType(item, index);
-                  const isTextarea = inputType === "textarea";
-                  return (
-                    <div key={index} className="bg-white rounded-lg p-4 shadow-sm">
-                      <div className="flex flex-col md:flex-row md:items-center gap-3">
-                        <label className="flex items-start gap-3 md:w-1/2 flex-shrink-0">
-                          <span className="flex-shrink-0 w-6 h-6 bg-emerald-600 text-white rounded-full flex items-center justify-center text-xs font-bold mt-1">
-                            {index + 1}
-                          </span>
-                          <span className="text-gray-700 text-sm font-medium">{item}</span>
-                        </label>
-                        <div className="md:flex-1">
-                          {isTextarea ? (
-                            <textarea
-                              value={formData[index] || ""}
-                              onChange={(e) => handleInputChange(index, e.target.value)}
-                              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm"
-                              rows={3}
-                              placeholder="Enter your answer..."
-                            />
-                          ) : (
-                            <input
-                              type={inputType}
-                              value={formData[index] || ""}
-                              onChange={(e) => handleInputChange(index, e.target.value)}
-                              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none text-sm"
-                              placeholder="Enter your answer..."
-                            />
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="mt-8 flex justify-center">
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition duration-300 font-semibold shadow-lg hover:shadow-xl"
-                >
-                  Submit Questionnaire
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-          {/* Required Documents Section */}
-          <section id="documents" className="py-16 bg-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Step 3
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
-              Required Documents & Tests Checklist
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Please prepare the following documents and items before your enrollment
-            </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6">
-              {requiredDocuments.map((doc, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex gap-4 items-start"
-                >
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-xl flex items-center justify-center">
-                    <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 md:p-12 border border-emerald-100">
+              <div className="text-center">
+                <div className="mb-8">
+                  <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div>
-                    <h4 className="font-bold text-emerald-900 mb-1">{doc.name}</h4>
-                    <p className="text-gray-600 text-sm">{doc.description}</p>
-                  </div>
+                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                    Your next step is to book a session with us. You'll then receive a detailed questionnaire that helps us understand your goals and tailor a personalised plan for you, all with complete respect for your privacy.
+                  </p>
+                  <Link
+                    to="/booking"
+                    className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
+                  >
+                    Book Your Session
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </div>
-              ))}
-            </div>
-
-            <div className="mt-8 bg-cyan-50 border border-cyan-200 rounded-xl p-6">
-              <h4 className="font-bold text-cyan-800 mb-3 flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Note
-              </h4>
-              <p className="text-cyan-700 text-sm">
-                After payment, please share pictures of any medications, minerals/vitamins, or over-the-counter medications you are taking. Your first meal plan will be delivered within 4-5 days of making the payment.
-              </p>
+              </div>
             </div>
           </div>
         </div>
