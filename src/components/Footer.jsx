@@ -96,7 +96,7 @@ const Footer = memo(() => {
                     to="/service/weight-loss-nutrition"
                     className="text-black  transition duration-300"
                   >
-                    Weight loss and nutrition
+                    Weight loss and Nutrition
                   </Link>
                 </li>
                 <li>
@@ -104,7 +104,7 @@ const Footer = memo(() => {
                     to="/service/sound-healing"
                     className="text-black  transition duration-300"
                   >
-                    Sound healing
+                    Sound Healing
                   </Link>
                 </li>
                 <li>
@@ -129,7 +129,7 @@ const Footer = memo(() => {
                     to="/service/prenatal-postnatal-nutrition"
                     className="text-black  transition duration-300"
                   >
-                    Prenatal and postnatal nutrition and weightloss
+                    Prenatal and Postnatal Nutrition and Weightloss
                   </Link>
                 </li>
                 <li>
@@ -137,7 +137,7 @@ const Footer = memo(() => {
                     to="/service/menopause-nutrition"
                     className="text-black  transition duration-300"
                   >
-                    Menopause nutrition and guidance
+                    Menopause Nutrition and Guidance
                   </Link>
                 </li>
                 <li>
@@ -145,7 +145,7 @@ const Footer = memo(() => {
                     to="/service/pcos-hormonal-imbalance"
                     className="text-black  transition duration-300"
                   >
-                    Pcos/pcod/hormonal imbalance management
+                    PCOS/PCOD/HORMONAL Imbalance Management
                   </Link>
                 </li>
                 <li>
@@ -153,7 +153,7 @@ const Footer = memo(() => {
                     to="/service/breath-work"
                     className="text-black  transition duration-300"
                   >
-                    Breathe work
+                    Breathe Work
                   </Link>
                 </li>
               </ul>
