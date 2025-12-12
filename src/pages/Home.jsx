@@ -484,26 +484,7 @@ function Home() {
                 Tailored meal plans based on your body type, diet preferences,
                 and lifestyle with balanced nutrition and portion control.
               </p>
-              <Link
-                to="/services"
-                className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
-              >
-                Learn More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </Link>
+              
             </div>
 
             {/* Service 2 */}
@@ -531,26 +512,7 @@ function Home() {
                 Holistic lifestyle coaching combining nutrition, mindfulness,
                 and habit formation for sustainable wellness.
               </p>
-              <Link
-                to="/services"
-                className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
-              >
-                Learn More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </Link>
+             
             </div>
 
             {/* Service 3 */}
@@ -578,26 +540,7 @@ function Home() {
                 Sustainable weight loss programs with daily support, progress
                 tracking, and mindful eating guidance.
               </p>
-              <Link
-                to="/services"
-                className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
-              >
-                Learn More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </Link>
+             
             </div>
 
             {/* Service 4 */}
@@ -625,26 +568,7 @@ function Home() {
                 Weekly consultations on Tuesdays & Thursdays with extended
                 support for quarterly and semi-annual plans.
               </p>
-              <Link
-                to="/services"
-                className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
-              >
-                Learn More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </Link>
+              
             </div>
 
             {/* Service 5 */}
@@ -672,26 +596,7 @@ function Home() {
                 Comprehensive health assessment with BMI testing, lab work
                 guidance, and medical history integration.
               </p>
-              <Link
-                to="/services"
-                className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
-              >
-                Learn More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </Link>
+             
             </div>
 
             {/* Service 6 */}
@@ -719,26 +624,7 @@ function Home() {
                 Daily weight tracking, WhatsApp support during working hours,
                 and continuous guidance for lasting results.
               </p>
-              <Link
-                to="/services"
-                className="text-emerald-700 font-medium hover:text-emerald-900 inline-flex items-center transition-colors"
-              >
-                Learn More
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  ></path>
-                </svg>
-              </Link>
+             
             </div>
           </div>
         </div>
