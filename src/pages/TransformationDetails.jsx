@@ -17,21 +17,13 @@ const TRANSFORMATIONS = [
         detailedStory: "Amazing experience I had with the help of Kusum and Rajwant helped me from day 1. Every plan they created was personalized built around my preferences, routines, and progress. What really stood out was how they emphasized education, they didn’t just tell me what to eat, they explained why.Always available to help you out if you have any doubts regarding the diet.\n\nMuch recommended.",
         weightLost: "30kg",
         duration: "Ongoing",
-        challenges: "Busy schedule in Dubai, lack of time, energy deficiency",
-        solutions: "Personalized nutrition, home workouts, stress management",
+
         beforeAfterImages: {
             before: "/kevin-before.jpg",
             after: "/kevin-after.jpg"
         },
 
-        results: [
-            "30kg weight loss",
-            "Increased energy levels",
-            "Improved sleep quality",
-            "Enhanced self-confidence",
-            "Better relationship with food",
-            "Improved blood biomarkers"
-        ]
+
     },
 
     {
@@ -46,17 +38,9 @@ const TRANSFORMATIONS = [
         detailedStory: "I have always managed to achieve my goals with your program, even within short month timeframes. I find the program very effective, encouraging and it has become my daily lifestyle. ",
         weightLost: "3kg",
         duration: "Ongoing",
-        challenges: "Maintaining consistency in a busy lifestyle",
-        solutions: "Flexible meal planning, habit formation, continuous support",
 
-        results: [
-            "3kg weight loss",
-            "Improved energy levels",
-            "Better lifestyle habits",
-            "Enhanced discipline",
-            "Sustainable wellness routine",
-            "Improved blood biomarkers"
-        ]
+
+
     },
     {
         id: "3",
@@ -69,17 +53,9 @@ const TRANSFORMATIONS = [
         fullDescription: "Simran couldn't thank Kusum and Rajwant enough for their constant guidance and support throughout her journey. Their diet plans were simple, practical, and easy to follow; nothing complicated or unrealistic.",
         detailedStory: "I can’t thank Kusum and Rajwant enough for their constant guidance and support throughout my journey. Their diet plans were simple, practical, and easy to follow; nothing complicated or unrealistic. Working with them has truly made me more mindful of what I eat and has encouraged me to adopt a cleaner, healthier lifestyle. I’ve also become much more motivated to stay active and prioritize my fitness.I couldn’t have asked for better guidance, they have truly helped me build healthier habits that I’ll carry forward.",
         duration: "Ongoing",
-        challenges: "Building mindfulness around eating, staying motivated for fitness",
-        solutions: "Simple diet plans, education on nutrition, motivation and support",
 
-        results: [
-            "8kg weight loss",
-            "Increased mindfulness about eating",
-            "Adopted cleaner lifestyle",
-            "Enhanced motivation for fitness",
-            "Better understanding of nutrition",
-            "Improved blood biomarkers"
-        ]
+
+
     },
     {
         id: "4",
@@ -93,17 +69,9 @@ const TRANSFORMATIONS = [
         detailedStory: "I had a fantastic experience with Kusum and Rajwant over the last few months. I not only reached my weight loss goal but also gained a new perspective on food and nutrition. Kusum's approach is incredibly thorough and detailed and her genuine concern truly makes a difference. The constant support and motivation they offer at every step of the way was very helpful in achieving my goal.",
         weightLost: "10kg",
         duration: "Several months",
-        challenges: "Need for thorough approach, ongoing support and motivation",
-        solutions: "Detailed assessment, personalized plan, regular check-ins, education",
 
-        results: [
-            "10kg weight loss",
-            "New perspective on food and nutrition",
-            "Thorough and detailed approach",
-            "Ongoing support and motivation",
-            "Personalized plan based on individual needs",
-            "Improved blood biomarkers"
-        ]
+
+
     },
     {
         id: "5",
@@ -117,17 +85,8 @@ const TRANSFORMATIONS = [
         detailedStory: "super. Actually, put me on the right track after being on YO YO diets all my life ",
         weightLost: "10kg",
         duration: "Ongoing",
-        challenges: "Breaking the yo-yo dieting cycle, achieving sustainable results",
-        solutions: "Gradual changes, habit formation, education, consistency focus",
 
-        results: [
-            "10kg weight loss",
-            "Breaking the yo-yo dieting cycle",
-            "Sustainable results",
-            "Healthier relationship with food",
-            "Confidence in making healthy choices",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "6",
@@ -141,17 +100,7 @@ const TRANSFORMATIONS = [
         detailedStory: "I put on a significant amount of weight after I had my son and really struggled to lose it. After trying multiple diets and exercise regimes I started to work with Soul Fuel Wellness. I lost 12 kgs in as many weeks and the best part was how easy it felt. The diet plans were sustainable, easy to follow and included favorite food groups and cheat meals.  Kusum and Rajwant are exceptionally supportive and explained reasons behind all the plans and rules which make it much easier to engage with. They were approachable and able to offer advice at every step of the journey, including last-minute questions when I had a change of plan. They helped me continue to lose weight through holidays, work dinners and social events. Overall, it has been a journey not only of weight loss but also learning. I feel I better understand how to engage with food and maintain a healthy balance while continuing to enjoy my lifestyle. Cannot thank both of you enough!",
         weightLost: "12kg",
         duration: "12 weeks",
-        challenges: "Post-pregnancy weight gain, multiple failed diets, maintaining lifestyle",
-        solutions: "Sustainable diet plans, favorite foods inclusion, flexible approach, education",
 
-        results: [
-            "12kg weight loss",
-            "Sustainable and easy to follow plans",
-            "Inclusion of favorite foods",
-            "Support through all life events",
-            "Better understanding of food and balance",
-            "Improved blood biomarkers"
-        ]
     },
     {
         id: "7",
@@ -165,20 +114,12 @@ const TRANSFORMATIONS = [
         detailedStory: "Started on 10th Feb 2025 .. did it for 4months It took me a while to finally start the diet… I honestly thought I'd never be able to eat my favorite foods again!\n\nBut you proved me so wrong! I ate everything I love and still lost weight 😍\n\nYou taught me how to be healthy, eat wisely, and enjoy food in the right proportions.\n\nLife has completely changed for me — from my eating habits to how I look and feel. I've never felt or looked better!\n\nThank you so much Kusum and Rajwant for your constant support, motivation, and encouragement 💕\n\nTruly, the best decision of my life was to join you both!",
         weightLost: "17.5kg",
         duration: "4 months",
-        challenges: "Fear of giving up favorite foods, delay in starting",
-        solutions: "Portion control education, balanced approach, motivation, comprehensive wellness",
+
         beforeAfterImages: {
             before: "/dhara-before.jpeg",
             after: "/dhara-after.jpeg"
         },
-        results: [
-            "17.5kg weight loss",
-            "Enjoyment of favorite foods",
-            "Complete lifestyle change",
-            "Improved appearance and feelings",
-            "Sustainable healthy habits",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "8",
@@ -192,16 +133,8 @@ const TRANSFORMATIONS = [
         detailedStory: "I'm incredibly grateful for the amazing support and expertise Kusum and Rajwant provided throughout my weight-loss journey. From day one, they took the time to understand my habits, preferences, and goals, creating a plan that felt realistic, sustainable, and tailored specifically to me.\n\nTheir encouragement kept me motivated, and their practical advice made healthy eating feel simple and achievable—even on the toughest days. Thanks to their guidance, I not only lost weight but also gained a much healthier relationship with food. I was able to reverse my diabetes and get all my parameters in line.\n\nIf you're looking for a knowledgeable, compassionate, and results-driven team, I can't recommend them highly enough. Their work truly made a difference in my life!",
         weightLost: "22.3 kg",
         duration: "Ongoing",
-        challenges: "Diabetes, habits, sustainability",
-        solutions: "Tailored nutrition, ongoing support, realistic planning",
-        results: [
-            "22.3kg weight loss",
-            "Reversed diabetes",
-            "Better relationship with food",
-            "Improved health parameters",
-            "Improved blood biomarkers"
 
-        ]
+
     },
     {
         id: "9",
@@ -215,15 +148,7 @@ const TRANSFORMATIONS = [
         detailedStory: "Choosing to work with Kusum wasn't just about finding the right person to help me on my weight loss journey, I felt I found a lifelong friend and guide in her. The impact of her guidance has been truly life changing, I'm amazed at how she trained my brain to make portion controlled healthier choices even when I'm in social settings. I truly feel I'm in best shape of my life today and I only have Kusum to thank for the confidence and knowledge to make that a reality. Thank you Kusum for everything.",
         weightLost: "23 kg",
         duration: "Ongoing",
-        challenges: "Portion control, lifestyle balance",
-        solutions: "Mindset training, habit formation, tailored plans",
-        results: [
-            "23kg weight loss",
-            "Better relationship with food",
-            "Mindful eating habits",
-            "Increased confidence",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "10",
@@ -237,19 +162,13 @@ const TRANSFORMATIONS = [
         detailedStory: "I am 24 years old, and for many years I struggled with my weight. I was a slim child, but from my late teens I started gaining weight steadily. Things became difficult when I was studying abroad, and by the time I returned to Dubai after completing my studies, I had reached almost 120 kilos. It was worrying for me and for my family.\n\nI tried exercise and different routines, but nothing really helped. Through one of my mother's colleagues, we heard about Kusum and Rajwant, and I decided to give it a try. Kusum asked me to complete a few tests and then guided me through a personalised lifestyle plan. I realised that many of the foods I was eating were not supporting my body or my emotional balance.\n\nI followed the plan with commitment. I started at 120 kilos, and today I am at 85 kilos. This 34-kilo change has transformed my confidence, my health, and the way I feel about myself. My mother also followed the program and lost around 8 kilos, which shows how effective their guidance is.\n\nI am truly grateful to Kusum and Rajwant for their discipline, support, and consistent follow-ups. This journey has changed my life, and I would genuinely recommend them to anyone who wants a healthier body and a healthier mind.",
         weightLost: "28.4 kg",
         duration: "Ongoing",
-        challenges: "Emotional eating, lifestyle habits",
-        solutions: "Personalized plan, deep assessment, consistent follow-ups",
+
         beforeAfterImages: {
             before: "/satvik-before.jpeg",
             after: "/satvik-after.jpeg"
         },
-        results: [
-            "28.4kg weight loss",
-            "Improved confidence",
-            "Better emotional balance",
-            "Healthier lifestyle habits",
-            "Improved blood biomarkers"
-        ]
+
+
     },
     {
         id: "11",
@@ -263,15 +182,7 @@ const TRANSFORMATIONS = [
         detailedStory: "Amid lots of changes in the body is a belly fat that becomes a peri-menopause issue. As a woman going through that , I knew I had to loose slow and consistent.\n\nKusum and Rajwant understood that narrative and kept me craving free , yet nutrient surplus. They made loosing the wholesome way possible.  Grateful to them always .",
         weightLost: "9 kg",
         duration: "Ongoing",
-        challenges: "Perimenopause, cravings, hormonal changes",
-        solutions: "Balanced diet, habit management, personalized nutrition",
-        results: [
-            "9kg weight loss",
-            "Craving-free plan",
-            "Better hormonal balance",
-            "Improved energy",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "12",
@@ -285,14 +196,7 @@ const TRANSFORMATIONS = [
         detailedStory: "I had a fantastic experience with Kusum and her team. The nutritional advice she had provided was original, new and tailored to my needs. The plan was easy to follow and made me feel full all day! I highly recommend her to everyone 🌸",
         weightLost: "5 kg",
         duration: "Ongoing",
-        challenges: "Finding sustainable nutrition",
-        solutions: "Tailored plan, simple guidelines",
-        results: [
-            "5kg weight loss",
-            "Easy to follow plan",
-            "Feeling full all day",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "13",
@@ -306,14 +210,7 @@ const TRANSFORMATIONS = [
         detailedStory: "6 month course to achieve my best physique for my wedding. Touch in the beginning but gets better after 2-3 weeks. My progress helped me increase my confidence as well. I looked great and felt great.",
         weightLost: "8 kg",
         duration: "6 months",
-        challenges: "Consistency, pre-wedding pressure",
-        solutions: "Structured planning, accountability, flexible diet",
-        results: [
-            "8kg weight loss",
-            "Better physique",
-            "Improved confidence",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "14",
@@ -327,18 +224,12 @@ const TRANSFORMATIONS = [
         detailedStory: "Starting my health journey with Kusum was one of the best decisions I've ever made. What made it even better was the daily check-ins, which kept me on track and motivated. The meal plan was also flexible—if I didn’t like a certain food or ingredient, Kusum and her team would make adjustments to suit my preferences, ensuring I always enjoyed what I was eating. There were no fad diets—just simple portion control, exercise, and movement, which made it all feel sustainable. With Kusum’s support and constant communication, staying on track was easier than I expected. Highly recommend!",
         weightLost: "11.45 kg",
         duration: "Ongoing",
-        challenges: "Consistency, food preferences",
-        solutions: "Flexible meal plan, portion control, daily support",
+
         beforeAfterImages: {
             before: "/anndie-before.jpeg",
             after: "/andie-after.jpeg"
         },
-        results: [
-            "11.45kg weight loss",
-            "Improved consistency",
-            "Better lifestyle habits",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "15",
@@ -352,14 +243,7 @@ const TRANSFORMATIONS = [
         detailedStory: "Working with Kusum has been one of the best things I have ever done for myself. Not only did I lose the weight that refused to come off no matter what I tried, I was also able to understand what foods worked for me and what didn’t. Under her guidance I was able see a pattern and understand certain foods caused inflammation in my body. She always takes the time to answer all your questions patiently. Not only do I feel great after working with her I also understand my body like never before. I highly recommend Kusum and her team.",
         weightLost: "12 kg",
         duration: "Ongoing",
-        challenges: "Inflammation, stubborn weight",
-        solutions: "Food mapping, education, personalized guidance",
-        results: [
-            "12kg weight loss",
-            "Reduced inflammation",
-            "Better understanding of body",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "16",
@@ -373,14 +257,7 @@ const TRANSFORMATIONS = [
         detailedStory: "A 6-month program helped me get into the best shape for my wedding. Tough initially but became easier after a few weeks.",
         weightLost: "8 kg",
         duration: "6 months",
-        challenges: "Wedding deadline",
-        solutions: "Structured routine, accountability",
-        results: [
-            "8kg weight loss",
-            "Improved confidence",
-            "Better physique",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "17",
@@ -394,14 +271,7 @@ const TRANSFORMATIONS = [
         detailedStory: "I gained weight due to cortisol and couldn’t lose it. Kusum studied my blood tests and lifestyle deeply. Everything was designed for my specific needs.",
         weightLost: "11 kg",
         duration: "2 months",
-        challenges: "Cortisol issues, past failures",
-        solutions: "Lifestyle analysis, personalized nutrition, constant support",
-        results: [
-            "11kg weight loss",
-            "Better hormonal balance",
-            "Improved health",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "18",
@@ -415,18 +285,12 @@ const TRANSFORMATIONS = [
         detailedStory: "Honestly since I have thyroid, I’ve always been working out and I have tried lots and lots of other diets. Kusum is so diligent, she used to keep checking up on me and keeping me accountable, that really helped a lot and I lost over 20 kilos right before my wedding.",
         weightLost: "21 kg",
         duration: "Ongoing",
-        challenges: "Thyroid, multiple failed diets",
-        solutions: "Accountability, thyroid-friendly planning",
+
         beforeAfterImages: {
             before: "/prerna-before.jpeg",
             after: "/prerna-after.jpeg"
         },
-        results: [
-            "21kg weight loss",
-            "Improved energy",
-            "Better hormonal balance",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "19",
@@ -440,13 +304,7 @@ const TRANSFORMATIONS = [
         detailedStory: "I put on a significant amount of weight after I had my son and really struggled to lose it. After trying multiple diets and exercise regimes I started to work with Soul Fuel Wellness. I lost 12kg in as many weeks and the best part was how easy it felt. The diet plans were sustainable, easy to follow and included favourite food groups and cheat meals.  Kusum and Rajwant are exceptionally supportive and explained reasons behind all the plans and rules which makes it much easier to engage with. They were approachable and able to offer advice at every step of the journey, including last minute questions when I had a change of plan. They helped me continue to lose weight through holidays, work dinners and social events. Overall, it has been a journey not only of weight loss, but also learning. I feel I better understand how to engage with food and maintain a healthy balance while continuing to enjoy my lifestyle. Cannot thank both of you enough",
         weightLost: "13 kg",
         duration: "12 weeks",
-        challenges: "Post-pregnancy weight, failed diets",
-        solutions: "Simple sustainable plans, flexibility, constant support",
-        results: [
-            "13kg weight loss",
-            "Better lifestyle balance",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "20",
@@ -460,14 +318,7 @@ const TRANSFORMATIONS = [
         detailedStory: "I was 64 kgs before starting, and in 4 months I lost 14 kgs in a slow and easy manner.\n\nThere was no starving or outlandish meal ideas .\n\nThe plan was curated to my likes and I was able to eat everything I like and still the lose weight .\n\nThe best part is it instilled a sense of discipline and respect towards my own body and I was in tune with myself .\n\nAlong with physical health my mental health also improved greatly and  I had more energy to work productively .\n\nThis diet plan is not just a temporary fix , it is sustainable lifestyle modification!",
         weightLost: "14 kg",
         duration: "4 months",
-        challenges: "Discipline, mindset",
-        solutions: "Meal customization, balance, habit formation",
-        results: [
-            "14kg weight loss",
-            "Better mental health",
-            "More energy",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "21",
@@ -482,18 +333,12 @@ const TRANSFORMATIONS = [
 
         weightLost: "16 kg",
         duration: "6 months",
-        challenges: "Postpartum weight, low energy",
-        solutions: "Right food, right quantity, lifestyle reset",
+
         beforeAfterImages: {
             before: "/neha-before.jpeg",
             after: "/neha-after.jpeg"
         },
-        results: [
-            "16kg weight loss",
-            "Improved energy",
-            "Better mood",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "22",
@@ -507,14 +352,8 @@ const TRANSFORMATIONS = [
         detailedStory: "My journey has been a wonderful experience. Rather than focusing solely on weight reduction, the team made me aware of the fundamentals of a healthy, balanced diet and, most importantly, the critical need to stay active.\n\nI am grateful to Ms. Kusum and Ms. Rajwant, who were incredibly supportive at every step. They were always there to answer my queries, and they understood the challenges I faced in adapting to this new lifestyle. They were supported in getting me up to speed on the dietary changes—guiding me through the restrictions and, more importantly, teaching me how to eat the right foods at the right time and in the right quantities.\n\nA simple yet highly effective method for me was incorporating NEAT (Non-Exercise Activity Thermogenesis), which helped me significantly increase my daily energy expenditure.\n\n",
         weightLost: "18.5 kg",
         duration: "1 year",
-        challenges: "Undisciplined diet, lifestyle habits",
-        solutions: "NEAT, education, consistent guidance",
-        results: [
-            "18.5kg weight loss",
-            "Sustainable lifestyle",
-            "Better dietary awareness",
-            "Improved blood biomarkers"
-        ]
+
+
     },
     {
         id: "23",
@@ -528,14 +367,7 @@ const TRANSFORMATIONS = [
         detailedStory: "I got introduced to Kusum when I was at my lowest physically. Was 90 kg and having high BP and started medication for the same. Over the course of 10 months, I dropped 27 kg and also was able to stop my BP medicine as my BP normalized. It was a beautiful experience with Kusum being there with me at every step. The food plan she gave was easy to follow and though I am a foodie, I was not deprived of what I wanted to eat. She curated the diet based on what I wanted to eat. She would be there with me daily on WhatsApp and weekly on calls to motivate, encourage and cheer me on. With her endless support I was able to achieve my weight loss goals. I have and will continue to recommend Kusum and her team to everyone who wants to lose weight.",
         weightLost: "27 kg",
         duration: "10 months",
-        challenges: "High BP, cravings, consistency",
-        solutions: "Tailored meal plan, daily accountability",
-        results: [
-            "27kg weight loss",
-            "Stopped BP medication",
-            "Improved overall health",
-            "Improved blood biomarkers"
-        ]
+
     },
     {
         id: "24",
@@ -549,14 +381,7 @@ const TRANSFORMATIONS = [
         detailedStory: "My journey with Kusum and the entire team has been nothing short of spectacular. I began my first phase in January 2024 and completed it in July 2024, during which I lost over 25 kg. The weekly calls and daily interactions helped me stay accountable and follow my plan consistently.\n\nWhat truly sets the team apart is how they plan everything around your schedule, events, and lifestyle, ensuring you can stay on track no matter how your week looks. I now follow a structured plan with the team for six months each year to make sure I stay aligned with my fitness goals.\n\n",
         weightLost: "25 kg",
         duration: "6 months",
-        challenges: "Lifestyle, long-term consistency",
-        solutions: "Yearly structured approach, personalized scheduling",
-        results: [
-            "25kg weight loss",
-            "Consistency through events",
-            "Long-term sustainability",
-            "Improved blood biomarkers"
-        ]
+
     }
 
 ];
@@ -692,7 +517,7 @@ const TransformationDetails = () => {
                                                 alt={`${transformation.name} - Before`}
                                                 className="w-full h-[400px] object-contain"
                                             />
-                                           
+
                                         </div>
                                     </div>
                                     <div className="relative group flex-1 max-w-[300px]">
@@ -703,7 +528,7 @@ const TransformationDetails = () => {
                                                 alt={`${transformation.name} - After`}
                                                 className="w-full h-[400px] object-contain"
                                             />
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -720,36 +545,6 @@ const TransformationDetails = () => {
                             <div className="prose max-w-none text-gray-600">
                                 {transformation.detailedStory.split('\n\n').map((paragraph, index) => (
                                     <p key={index} className="mb-4">{paragraph}</p>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="mb-12">
-                            <h2 className="text-2xl font-bold text-emerald-900 mb-6">Challenges & Solutions</h2>
-                            <div className="grid md:grid-cols-2 gap-8">
-                                <div className="bg-amber-50 rounded-xl p-6 border border-amber-100">
-                                    <h3 className="text-lg font-bold text-amber-800 mb-3">Main Challenges</h3>
-                                    <p className="text-amber-700">{transformation.challenges}</p>
-                                </div>
-                                <div className="bg-emerald-50 rounded-xl p-6 border border-emerald-100">
-                                    <h3 className="text-lg font-bold text-emerald-800 mb-3">Our Solutions</h3>
-                                    <p className="text-emerald-700">{transformation.solutions}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="mb-12">
-                            <h2 className="text-2xl font-bold text-emerald-900 mb-6">Key Results</h2>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                {transformation.results.map((result, index) => (
-                                    <div key={index} className="flex items-start">
-                                        <div className="flex-shrink-0 mt-1">
-                                            <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                                            </svg>
-                                        </div>
-                                        <p className="ml-3 text-gray-600">{result}</p>
-                                    </div>
                                 ))}
                             </div>
                         </div>
