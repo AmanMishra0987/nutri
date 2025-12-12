@@ -53,7 +53,7 @@ const AboutPage = () => {
                 <img
                   src={IMAGES.teamImage}
                   alt="Kusum Rana - Founder"
-                  className="w-full h-[600px] object-cover transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>
