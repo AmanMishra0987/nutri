@@ -85,10 +85,7 @@ const GalleryPage = () => {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white">
               Wellness Gallery
             </h1>
-            <p className="text-xl text-emerald-100 max-w-3xl mx-auto mt-4">
-              A glimpse into our wellness events, workshops, and community
-              activities. See the joy and transformation in action.
-            </p>
+           
           </div>
         </div>
       </section>

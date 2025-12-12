@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { SOCIAL_MEDIA } from "../constants/socialMedia";
+// import { SOCIAL_MEDIA } from "../constants/socialMedia";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -336,7 +336,7 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="flex">
+                  {/* <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                         <svg
@@ -369,7 +369,7 @@ const ContactPage = () => {
                         Healthville, HV 12345
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex">
                     <div className="flex-shrink-0">
@@ -399,7 +399,7 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-10 pt-6 border-t border-white/20">
+                {/* <div className="mt-10 pt-6 border-t border-white/20">
                   <h4 className="text-lg font-bold mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
                     {SOCIAL_MEDIA.map((social) => (
@@ -418,7 +418,7 @@ const ContactPage = () => {
                       </a>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

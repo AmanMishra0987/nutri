@@ -986,7 +986,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="mt-10">
+                {/* <div className="mt-10">
                   <h4 className="text-lg font-bold text-emerald-900 mb-4">
                     Follow Us
                   </h4>
@@ -1007,7 +1007,7 @@ function Home() {
                       </a>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

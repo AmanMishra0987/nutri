@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
-import { SOCIAL_MEDIA } from "../constants/socialMedia";
+// import { SOCIAL_MEDIA } from "../constants/socialMedia";
 import logoFooter from "../assets/yellowlo.png";
 
 const Footer = memo(() => {
@@ -22,7 +22,7 @@ const Footer = memo(() => {
                 Empowering individuals to achieve optimal health through
                 personalized wellness solutions.
               </p>
-              <div className="flex justify-center space-x-4">
+              {/* <div className="flex justify-center space-x-4">
                 {SOCIAL_MEDIA.map((social) => (
                   <a
                     key={social.name}
@@ -38,7 +38,7 @@ const Footer = memo(() => {
                     </svg>
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div>
