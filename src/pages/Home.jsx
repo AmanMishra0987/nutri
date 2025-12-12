@@ -16,7 +16,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "30kg",
     shortSummary: "Lost 30kg with personalized nutrition coaching",
-    shortDescription: "Kevin achieved remarkable results through our personalized wellness program in Dubai."
+    shortDescription: "Amazing experience I had with the help of Kusum and Rajwant helped me from day 1."
   },
   {
     id: "2",
@@ -25,7 +25,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "3kg",
     shortSummary: "Achieved goals in short timeframes",
-    shortDescription: "Priyanka found our program effective and encouraging, making it her daily lifestyle."
+    shortDescription: "I have always managed to achieve my goals with your program, even within short month timeframes."
   },
   {
     id: "3",
@@ -34,7 +34,7 @@ const TRANSFORMATIONS = [
     location: "Dubai",
     weightLost: "8kg",
     shortSummary: "Lost 8kg with constant guidance",
-    shortDescription: "Simran became more mindful of what she eats and adopted a cleaner, healthier lifestyle."
+    shortDescription: "I can’t thank Kusum and Rajwant enough for their constant guidance and support throughout my journey. Their diet plans were simple, practical."
   },
   {
     id: "4",
