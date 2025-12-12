@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import ServiceDetail from "../ServiceDetail";
+
 import { IMAGES } from "../constants/images";
 import { SOCIAL_MEDIA } from "../constants/socialMedia";
 import Header from "../components/Header";
@@ -1021,7 +1021,7 @@ function Home() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/service/:serviceName" element={<ServiceDetail />} />
+      
       <Route
         path="/contact"
         element={

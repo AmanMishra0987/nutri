@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -15,6 +15,7 @@ const EnrollmentPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("intro");
   const [formData, setFormData] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -294,12 +295,35 @@ const EnrollmentPage = () => {
       <Header isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-600 to-cyan-600 relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-r from-emerald-600 to-cyan-600 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yIDItNCAyLTZzLTItNC0yLTYgMi00IDItNi0yLTQtMi02bTAgMjRjMC0yIDItNCAyLTZzLTItNC0yLTYgMi00IDItNi0yLTQtMi02Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mt-10 mb-6">
-            How to Enroll
-          </h1>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* Back Button */}
+          <div className="mb-8">
+            <button
+              onClick={() => navigate(-1)}
+              className="flex items-center text-white hover:text-emerald-100 transition duration-300 group bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm"
+            >
+              <svg
+                className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              <span className="font-medium">Back</span>
+            </button>
+          </div>
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
+              How to Enroll
+            </h1>
           <p className="text-xl text-emerald-100 max-w-3xl mx-auto mb-8">
             Your complete guide to starting your sustainable weight loss journey with Soul Fuel Wellness
           </p>
@@ -316,6 +340,7 @@ const EnrollmentPage = () => {
             >
               Learn More
             </button>
+          </div>
           </div>
         </div>
       </section>

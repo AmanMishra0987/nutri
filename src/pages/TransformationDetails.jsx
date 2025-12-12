@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -564,6 +564,7 @@ const TRANSFORMATIONS = [
 const TransformationDetails = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const { id } = useParams();
+    const navigate = useNavigate();
     const transformation = TRANSFORMATIONS.find(t => t.id === id);
 
     // Handle scroll to change navbar background on scroll
@@ -593,14 +594,38 @@ const TransformationDetails = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
             <Header isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
-            <section className="py-20 bg-gradient-to-r from-emerald-600 to-cyan-600">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mt-10">
-                        {transformation.name}'s Transformation Journey
-                    </h1>
-                    <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
-                        Discover how {transformation.name} achieved remarkable results through our personalized wellness program.
-                    </p>
+            <section className="pt-32 pb-20 bg-gradient-to-r from-emerald-600 to-cyan-600">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    {/* Back Button */}
+                    <div className="mb-8">
+                        <button
+                            onClick={() => navigate(-1)}
+                            className="flex items-center text-white hover:text-emerald-100 transition duration-300 group bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm"
+                        >
+                            <svg
+                                className="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M15 19l-7-7 7-7"
+                                />
+                            </svg>
+                            <span className="font-medium">Back</span>
+                        </button>
+                    </div>
+                    <div className="text-center">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-white">
+                            {transformation.name}'s Transformation Journey
+                        </h1>
+                        <p className="text-xl text-emerald-100 max-w-3xl mx-auto mt-4">
+                            Discover how {transformation.name} achieved remarkable results through our personalized wellness program.
+                        </p>
+                    </div>
                 </div>
             </section>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

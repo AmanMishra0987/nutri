@@ -93,7 +93,7 @@ const Footer = memo(() => {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    to="#"
+                    to="/service/weight-loss-nutrition"
                     className="text-black  transition duration-300"
                   >
                     Weight loss and nutrition
@@ -101,7 +101,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/service/sound-healing"
                     className="text-black  transition duration-300"
                   >
                     Sound healing
@@ -109,7 +109,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/service/yoga"
                     className="text-black  transition duration-300"
                   >
                     Yoga
@@ -118,7 +118,7 @@ const Footer = memo(() => {
                 
                 <li>
                   <Link
-                    to="#"
+                    to="/service/pilates"
                     className="text-black  transition duration-300"
                   >
                     Pilates
@@ -126,7 +126,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/service/prenatal-postnatal-nutrition"
                     className="text-black  transition duration-300"
                   >
                     Prenatal and postnatal nutrition and weightloss
@@ -134,7 +134,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/service/menopause-nutrition"
                     className="text-black  transition duration-300"
                   >
                     Menopause nutrition and guidance
@@ -142,7 +142,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/service/pcos-hormonal-imbalance"
                     className="text-black  transition duration-300"
                   >
                     Pcos/pcod/hormonal imbalance management
@@ -150,7 +150,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="#"
+                    to="/service/breath-work"
                     className="text-black  transition duration-300"
                   >
                     Breathe work
