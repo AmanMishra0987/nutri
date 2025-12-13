@@ -13,8 +13,7 @@ export const IMAGES = {
     "/nut1.jpeg",
     "/nut2.jpeg",
     "/nut3.jpeg",
-    "/nut4.jpeg",
-    "/nut5.jpeg"
+    
   ],
   
   // Testimonial images
