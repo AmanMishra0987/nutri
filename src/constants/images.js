@@ -10,7 +10,11 @@ export const IMAGES = {
   
   // Gallery images - Nutrition, healthy eating, and weight loss related
  gallery: [
-   
+    "/nut1.jpeg",
+    "/nut2.jpeg",
+    "/nut3.jpeg",
+    "/nut4.jpeg",
+    "/nut5.jpeg"
   ],
   
   // Testimonial images
