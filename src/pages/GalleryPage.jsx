@@ -133,11 +133,7 @@ const GalleryPage = () => {
                         loading="lazy"
                         decoding="async"
                       />
-                      <div className="p-4 bg-white">
-                        <p className="text-gray-600 text-sm">
-                          {category.name} - Image {index + 1}
-                        </p>
-                      </div>
+                      
                     </div>
                   ))}
                 </div>
