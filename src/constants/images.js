@@ -10,12 +10,12 @@ export const IMAGES = {
   
   // Gallery images - Nutrition, healthy eating, and weight loss related
   gallery: [
-    "soul1.jpeg",
-    "soul2.jpeg",
-    "soul3.jpeg",
-    "soul4.mp4",
-    "soul5.mp4",
-    "soul6.mp4"
+    "/soul1.jpeg",
+    "/soul2.jpeg",
+    "/soul3.jpeg",
+    "/soul4.mp4",
+    "/soul5.mp4",
+    "/soul6.mp4"
   ],
   
   
