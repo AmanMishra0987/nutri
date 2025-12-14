@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import axios from "axios";
 
 import { IMAGES } from "../constants/images";
 import { SOCIAL_MEDIA } from "../constants/socialMedia";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../App.css";
+
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 // Sample transformation data for home page cards
 const TRANSFORMATIONS = [
@@ -235,6 +238,16 @@ const TRANSFORMATIONS = [
 function Home() {
   const [showAll, setShowAll] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  
+  // Contact form state (for home page contact section)
+  const [contactFormData, setContactFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [contactFormErrors, setContactFormErrors] = useState({});
+  const [contactFormLoading, setContactFormLoading] = useState(false);
 
   // Function to extract numeric weight value for sorting
   const getWeightValue = (weightLost) => {
@@ -262,6 +275,77 @@ function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Handle contact form input changes
+  const handleContactFormChange = (e) => {
+    const { name, value } = e.target;
+    setContactFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    // Clear error when user starts typing
+    if (contactFormErrors[name]) {
+      setContactFormErrors((prev) => ({
+        ...prev,
+        [name]: "",
+      }));
+    }
+  };
+
+  // Handle contact form submission
+  const handleContactFormSubmit = async (e) => {
+    e.preventDefault();
+    setContactFormLoading(true);
+
+    // Validate form
+    const newErrors = {};
+    if (!contactFormData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    if (!contactFormData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactFormData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+    if (!contactFormData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setContactFormErrors(newErrors);
+      setContactFormLoading(false);
+      return;
+    }
+
+    try {
+      const response = await axios.post(`${API_BASE_URL}/api/contact`, {
+        name: contactFormData.name,
+        email: contactFormData.email,
+        subject: contactFormData.subject || "Contact Form Submission",
+        message: contactFormData.message,
+      });
+
+      if (response.data.success) {
+        alert("Thank you for your message! We'll get back to you within 24 hours.");
+        // Reset form
+        setContactFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      alert(
+        error.response?.data?.message ||
+          "Failed to send message. Please try again later."
+      );
+    } finally {
+      setContactFormLoading(false);
+    }
+  };
 
   const Home = () => (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
@@ -325,11 +409,11 @@ function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gray-100 flex items-center justify-center">
                 <img
                   src={IMAGES.teamImage}
                   alt="Kusum Rana - Founder"
-                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-[600px] object-contain transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>
@@ -637,18 +721,33 @@ function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {IMAGES.gallery.slice(0, 3).map((imageUrl, index) => (
-              <div
-                key={index}
-                className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
-              >
-                <img
-                  src={imageUrl}
-                  alt={`Wellness gallery image ${index + 1}`}
-                  className="w-full h-64 object-cover"
-                />
-              </div>
-            ))}
+            {IMAGES.gallery.slice(0, 3).map((mediaUrl, index) => {
+              const isVideo = mediaUrl.endsWith('.mp4') || mediaUrl.endsWith('.webm') || mediaUrl.endsWith('.mov');
+              return (
+                <div
+                  key={index}
+                  className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-gray-100 flex items-center justify-center min-h-[256px]"
+                >
+                  {isVideo ? (
+                    <video
+                      src={mediaUrl}
+                      className="w-full h-full min-h-[256px] object-contain"
+                      muted
+                      loop
+                      playsInline
+                    />
+                  ) : (
+                    <img
+                      src={mediaUrl}
+                      alt={`Wellness gallery image ${index + 1}`}
+                      className="w-full h-full min-h-[256px] object-contain"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           <div className="text-center mt-12">
@@ -677,7 +776,7 @@ function Home() {
 
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div>
-              <form className="space-y-6">
+              <form onSubmit={handleContactFormSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-gray-700 mb-2">
                     Full Name
@@ -685,9 +784,17 @@ function Home() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    name="name"
+                    value={contactFormData.name}
+                    onChange={handleContactFormChange}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 ${
+                      contactFormErrors.name ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="Your name"
                   />
+                  {contactFormErrors.name && (
+                    <p className="text-red-500 text-sm mt-1">{contactFormErrors.name}</p>
+                  )}
                 </div>
 
                 <div>
@@ -697,9 +804,17 @@ function Home() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    name="email"
+                    value={contactFormData.email}
+                    onChange={handleContactFormChange}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 ${
+                      contactFormErrors.email ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="your.email@example.com"
                   />
+                  {contactFormErrors.email && (
+                    <p className="text-red-500 text-sm mt-1">{contactFormErrors.email}</p>
+                  )}
                 </div>
 
                 <div>
@@ -709,6 +824,9 @@ function Home() {
                   <input
                     type="text"
                     id="subject"
+                    name="subject"
+                    value={contactFormData.subject}
+                    onChange={handleContactFormChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     placeholder="How can we help?"
                   />
@@ -720,17 +838,26 @@ function Home() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    value={contactFormData.message}
+                    onChange={handleContactFormChange}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 ${
+                      contactFormErrors.message ? "border-red-500" : "border-gray-300"
+                    }`}
                     placeholder="Your message here..."
                   ></textarea>
+                  {contactFormErrors.message && (
+                    <p className="text-red-500 text-sm mt-1">{contactFormErrors.message}</p>
+                  )}
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-emerald-600 text-white px-6 py-4 rounded-lg hover:bg-emerald-700 transition duration-300 font-medium text-lg"
+                  disabled={contactFormLoading}
+                  className="w-full bg-emerald-600 text-white px-6 py-4 rounded-lg hover:bg-emerald-700 transition duration-300 font-medium text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {contactFormLoading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
