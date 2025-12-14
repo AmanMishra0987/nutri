@@ -9,12 +9,15 @@ export const IMAGES = {
   myJourneyImage: "/my-journey.jpg", // Before/After transformation image
   
   // Gallery images - Nutrition, healthy eating, and weight loss related
- gallery: [
-    "/nut1.jpeg",
-    "/nut2.jpeg",
-    "/nut3.jpeg",
-    
+  gallery: [
+    "soul1.jpeg",
+    "soul2.jpeg",
+    "soul3.jpeg",
+    "soul4.mp4",
+    "soul5.mp4",
+    "soul6.mp4"
   ],
+  
   
   // Testimonial images
   testimonials: [
