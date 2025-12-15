@@ -21,7 +21,8 @@ const BookingPage = () => {
     name: "",
     phone: "",
     email: "",
-    
+    subject: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -66,6 +67,14 @@ const BookingPage = () => {
       newErrors.email = "Please enter a valid email address";
     }
 
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -86,7 +95,8 @@ const BookingPage = () => {
         name: "",
         phone: "",
         email: "",
-        
+        subject: "",
+        message: "",
       });
     }
   };
@@ -230,10 +240,56 @@ const BookingPage = () => {
                     className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors ${
                       errors.email ? "border-red-500" : "border-gray-300"
                     }`}
-                    placeholder="Enter your email address"
+                    placeholder="your.email@example.com"
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                  )}
+                </div>
+
+                <div className="mt-6">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Subject *
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors ${
+                      errors.subject ? "border-red-500" : "border-gray-300"
+                    }`}
+                    placeholder="How can we help?"
+                  />
+                  {errors.subject && (
+                    <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
+                  )}
+                </div>
+
+                <div className="mt-6">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    Message *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={6}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-y ${
+                      errors.message ? "border-red-500" : "border-gray-300"
+                    }`}
+                    placeholder="Your message here..."
+                  />
+                  {errors.message && (
+                    <p className="text-red-500 text-sm mt-1">{errors.message}</p>
                   )}
                 </div>
               </div>

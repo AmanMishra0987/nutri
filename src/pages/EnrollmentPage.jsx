@@ -492,7 +492,7 @@ const EnrollmentPage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  to="/booking"
+                  to="/contact"
                   className="bg-white text-emerald-600 px-8 py-4 rounded-full hover:bg-emerald-50 transition duration-300 font-semibold text-lg shadow-lg"
                 >
                   Book Your Consultation
