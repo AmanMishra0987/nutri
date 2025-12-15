@@ -285,7 +285,7 @@ function Home() {
 
         {/* Hero Content ON video */}
         <div className={`relative z-10 w-full h-full flex transition-all duration-300 ${isScrolled ? 'items-start pt-[140px]' : 'items-center pt-[100px]'}`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{marginBottom: '100px'}}>
 
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
 

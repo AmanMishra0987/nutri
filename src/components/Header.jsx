@@ -52,7 +52,7 @@ const Header = memo(({ isScrolled, setIsScrolled }) => {
                 <img
                   src={isScrolled ? logoDark : logoFooter}
                   alt="Logo"
-                  className="w-20 h-auto transition-all duration-300 cursor-pointer"
+                  className="w-20 h-auto transition-all duration-300 cursor-pointer pt-4"
                 />
               </Link>
             </div>
