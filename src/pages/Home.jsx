@@ -620,9 +620,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      
+      </section> 
       <section id="gallery" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -649,6 +647,7 @@ function Home() {
                       src={mediaUrl}
                       className="w-full h-full min-h-[180px] object-contain"
                       muted
+                      autoPlay
                       loop
                       playsInline
                     />

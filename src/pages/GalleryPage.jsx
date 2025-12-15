@@ -167,6 +167,7 @@ const GalleryPage = () => {
                               src={mediaUrl}
                               className="w-full h-full min-h-[180px] object-contain hover:scale-105 transition-transform duration-300"
                               muted
+                              autoPlay
                               loop
                               playsInline
                               onPlay={() => setPlayingVideos(prev => ({ ...prev, [videoKey]: true }))}
