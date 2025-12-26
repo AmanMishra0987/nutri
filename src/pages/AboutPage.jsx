@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+jiimport React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { IMAGES } from "../constants/images";
 import Header from "../components/Header";
@@ -75,7 +75,7 @@ const AboutPage = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={IMAGES.teamImage}
+                  src="/kusumrana.jpg"
                   alt="Kusum Rana - Founder"
                   className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
@@ -122,7 +122,7 @@ const AboutPage = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/raj.jpg"
+                  src="/rajwantkaur.jpg"
                   alt="Rajwant Kaur - Co-Founder"
                   className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
