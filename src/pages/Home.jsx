@@ -407,16 +407,6 @@ function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
-                <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
-                  <div className="text-2xl font-bold text-cyan-700 mb-2">PCOD Specialist</div>
-                  <div className="text-gray-600 font-medium text-sm">Expert in managing PCOD through nutrition</div>
-                </div>
-                <div className="p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl border border-emerald-200">
-                  <div className="text-2xl font-bold text-emerald-700 mb-2">Post-Pregnancy</div>
-                  <div className="text-gray-600 font-medium text-sm">Supporting mothers in their wellness journey</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
