@@ -353,8 +353,7 @@ function Home() {
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl border border-emerald-200">
-                  <div className="text-4xl font-bold text-emerald-700 mb-2">Dubai</div>
-                  <div className="text-gray-600 font-medium">Based in UAE</div>
+                  <p>We proudly serve clients across the UAE, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
                   <div className="text-lg font-bold text-cyan-700 mb-2 white-space: nowrap;">Available </div>
