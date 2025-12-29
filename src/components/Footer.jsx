@@ -82,7 +82,7 @@ const Footer = memo(() => {
                     to="/contact"
                     className="text-black  transition duration-300"
                   >
-                    Contact
+                    Testimonials
                   </Link>
                 </li>
               </ul>
