@@ -19,7 +19,7 @@ const EnrollmentPage = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0);
-      
+
       // Update active section based on scroll position
       const sectionIds = sections.map(s => s.id);
       const currentSection = sectionIds.find(id => {
@@ -30,7 +30,7 @@ const EnrollmentPage = () => {
         }
         return false;
       });
-      
+
       if (currentSection) {
         setActiveSection(currentSection);
       }
@@ -207,11 +207,11 @@ const EnrollmentPage = () => {
       <Header isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-r from-emerald-600 to-cyan-600 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yIDItNCAyLTZzLTItNC0yLTYgMi00IDItNi0yLTQtMi02bTAgMjRjMC0yIDItNCAyLTZzLTItNC0yLTYgMi00IDItNi0yLTQtMi02Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
+      <section className="pt-20 pb-8 bg-gradient-to-r from-emerald-600 to-cyan-600 relative overflow-hidden">
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Back Button */}
-          <div className="mb-8">
+          <div className="pt-6 mb-8">
             <button
               onClick={() => navigate(-1)}
               className="flex items-center text-white hover:text-emerald-100 transition duration-300 group bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm"
@@ -232,28 +232,7 @@ const EnrollmentPage = () => {
               <span className="font-medium">Back</span>
             </button>
           </div>
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6">
-              How to Enroll
-            </h1>
-          <p className="text-xl text-emerald-100 max-w-3xl mx-auto mb-8">
-            Your complete guide to starting your sustainable weight loss journey with Soul Fuel Wellness
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/booking"
-              className="bg-white text-emerald-600 px-8 py-4 rounded-full hover:bg-emerald-50 transition duration-300 font-semibold text-lg shadow-lg"
-            >
-              Start Your Journey
-            </Link>
-            <button
-              onClick={() => scrollToSection("intro")}
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition duration-300 font-semibold text-lg"
-            >
-              Learn More
-            </button>
-          </div>
-          </div>
+         
         </div>
       </section>
 
@@ -268,11 +247,10 @@ const EnrollmentPage = () => {
                 <button
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
-                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium text-left ${
-                    activeSection === section.id
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium text-left ${activeSection === section.id
                       ? "bg-emerald-600 text-white shadow-md"
                       : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
-                  }`}
+                    }`}
                 >
                   <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={section.icon} />
@@ -289,228 +267,228 @@ const EnrollmentPage = () => {
 
           {/* Introduction Section */}
           <section id="intro" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-6">
-              Sustainable Diet Plans for Effective Weight Loss
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-          </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Our Approach
+                </span>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-6">
+                  Sustainable Diet Plans for Effective Weight Loss
+                </h2>
+                <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+              </div>
 
-          {/* Welcome Message */}
-          <div className="max-w-4xl mx-auto mb-16">
-            <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 md:p-12 border border-emerald-100">
-              <div className="prose prose-lg max-w-none text-gray-600">
-                <p className="text-lg leading-relaxed mb-6">
-                  <span className="font-semibold text-emerald-800">Dear Client,</span>
-                </p>
-                <p className="leading-relaxed mb-6">
-                  We are excited to introduce our sustainable diet plans to you. Our plans are specifically designed to help you achieve your weight loss goals while promoting overall well-being by maintaining a well balance of eating homemade meals and engaging in any social or eating out occasions.
-                </p>
-                <p className="leading-relaxed mb-6">
-                  In recent years, there has been a significant shift towards sustainable lifestyles, and we recognize the importance of incorporating these principles into our diet plans. Our approach combines the latest nutritional science with an emphasis on sustainability, ensuring that you achieve your desired weight loss target and contribute to a healthier version of your own self.
-                </p>
-                <p className="leading-relaxed">
-                  We are committed to your success and well-being. We welcome you to join us on this journey towards a healthier you and a sustainable weight loss plan.
-                </p>
-                <div className="mt-8 pt-6 border-t border-emerald-200">
-                  <p className="text-emerald-800 font-medium">Warm regards,</p>
-                  <p className="text-emerald-900 font-bold text-xl">Kusum Rana</p>
-                  <p className="text-emerald-700 text-sm">Yoga, Pilates, Wellness, General Fitness and Lifestyle Coach</p>
+              {/* Welcome Message */}
+              <div className="max-w-4xl mx-auto mb-16">
+                <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 md:p-12 border border-emerald-100">
+                  <div className="prose prose-lg max-w-none text-gray-600">
+                    <p className="text-lg leading-relaxed mb-6">
+                      <span className="font-semibold text-emerald-800">Dear Client,</span>
+                    </p>
+                    <p className="leading-relaxed mb-6">
+                      We are excited to introduce our sustainable diet plans to you. Our plans are specifically designed to help you achieve your weight loss goals while promoting overall well-being by maintaining a well balance of eating homemade meals and engaging in any social or eating out occasions.
+                    </p>
+                    <p className="leading-relaxed mb-6">
+                      In recent years, there has been a significant shift towards sustainable lifestyles, and we recognize the importance of incorporating these principles into our diet plans. Our approach combines the latest nutritional science with an emphasis on sustainability, ensuring that you achieve your desired weight loss target and contribute to a healthier version of your own self.
+                    </p>
+                    <p className="leading-relaxed">
+                      We are committed to your success and well-being. We welcome you to join us on this journey towards a healthier you and a sustainable weight loss plan.
+                    </p>
+                    <div className="mt-8 pt-6 border-t border-emerald-200">
+                      <p className="text-emerald-800 font-medium">Warm regards,</p>
+                      <p className="text-emerald-900 font-bold text-xl">Kusum Rana</p>
+                      <p className="text-emerald-700 text-sm">Yoga, Pilates, Wellness, General Fitness and Lifestyle Coach</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              {/* Key Features Grid */}
+              <h3 className="text-2xl font-serif font-bold text-emerald-900 mb-8 text-center">
+                Key Features of Our Program
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {dietPlanFeatures.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                  >
+                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={feature.icon} />
+                      </svg>
+                    </div>
+                    <h4 className="text-lg font-bold text-emerald-900 mb-2">{feature.title}</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-
-          {/* Key Features Grid */}
-          <h3 className="text-2xl font-serif font-bold text-emerald-900 mb-8 text-center">
-            Key Features of Our Program
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {dietPlanFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group"
-              >
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={feature.icon} />
-                  </svg>
-                </div>
-                <h4 className="text-lg font-bold text-emerald-900 mb-2">{feature.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+          </section>
 
           {/* Step 1 Section */}
           <section id="step1" className="py-16 bg-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Step 1
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
-              First Step to Start Enrollment
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Before we begin your personalized meal plan, here's what you need to prepare
-            </p>
-          </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Step 1
+                </span>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
+                  First Step to Start Enrollment
+                </h2>
+                <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Before we begin your personalized meal plan, here's what you need to prepare
+                </p>
+              </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-4">
-              {step1Items.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 flex gap-4 items-start"
-                >
-                  <div className="flex-shrink-0 w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <p className="text-gray-700 leading-relaxed">{item}</p>
-                  </div>
+              <div className="max-w-4xl mx-auto">
+                <div className="space-y-4">
+                  {step1Items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 flex gap-4 items-start"
+                    >
+                      <div className="flex-shrink-0 w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                        {index + 1}
+                      </div>
+                      <div>
+                        <p className="text-gray-700 leading-relaxed">{item}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
 
-            {/* Important Note */}
-            <div className="mt-8 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-6">
-              <div className="flex items-start gap-4">
-                <svg className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
-                <div>
-                  <h4 className="font-bold text-amber-800 mb-2">Important Reminder</h4>
-                  <p className="text-amber-700 text-sm leading-relaxed">
-                    Please do not get nervous seeing daily fluctuations in your weight. We evaluate changes weekly - daily weights are for our observations and to help curate your next diet accordingly. Your weight can deviate based on different food groups, so please don't stress over this.
-                  </p>
+                {/* Important Note */}
+                <div className="mt-8 bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-6">
+                  <div className="flex items-start gap-4">
+                    <svg className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <div>
+                      <h4 className="font-bold text-amber-800 mb-2">Important Reminder</h4>
+                      <p className="text-amber-700 text-sm leading-relaxed">
+                        Please do not get nervous seeing daily fluctuations in your weight. We evaluate changes weekly - daily weights are for our observations and to help curate your next diet accordingly. Your weight can deviate based on different food groups, so please don't stress over this.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
           {/* Step 2 Section */}
           <section id="step2" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Step 2
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
-              Book Your Session
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-          </div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Step 2
+                </span>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
+                  Book Your Session
+                </h2>
+                <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+              </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 md:p-12 border border-emerald-100">
-              <div className="text-center">
-                <div className="mb-8">
-                  <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
+              <div className="max-w-4xl mx-auto">
+                <div className="bg-gradient-to-br from-emerald-50 to-cyan-50 rounded-2xl p-8 md:p-12 border border-emerald-100">
+                  <div className="text-center">
+                    <div className="mb-8">
+                      <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                        Your next step is to book a session with us. You'll then receive a detailed questionnaire that helps us understand your goals and tailor a personalised plan for you, all with complete respect for your privacy.
+                      </p>
+                      <Link
+                        to="/booking"
+                        className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
+                      >
+                        Book Your Session
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
-                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
-                    Your next step is to book a session with us. You'll then receive a detailed questionnaire that helps us understand your goals and tailor a personalised plan for you, all with complete respect for your privacy.
-                  </p>
-                  <Link
-                    to="/booking"
-                    className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 transition duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
-                  >
-                    Book Your Session
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
           {/* Rules & Guidelines Section */}
           <section id="rules" className="py-16 bg-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Important
-            </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
-              Program Rules & Regulations
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Please read these guidelines carefully to ensure a smooth and successful experience
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6">
-              {rules.map((rule, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
-                  <h4 className="font-bold text-emerald-900 mb-4 flex items-center gap-2">
-                    <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">{index + 1}</span>
-                    </div>
-                    {rule.title}
-                  </h4>
-                  <ul className="space-y-2">
-                    {rule.items.map((item, iIndex) => (
-                      <li key={iIndex} className="flex items-start gap-2 text-sm text-gray-600">
-                        <svg className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Final Message */}
-          <div className="mt-12 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-2xl p-8 md:p-12 text-center text-white">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Ready to Transform Your Life?
-              </h3>
-              <p className="text-emerald-100 mb-8 max-w-2xl mx-auto">
-                Thank you for taking the time to review our enrollment process. We are thrilled to have you embark on this weight loss journey with us. Your commitment and dedication are the keys to your success, and we are here to support you every step of the way.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/contact"
-                  className="bg-white text-emerald-600 px-8 py-4 rounded-full hover:bg-emerald-50 transition duration-300 font-semibold text-lg shadow-lg"
-                >
-                  Book Your Consultation
-                </Link>
-                <Link
-                  to="/contact"
-                  className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition duration-300 font-semibold text-lg"
-                >
-                  Contact Us
-                </Link>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <span className="inline-block bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Important
+                </span>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900 mb-4">
+                  Program Rules & Regulations
+                </h2>
+                <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Please read these guidelines carefully to ensure a smooth and successful experience
+                </p>
               </div>
-              <p className="mt-8 text-emerald-200 text-sm">
-                Warm regards, Team Kusum
-              </p>
+
+              <div className="max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-2 gap-6">
+                  {rules.map((rule, index) => (
+                    <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
+                      <h4 className="font-bold text-emerald-900 mb-4 flex items-center gap-2">
+                        <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+                          <span className="text-white font-bold text-sm">{index + 1}</span>
+                        </div>
+                        {rule.title}
+                      </h4>
+                      <ul className="space-y-2">
+                        {rule.items.map((item, iIndex) => (
+                          <li key={iIndex} className="flex items-start gap-2 text-sm text-gray-600">
+                            <svg className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Final Message */}
+              <div className="mt-12 max-w-4xl mx-auto">
+                <div className="bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-2xl p-8 md:p-12 text-center text-white">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                    Ready to Transform Your Life?
+                  </h3>
+                  <p className="text-emerald-100 mb-8 max-w-2xl mx-auto">
+                    Thank you for taking the time to review our enrollment process. We are thrilled to have you embark on this weight loss journey with us. Your commitment and dedication are the keys to your success, and we are here to support you every step of the way.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Link
+                      to="/contact"
+                      className="bg-white text-emerald-600 px-8 py-4 rounded-full hover:bg-emerald-50 transition duration-300 font-semibold text-lg shadow-lg"
+                    >
+                      Book Your Consultation
+                    </Link>
+                    <Link
+                      to="/contact"
+                      className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition duration-300 font-semibold text-lg"
+                    >
+                      Contact Us
+                    </Link>
+                  </div>
+                  <p className="mt-8 text-emerald-200 text-sm">
+                    Warm regards, Team Kusum
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
         </main>
       </div>
 

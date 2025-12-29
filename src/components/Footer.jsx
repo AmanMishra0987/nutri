@@ -79,7 +79,7 @@ const Footer = memo(() => {
                 </li>
                 <li>
                   <Link
-                    to="/contact"
+                    to="/testimonials"
                     className="text-black  transition duration-300"
                   >
                     Testimonials
