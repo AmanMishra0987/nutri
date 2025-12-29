@@ -343,7 +343,7 @@ function Home() {
               </div>
               
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-                <p>
+                <p className="font-bold text-emerald-700">
                   At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. Our mission is to empower individuals to achieve optimal health through personalized wellness solutions that are sustainable and meaningful.
                 </p>
                 <p>
