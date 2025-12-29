@@ -343,7 +343,7 @@ function Home() {
               </div>
               
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-                <p className="font-bold text-emerald-700">
+                <p >
                   At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. Our mission is to empower individuals to achieve optimal health through personalized wellness solutions that are sustainable and meaningful.
                 </p>
                 <p>
@@ -353,7 +353,7 @@ function Home() {
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl border border-emerald-200">
-                  <p>We proudly serve clients across the UAE, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
+                  <p className="font-bold text-emerald-700">We proudly serve clients across the UAE, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
                   <div className="text-lg font-bold text-cyan-700 mb-2 white-space: nowrap;">Available </div>
