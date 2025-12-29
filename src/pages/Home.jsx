@@ -411,74 +411,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Successful Transformations Section */}
-      <section id="transformations" className="py-16 bg-emerald-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">
-              Clients Success Stories
-            </h2>
-            <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
-            <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-              Real stories from real people who have transformed their lives with Soul Fuel Wellness
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visibleCards.map((transformation) => (
-              <div
-                key={transformation.id}
-                className="bg-white rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl"
-              >
-                <div className="mb-6">
-                  <h4 className="font-bold text-emerald-900 mb-2">
-                    {transformation.name}
-                  </h4>
-                  <div className="flex items-center text-sm text-gray-600 mb-2">
-                    <span>{transformation.age} years</span>
-                    <span className="mx-2">•</span>
-                    <span>{transformation.location}</span>
-                  </div>
-                  {transformation.weightLost && (
-                    <div className="text-sm font-semibold text-emerald-600">
-                      Lost {transformation.weightLost}
-                    </div>
-                  )}
-                </div>
-                <p className="text-gray-600 italic mb-4">"{transformation.shortDescription}"</p>
-                <Link
-                  to={`/transformation/${transformation.id}`}
-                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-300"
-                >
-                  Read More
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </Link>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition duration-300 font-medium"
-            >
-              {showAll ? "Show Less" : "Show All Transformations"}
-            </button>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Services Section */}
       <section id="services" className="py-16 bg-white">
@@ -665,6 +598,76 @@ function Home() {
           </div>
         </div>
       </section> 
+
+        {/* Successful Transformations Section */}
+      <section id="transformations" className="py-16 bg-emerald-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">
+              Clients Success Stories
+            </h2>
+            <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
+            <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+              Real stories from real people who have transformed their lives with Soul Fuel Wellness
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {visibleCards.map((transformation) => (
+              <div
+                key={transformation.id}
+                className="bg-white rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl"
+              >
+                <div className="mb-6">
+                  <h4 className="font-bold text-emerald-900 mb-2">
+                    {transformation.name}
+                  </h4>
+                  <div className="flex items-center text-sm text-gray-600 mb-2">
+                    <span>{transformation.age} years</span>
+                    <span className="mx-2">•</span>
+                    <span>{transformation.location}</span>
+                  </div>
+                  {transformation.weightLost && (
+                    <div className="text-sm font-semibold text-emerald-600">
+                      Lost {transformation.weightLost}
+                    </div>
+                  )}
+                </div>
+                <p className="text-gray-600 italic mb-4">"{transformation.shortDescription}"</p>
+                <Link
+                  to={`/transformation/${transformation.id}`}
+                  className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700 transition-colors duration-300"
+                >
+                  Read More
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition duration-300 font-medium"
+            >
+              {showAll ? "Show Less" : "Show All Transformations"}
+            </button>
+          </div>
+        </div>
+      </section>
+      
       <section id="gallery" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
