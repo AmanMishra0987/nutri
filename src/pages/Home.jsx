@@ -233,7 +233,6 @@ const TRANSFORMATIONS = [
 
 
 function Home() {
-  const [showAll, setShowAll] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Function to extract numeric weight value for sorting
@@ -248,7 +247,7 @@ function Home() {
     return getWeightValue(b.weightLost) - getWeightValue(a.weightLost);
   });
 
-  const visibleCards = showAll ? sortedTransformations : sortedTransformations.slice(0, 6);
+  const visibleCards = sortedTransformations.slice(0, 6);
 
   // Handle scroll to change navbar background after hero section
   useEffect(() => {
@@ -302,15 +301,7 @@ function Home() {
                   effective weight loss and overall well-being.
                 </p>
 
-                {/* <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-                  <Link
-                    to="/booking"
-                    className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition duration-300 text-lg font-medium text-center"
-                  >
-                    Start Your Journey
-                  </Link>
-
-                </div> */}
+               
               </div>
 
             </div>
@@ -658,12 +649,12 @@ function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <button
-              onClick={() => setShowAll(!showAll)}
-              className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition duration-300 font-medium"
+            <Link
+              to="/testimonials"
+              className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition duration-300 font-medium"
             >
-              {showAll ? "Show Less" : "Show All Transformations"}
-            </button>
+              Show All Transformations
+            </Link>
           </div>
         </div>
       </section>
