@@ -179,7 +179,7 @@ const Header = memo(({ isScrolled, setIsScrolled }) => {
                     className="block text-gray-900 hover:text-emerald-600 font-medium py-2 transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Contact Us
+                    Testimonials
                   </Link>
                 </li>
               </ul>
