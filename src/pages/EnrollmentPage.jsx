@@ -475,12 +475,7 @@ const EnrollmentPage = () => {
                     >
                       Book Your Consultation
                     </Link>
-                    <Link
-                      to="/contact"
-                      className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition duration-300 font-semibold text-lg"
-                    >
-                      Contact Us
-                    </Link>
+                    
                   </div>
                   <p className="mt-8 text-emerald-200 text-sm">
                     Warm regards, Team Kusum
