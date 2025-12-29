@@ -302,7 +302,7 @@ function Home() {
                   effective weight loss and overall well-being.
                 </p>
 
-                <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                {/* <div className="mt-8 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
                   <Link
                     to="/booking"
                     className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition duration-300 text-lg font-medium text-center"
@@ -310,7 +310,7 @@ function Home() {
                     Start Your Journey
                   </Link>
 
-                </div>
+                </div> */}
               </div>
 
             </div>
