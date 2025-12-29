@@ -325,11 +325,11 @@ function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/kusumrana.jpg"
                   alt="Kusum Rana - Founder"
-                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-[500px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>
@@ -373,11 +373,11 @@ function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative group lg:order-2">
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/rajwantkaur.jpg"
                   alt="Rajwant Kaur - Co-Founder"
-                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-[500px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>
