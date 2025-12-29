@@ -248,7 +248,7 @@ function Home() {
     return getWeightValue(b.weightLost) - getWeightValue(a.weightLost);
   });
 
-  const visibleCards = showAll ? sortedTransformations : sortedTransformations.slice(0, 3);
+  const visibleCards = showAll ? sortedTransformations : sortedTransformations.slice(0, 6);
 
   // Handle scroll to change navbar background after hero section
   useEffect(() => {
