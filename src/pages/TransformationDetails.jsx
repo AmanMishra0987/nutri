@@ -382,6 +382,25 @@ const TRANSFORMATIONS = [
         weightLost: "25 kg",
         duration: "6 months",
 
+    },
+    {
+        id: "25",
+        name: "Neerav",
+        age: 40,
+        location: null,
+        startingWeight: "113 kg",
+        currentWeight: "88 kg",
+        shortSummary: "Lost 25kg with sustainable habits for life",
+        fullDescription: "Neerav discovered the importance of creating healthy, sustainable habits that last a lifetime, maintaining results even after a year.",
+        detailedStory: "This experience was unlike any diets I have done in the past. The biggest learning during this journey was creating healthy sustainable habits. The importance of this cannot be stated more as the journey continues for life. I can assure that even a year after I have been able to maintain the reduced weight on my own.",
+        weightLost: "25 kg",
+        duration: "Ongoing",
+
+        beforeAfterImages: {
+            before: "/neeravbefore.jpeg",
+            after: "/neeravafter.jpeg"
+        },
+
     }
 
 ];

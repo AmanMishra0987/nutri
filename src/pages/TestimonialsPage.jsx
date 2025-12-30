@@ -220,6 +220,15 @@ const TRANSFORMATIONS = [
     weightLost: "25kg",
     shortSummary: "Lost 25kg with structured yearly planning",
     shortDescription: "My journey with Kusum and the entire team has been nothing short of spectacular."
+  },
+  {
+    id: "25",
+    name: "Neerav",
+    age: 40,
+    location: null,
+    weightLost: "25kg",
+    shortSummary: "Lost 25kg with sustainable habits for life",
+    shortDescription: "This experience was unlike any diets I have done in the past. The biggest learning during this journey was creating healthy sustainable habits."
   }
 ];
 
