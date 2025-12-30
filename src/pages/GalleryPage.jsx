@@ -1,8 +1,48 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { IMAGES } from "../constants/images";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+// All gallery media from /soul folder - images first, then videos
+const GALLERY_MEDIA = [
+  // Images
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.06 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.06 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.06 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.07 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.07 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.07 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.08 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.08 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.08 AM (3).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.08 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.09 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.09 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.09 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.10 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.10 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.10 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.11 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.11 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.11 AM (3).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.11 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.12 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.12 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.12 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.13 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.13 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.13 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.14 AM (1).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.14 AM (2).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.14 AM (3).jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.14 AM.jpeg",
+  "/soul/WhatsApp Image 2025-12-30 at 10.53.15 AM.jpeg",
+  // Videos
+  "/soul/WhatsApp Video 2025-12-30 at 10.53.05 AM.mp4",
+  "/soul/soul4.mp4",
+  "/soul/soul5.mp4",
+  "/soul/soul6.mp4",
+];
 
 const GalleryPage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,7 +54,7 @@ const GalleryPage = () => {
 
   useEffect(() => {
     // Preload images and videos for better performance
-    const mediaPromises = IMAGES.gallery.map((src) => {
+    const mediaPromises = GALLERY_MEDIA.map((src) => {
       return new Promise((resolve, reject) => {
         if (src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov')) {
           // For videos, check if they can be loaded
@@ -51,7 +91,7 @@ const GalleryPage = () => {
   const galleryCategories = [
     {
       name: "Nutrition & Wellness",
-      images: IMAGES.gallery, // Show all 9 images
+      images: GALLERY_MEDIA,
     }
   ];
 
@@ -123,7 +163,7 @@ const GalleryPage = () => {
           {!imagesLoaded ? (
             // Loading skeleton
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[...Array(9)].map((_, index) => (
+              {[...Array(31)].map((_, index) => (
                 <div
                   key={index}
                   className="rounded-2xl overflow-hidden shadow-lg"
