@@ -230,7 +230,7 @@ const TRANSFORMATIONS = [
     id: "25",
     name: "Neerav",
     age: 40,
-    location: null,
+    location: "Canada",
     weightLost: "25kg",
     shortSummary: "Lost 25kg with sustainable habits for life",
     shortDescription: "This experience was unlike any diets I have done in the past. The biggest learning during this journey was creating healthy sustainable habits."
