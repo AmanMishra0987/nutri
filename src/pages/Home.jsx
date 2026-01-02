@@ -230,7 +230,7 @@ const TRANSFORMATIONS = [
     id: "25",
     name: "Neerav",
     age: 40,
-    location: null,
+    location: "Canada",
     weightLost: "25kg",
     shortSummary: "Lost 25kg with sustainable habits for life",
     shortDescription: "This experience was unlike any diets I have done in the past. The biggest learning during this journey was creating healthy sustainable habits."
@@ -327,7 +327,7 @@ function Home() {
                 <img
                   src="/kusumrana.jpeg"
                   alt="Kusum Rana - Founder"
-                  className="w-full h-[500px] object-cover object-top transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>
@@ -374,7 +374,7 @@ function Home() {
                 <img
                   src="/rajwantkaur.jpeg"
                   alt="Rajwant Kaur - Co-Founder"
-                  className="w-full h-[500px] object-cover object-top transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
               </div>
             </div>

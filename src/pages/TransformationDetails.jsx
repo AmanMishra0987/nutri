@@ -387,7 +387,7 @@ const TRANSFORMATIONS = [
         id: "25",
         name: "Neerav",
         age: 40,
-        location: null,
+        location: "Canada",
         startingWeight: "113 kg",
         currentWeight: "88 kg",
         shortSummary: "Lost 25kg with sustainable habits for life",
