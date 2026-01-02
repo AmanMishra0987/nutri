@@ -325,7 +325,7 @@ function Home() {
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/kusumrana.jpeg"
+                  src="/kusumsoul.jpeg"
                   alt="Kusum Rana - Founder"
                   className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />
@@ -351,7 +351,7 @@ function Home() {
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl border border-emerald-200">
-                  <p className="font-bold text-emerald-700">We proudly serve clients across the UAE, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
+                  <p className="font-bold text-sm text-emerald-700">We proudly serve clients across the UAE, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
                   <div className="text-lg font-bold text-cyan-700 mb-2 white-space: nowrap;">Available </div>
@@ -372,7 +372,7 @@ function Home() {
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/rajwantkaur.jpeg"
+                  src="/rajsoul.jpeg"
                   alt="Rajwant Kaur - Co-Founder"
                   className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
                 />

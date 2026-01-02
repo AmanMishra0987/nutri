@@ -57,23 +57,44 @@ const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [playingVideos, setPlayingVideos] = useState({});
+  const [mediaDimensions, setMediaDimensions] = useState({});
   const videoRefs = React.useRef({});
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Preload images and videos for better performance
-    const mediaPromises = GALLERY_MEDIA.map((src) => {
+    // Preload images and videos and calculate dimensions for bento layout
+    const mediaPromises = GALLERY_MEDIA.map((src, index) => {
       return new Promise((resolve, reject) => {
         if (src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov')) {
-          // For videos, check if they can be loaded
+          // For videos, get dimensions
           const video = document.createElement('video');
-          video.oncanplay = resolve;
+          video.onloadedmetadata = () => {
+            setMediaDimensions(prev => ({
+              ...prev,
+              [index]: {
+                width: video.videoWidth,
+                height: video.videoHeight,
+                aspectRatio: video.videoWidth / video.videoHeight
+              }
+            }));
+            resolve();
+          };
           video.onerror = reject;
           video.src = src;
         } else {
-          // For images
+          // For images, get dimensions
           const img = new Image();
-          img.onload = resolve;
+          img.onload = () => {
+            setMediaDimensions(prev => ({
+              ...prev,
+              [index]: {
+                width: img.naturalWidth,
+                height: img.naturalHeight,
+                aspectRatio: img.naturalWidth / img.naturalHeight
+              }
+            }));
+            resolve();
+          };
           img.onerror = reject;
           img.src = src;
         }
@@ -127,6 +148,32 @@ const GalleryPage = () => {
     }
   };
 
+  // Helper function to determine grid span based on aspect ratio (bento style)
+  const getGridSpan = (index) => {
+    const dimensions = mediaDimensions[index];
+    if (!dimensions) return { rowSpan: 1, colSpan: 1 };
+    
+    const { aspectRatio } = dimensions;
+    
+    // Bento box logic: vary spans based on aspect ratio for organic layout
+    if (aspectRatio > 1.6) {
+      // Very wide/landscape images - span 2 columns
+      return { rowSpan: 1, colSpan: 2 };
+    } else if (aspectRatio < 0.65) {
+      // Very tall/portrait images - span 2 rows
+      return { rowSpan: 2, colSpan: 1 };
+    } else if (aspectRatio > 1.3 && aspectRatio <= 1.6) {
+      // Medium-wide - occasionally span 2 columns for variety
+      return { rowSpan: 1, colSpan: index % 4 === 0 ? 2 : 1 };
+    } else if (aspectRatio >= 0.65 && aspectRatio < 0.85) {
+      // Medium-tall - occasionally span 2 rows
+      return { rowSpan: index % 5 === 0 ? 2 : 1, colSpan: 1 };
+    } else {
+      // Square-ish or standard - single cell
+      return { rowSpan: 1, colSpan: 1 };
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-cyan-50">
       <Header isScrolled={isScrolled} setIsScrolled={setIsScrolled} />
@@ -169,19 +216,24 @@ const GalleryPage = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {!imagesLoaded ? (
-            // Loading skeleton
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[...Array(31)].map((_, index) => (
-                <div
-                  key={index}
-                  className="rounded-2xl overflow-hidden shadow-lg"
-                >
-                  <div className="w-full h-48 bg-gray-200 animate-pulse"></div>
-                  <div className="p-4 bg-white">
-                    <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
-                  </div>
-                </div>
-              ))}
+            // Loading skeleton with bento layout
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[minmax(200px,auto)]">
+              {[...Array(31)].map((_, index) => {
+                // Vary skeleton sizes for bento effect
+                const isWide = index % 5 === 0;
+                const isTall = index % 7 === 0;
+                return (
+                  <div
+                    key={index}
+                    className="rounded-2xl overflow-hidden shadow-lg bg-gray-200 animate-pulse"
+                    style={{
+                      gridRow: isTall ? 'span 2' : 'span 1',
+                      gridColumn: isWide ? 'span 2' : 'span 1',
+                      height: isTall ? '400px' : '200px'
+                    }}
+                  />
+                );
+              })}
             </div>
           ) : (
             galleryCategories.map((category, categoryIndex) => (
@@ -193,17 +245,30 @@ const GalleryPage = () => {
                   <div className="w-20 h-1 bg-emerald-600 mx-auto"></div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div 
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+                  style={{ 
+                    gridAutoRows: 'minmax(200px, auto)',
+                    gridAutoFlow: 'dense'
+                  }}
+                >
                   {category.images.map((mediaUrl, index) => {
                     const isVideo = mediaUrl.endsWith('.mp4') || mediaUrl.endsWith('.webm') || mediaUrl.endsWith('.mov');
                     const videoKey = `${mediaUrl}-${index}`;
                     const isPlaying = playingVideos[videoKey];
+                    const dimensions = mediaDimensions[index];
+                    const { rowSpan, colSpan } = getGridSpan(index);
                     
                     return (
                       <div
                         key={index}
-                        className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer bg-gray-100 flex items-center justify-center min-h-[180px] relative"
-                        style={{ willChange: "transform, box-shadow" }}
+                        className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer bg-gray-100 relative group"
+                        style={{ 
+                          willChange: "transform, box-shadow",
+                          gridRow: `span ${rowSpan}`,
+                          gridColumn: `span ${colSpan}`,
+                          minHeight: '200px'
+                        }}
                         onClick={() => openModal(mediaUrl)}
                       >
                         {isVideo ? (
@@ -213,7 +278,7 @@ const GalleryPage = () => {
                                 if (el) videoRefs.current[videoKey] = el;
                               }}
                               src={mediaUrl}
-                              className="w-full h-full min-h-[180px] object-contain hover:scale-105 transition-transform duration-300"
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                               muted
                               autoPlay
                               loop
@@ -223,10 +288,10 @@ const GalleryPage = () => {
                             />
                             <button
                               onClick={(e) => toggleVideoPlay(mediaUrl, index, e)}
-                              className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors z-10 group"
+                              className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors z-10"
                               aria-label={isPlaying ? "Pause video" : "Play video"}
                             >
-                              <div className="bg-white/90 rounded-full p-4 group-hover:bg-white transition-colors shadow-lg">
+                              <div className="bg-white/90 rounded-full p-4 hover:bg-white transition-colors shadow-lg">
                                 {isPlaying ? (
                                   <svg
                                     className="w-8 h-8 text-gray-800"
@@ -251,7 +316,7 @@ const GalleryPage = () => {
                           <img
                             src={mediaUrl}
                             alt={`${category.name} image ${index + 1}`}
-                            className="w-full h-full min-h-[180px] object-contain hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             loading="lazy"
                             decoding="async"
                           />
