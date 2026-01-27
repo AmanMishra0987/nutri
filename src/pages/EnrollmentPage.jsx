@@ -208,7 +208,7 @@ const EnrollmentPage = () => {
 
       {/* Hero Section */}
       <section className="pt-20 pb-8 bg-gradient-to-r from-emerald-600 to-cyan-600 relative overflow-hidden">
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Back Button */}
           <div className="pt-6 mb-8">
@@ -232,7 +232,7 @@ const EnrollmentPage = () => {
               <span className="font-medium">Back</span>
             </button>
           </div>
-         
+
         </div>
       </section>
 
@@ -248,8 +248,8 @@ const EnrollmentPage = () => {
                   key={section.id}
                   onClick={() => scrollToSection(section.id)}
                   className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium text-left ${activeSection === section.id
-                      ? "bg-emerald-600 text-white shadow-md"
-                      : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
+                    ? "bg-emerald-600 text-white shadow-md"
+                    : "bg-emerald-50 text-emerald-700 hover:bg-emerald-100"
                     }`}
                 >
                   <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -295,7 +295,7 @@ const EnrollmentPage = () => {
                       We are committed to your success and well-being. We welcome you to join us on this journey towards a healthier you and a sustainable weight loss plan.
                     </p>
                     <div className="mt-8 pt-6 border-t border-emerald-200">
-                      <p className="text-emerald-800 font-medium">Warm regards,</p>
+                      <p className="text-emerald-800 font-medium">Wishing you wellness,</p>
                       <p className="text-emerald-900 font-bold text-xl">Kusum Rana</p>
                       <p className="text-emerald-700 text-sm">Yoga, Pilates, Wellness, General Fitness and Lifestyle Coach</p>
                     </div>
@@ -475,10 +475,10 @@ const EnrollmentPage = () => {
                     >
                       Book Your Consultation
                     </Link>
-                    
+
                   </div>
                   <p className="mt-8 text-emerald-200 text-sm">
-                    Warm regards, Team Kusum
+                    Wishing you wellness, Team Kusum
                   </p>
                 </div>
               </div>

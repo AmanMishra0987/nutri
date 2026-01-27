@@ -291,7 +291,7 @@ function Home() {
 
         {/* Hero Content ON video */}
         <div className={`relative z-10 w-full h-full flex transition-all duration-300 ${isScrolled ? 'items-start pt-[140px]' : 'items-center pt-[100px]'}`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{marginBottom: '100px'}}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ marginBottom: '100px' }}>
 
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
 
@@ -308,7 +308,7 @@ function Home() {
                   effective weight loss and overall well-being.
                 </p>
 
-               
+
               </div>
 
             </div>
@@ -331,7 +331,7 @@ function Home() {
                 />
               </div>
             </div>
-            
+
             <div className="space-y-8">
               <div>
                 <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">Founder</span>
@@ -339,19 +339,19 @@ function Home() {
                   Founded by <span className="text-emerald-600">Kusum Rana</span>
                 </h2>
               </div>
-              
+
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
                 <p >
                   At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. Our mission is to empower individuals to achieve optimal health through personalized wellness solutions that are sustainable and meaningful.
                 </p>
                 <p>
-                  We offer sustainable, personalized diet and lifestyle programs aimed at achieving effective weight loss and overall well-being. Our approach combines personalized nutrition plans with wellness coaching, focusing on building sustainable habits for long-term success.
+                  We offer sustainable, personalized diet and lifestyle programs aimed at achieving effective weight loss and overall well-being. Our approach combines personalized nutrition plans with wellness coaching, focusing on building sustainable habits for long-term success.<br />Specialize in tailoring the plans for both men and women
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-6 pt-8">
                 <div className="p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl border border-emerald-200">
-                  <p className="font-bold text-sm text-emerald-700">We proudly serve clients across the UAE, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
+                  <p className="font-bold text-sm text-emerald-700">We proudly serve clients across the UAE and the GCC, India, Thailand, the UK, Canada, the United States, and Africa, with our head office located in Dubai.</p>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl border border-cyan-200">
                   <div className="text-lg font-bold text-cyan-700 mb-2 white-space: nowrap;">Available </div>
@@ -378,7 +378,7 @@ function Home() {
                 />
               </div>
             </div>
-            
+
             <div className="space-y-8 lg:order-1">
               <div>
                 <span className="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Co-Founder</span>
@@ -386,7 +386,7 @@ function Home() {
                   Meet <span className="text-cyan-600">Rajwant Kaur</span>
                 </h2>
               </div>
-              
+
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4 text-emerald-700">
@@ -409,7 +409,82 @@ function Home() {
         </div>
       </section>
 
-    
+
+
+
+      {/* Why Choose Section */}
+      <section className="py-16 bg-emerald-50/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-emerald-900">
+              Why Choose Soulfuel Wellness
+            </h2>
+            <div className="w-20 h-1 bg-emerald-600 mx-auto mt-4"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* 1. Keeping you on track */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-emerald-900 mb-4">
+                Keeping you on track
+              </h3>
+              <p className="text-gray-600">
+                Regular follow-ups and progress monitoring to ensure you stay aligned with your wellness goals.
+              </p>
+            </div>
+
+            {/* 2. One to one consultation */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-emerald-900 mb-4">
+                One to one consultation
+              </h3>
+              <p className="text-gray-600">
+                Personalized sessions with expert nutritionists to address your specific needs and challenges.
+              </p>
+            </div>
+
+            {/* 3. Being part of your journey */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-emerald-900 mb-4">
+                Being part of your journey
+              </h3>
+              <p className="text-gray-600">
+                Continuous support and motivation as you navigate through your transformation.
+              </p>
+            </div>
+
+            {/* 4. Detailed analysis of the body */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-cyan-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-emerald-900 mb-4">
+                Detailed analysis of the body
+              </h3>
+              <p className="text-gray-600">
+                Comprehensive body composition analysis to tailor the perfect plan for you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section id="services" className="py-16 bg-white">
@@ -451,7 +526,7 @@ function Home() {
                 Tailored meal plans based on your body type, diet preferences,
                 and lifestyle with balanced nutrition and portion control.
               </p>
-              
+
             </div>
 
             {/* Service 2 */}
@@ -479,7 +554,7 @@ function Home() {
                 Holistic lifestyle coaching combining nutrition, mindfulness,
                 and habit formation for sustainable wellness.
               </p>
-             
+
             </div>
 
             {/* Service 3 */}
@@ -507,7 +582,7 @@ function Home() {
                 Sustainable weight loss programs with daily support, progress
                 tracking, and mindful eating guidance.
               </p>
-             
+
             </div>
 
             {/* Service 4 */}
@@ -535,7 +610,7 @@ function Home() {
                 Weekly consultations on Tuesdays & Thursdays with extended
                 support for quarterly and semi-annual plans.
               </p>
-              
+
             </div>
 
             {/* Service 5 */}
@@ -563,7 +638,7 @@ function Home() {
                 Comprehensive health assessment with BMI testing, lab work
                 guidance, and medical history integration.
               </p>
-             
+
             </div>
 
             {/* Service 6 */}
@@ -591,13 +666,13 @@ function Home() {
                 Daily weight tracking, WhatsApp support during working hours,
                 and continuous guidance for lasting results.
               </p>
-             
+
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
-        {/* Successful Transformations Section */}
+      {/* Successful Transformations Section */}
       <section id="transformations" className="py-16 bg-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -673,7 +748,7 @@ function Home() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      
+
       <Route
         path="/contact"
         element={
