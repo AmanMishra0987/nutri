@@ -28,7 +28,7 @@ const TRANSFORMATIONS = [
 
     {
         id: "2",
-        name: "Priyanka Ramchandani",
+        name: "Priyanka",
         age: 40,
         location: "Dubai",
         startingWeight: "55 kg",
@@ -44,7 +44,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "3",
-        name: "Simran Makhijani",
+        name: "Simran",
         age: 28,
         location: "Dubai",
         startingWeight: "61 kg",
@@ -59,7 +59,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "4",
-        name: "Namit Bhalla",
+        name: "Namit",
         age: 44,
         location: "Dubai",
         startingWeight: "92 kg",
@@ -75,7 +75,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "5",
-        name: "Richa Bhagnari",
+        name: "Richa",
         age: 49,
         location: "Dubai",
         startingWeight: "73 kg",
@@ -104,7 +104,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "7",
-        name: "Dhaara Nikalank",
+        name: "Dhaara",
         age: 42,
         location: "India",
         startingWeight: "82.5 kg",
@@ -138,7 +138,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "9",
-        name: "Deepali Gandhi",
+        name: "Deepali",
         age: 40,
         location: "Canada",
         startingWeight: "82 kg",
@@ -172,7 +172,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "11",
-        name: "Miita Thakral",
+        name: "Miita",
         age: 43,
         location: "Thailand",
         startingWeight: "66 kg",
@@ -186,7 +186,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "12",
-        name: "Ruba Hassan",
+        name: "Ruba",
         age: 35,
         location: "Yemen",
         startingWeight: "84.45 kg",
@@ -247,7 +247,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "16",
-        name: "Rahul Valecha",
+        name: "Rahul",
         age: 32,
         location: "Dubai",
         startingWeight: "86 kg",
@@ -275,7 +275,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "18",
-        name: "Prerna Khushalani",
+        name: "Prerna",
         age: 33,
         location: null,
         startingWeight: "101 kg",
@@ -308,7 +308,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "20",
-        name: "Priyanka Sridhar",
+        name: "Priyanka",
         age: 28,
         location: "USA",
         startingWeight: "64 kg",
@@ -322,7 +322,7 @@ const TRANSFORMATIONS = [
     },
     {
         id: "21",
-        name: "Neha Munjal",
+        name: "Neha",
         age: 36,
         location: null,
         startingWeight: "68 kg",
