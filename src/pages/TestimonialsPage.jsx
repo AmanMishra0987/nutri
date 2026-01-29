@@ -16,7 +16,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "2",
-    name: "Priyanka Ramchandani",
+    name: "Priyanka",
     age: 40,
     location: "Dubai",
     weightLost: "3kg",
@@ -25,7 +25,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "3",
-    name: "Simran Makhijani",
+    name: "Simran",
     age: 28,
     location: "Dubai",
     weightLost: "8kg",
@@ -34,7 +34,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "4",
-    name: "Namit Bhalla",
+    name: "Namit",
     age: 44,
     location: "Dubai",
     weightLost: "10kg",
@@ -43,7 +43,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "5",
-    name: "Richa Bhagnari",
+    name: "Richa",
     age: 49,
     location: "Dubai",
     weightLost: "10kg",
@@ -61,7 +61,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "7",
-    name: "Dhaara Nikalank",
+    name: "Dhaara",
     age: 42,
     location: "India",
     weightLost: "17.5kg",
@@ -97,7 +97,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "11",
-    name: "Miita Thakral",
+    name: "Miita",
     age: 43,
     location: "Thailand",
     weightLost: "9kg",
@@ -142,7 +142,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "16",
-    name: "Rahul Valecha",
+    name: "Rahul",
     age: 32,
     location: "Dubai",
     weightLost: "8kg",
@@ -160,7 +160,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "18",
-    name: "Prerna Khushalani",
+    name: "Prerna",
     age: 33,
     location: null,
     weightLost: "21kg",
@@ -178,7 +178,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "20",
-    name: "Priyanka Sridhar",
+    name: "Priyanka",
     age: 28,
     location: "USA",
     weightLost: "14kg",
@@ -187,7 +187,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "21",
-    name: "Neha Munjal",
+    name: "Neha",
     age: 36,
     location: null,
     weightLost: "16kg",
