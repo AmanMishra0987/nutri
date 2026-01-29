@@ -345,7 +345,7 @@ function Home() {
                   At Soul Fuel Wellness, we believe that true wellness comes from nurturing the whole self - body, mind, and spirit. Our mission is to empower individuals to achieve optimal health through personalized wellness solutions that are sustainable and meaningful.
                 </p>
                 <p>
-                  We offer sustainable, personalized diet and lifestyle programs aimed at achieving effective weight loss and overall well-being. Our approach combines personalized nutrition plans with wellness coaching, focusing on building sustainable habits for long-term success.<br />Specialize in tailoring the plans for both men and women
+                  We provide sustainable, customized diet and lifestyle programs designed to support effective weight management and overall wellness. Our method blends personalized nutrition strategies with wellness coaching, helping individuals develop healthy, long-lasting habits for continued success. We specialize in creating tailored plans specifically for both men and women.
                 </p>
               </div>
 
