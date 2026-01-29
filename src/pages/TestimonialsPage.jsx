@@ -79,7 +79,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "9",
-    name: "Deepali Gandhi",
+    name: "Deepali",
     age: 40,
     location: "Canada",
     weightLost: "23kg",
@@ -106,7 +106,7 @@ const TRANSFORMATIONS = [
   },
   {
     id: "12",
-    name: "Ruba Hassan",
+    name: "Ruba",
     age: 35,
     location: "Yemen",
     weightLost: "5kg",
