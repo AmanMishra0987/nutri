@@ -42,7 +42,6 @@ const GALLERY_MEDIA = [
   "/soul/WhatsApp Video 2025-12-31 at 8.00.03 PM.mp4",
   "/soul/soul4.mp4",
   "/soul/soul5.mp4",
-  "/soul/soul6.mp4",
 ];
 
 const GalleryPage = () => {
