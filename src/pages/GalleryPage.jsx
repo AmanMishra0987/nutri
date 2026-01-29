@@ -14,7 +14,6 @@ const GALLERY_MEDIA = [
   "/soul/WhatsApp Image 2025-12-30 at 10.53.07 AM.jpeg",
   "/soul/WhatsApp Image 2025-12-30 at 10.53.09 AM (1).jpeg",
   "/soul/WhatsApp Image 2025-12-30 at 10.53.09 AM (2).jpeg",
-  "/soul/WhatsApp Image 2025-12-30 at 10.53.09 AM.jpeg",
   "/soul/WhatsApp Image 2025-12-30 at 10.53.10 AM (1).jpeg",
   "/soul/WhatsApp Image 2025-12-30 at 10.53.10 AM (2).jpeg",
   "/soul/WhatsApp Image 2025-12-30 at 10.53.10 AM.jpeg",
