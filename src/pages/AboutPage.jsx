@@ -162,6 +162,51 @@ const AboutPage = () => {
 
       </section>
 
+       {/* Rajwant Kaur Section */}
+      <section className="py-24 bg-gradient-to-br from-emerald-50 to-cyan-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative group lg:order-2">
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition duration-300"></div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/rajsoul.jpeg"
+                  alt="Rajwant Kaur - Co-Founder"
+                  className="w-full h-[600px] object-cover object-top transform group-hover:scale-105 transition duration-500"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-8 lg:order-1">
+              <div>
+                <span className="text-cyan-600 font-semibold text-sm uppercase tracking-wider">Co-Founder</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-6">
+                  Meet <span className="text-cyan-600">Rajwant Kaur</span>
+                </h2>
+              </div>
+
+              <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 text-emerald-700">
+                    My Journey with PCOD
+                  </h3>
+                  <p>
+                    I've struggled with Polycystic Ovary Syndrome (PCOD) for most of my life. As a skinny child, my challenges began during my shift work. Irregular eating and sleeping patterns, along with high stress levels from working in the aviation industry, led to weight gain and difficulties in conceiving.
+                  </p>
+                </div>
+                <p>
+                  After two pregnancies, I gained 25 kilograms, and losing that weight felt overwhelming. However, through healthy eating, self-care, and external support, I managed to regulate my weight and return to my pre-pregnancy size. This transformation wasn't just physical; it was profound in every aspect of my life. I sustained a healthier lifestyle and became better equipped to manage my PCOD.
+                </p>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
       {/* Core Values - Modern Grid */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
